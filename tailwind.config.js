@@ -5,8 +5,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      "slate-950": "#0E1116",
+    extend: {
+      colors: {
+        "slate-950": "#0E1116",
+      },
     },
   },
   plugins: [],
