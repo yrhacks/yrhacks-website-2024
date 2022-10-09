@@ -43,7 +43,7 @@ const Hero = () => {
         <div className="absolute top-48 right-0 w-48 h-48 rounded-full bg-blue-600/30 blur-[100px]" />
         <div className="absolute bottom-40 left-0 w-48 h-48 rounded-full bg-rose-600/20 blur-[100px]" />
         <p className="text-sm font-semibold text-white/50">SPRING 2023</p>
-        <h1 className="text-5xl font-bold my-1">YRHacks</h1>
+        <h1 className="text-5xl font-bold my-1 font-helvetica">YRHacks</h1>
         <p className="text-xl font-semibold mb-4">
           {begun ? "has begun!" : "is in..."}
         </p>
