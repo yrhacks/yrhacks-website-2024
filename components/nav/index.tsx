@@ -20,7 +20,7 @@ const Nav = () => {
             href="/#"
           >
             <Image
-              src="/assets/logo.png"
+              src="/assets/Logo.png"
               alt="YRHacks Logo"
               width={width < 768 ? 35 : 60}
               height={width < 768 ? 35 : 60}
