@@ -12,24 +12,24 @@ const Collapsible = ({ question, answer }: Props) => {
   return (
     <div className="w-full pb-5">
       <header
-        className="flex flex-row justify-start items-center mt-3 w-full z-20"
+        className="flex flex-row justify-start items-center mt-3 w-full z-20 cursor-pointer"
         onClick={() => setOpen(!open)}
       >
         {open ? (
-          <GoDash className="text-lg text-white cursor-pointer" />
+          <GoDash className="text-lg text-white" />
         ) : (
-          <GoPlus className="text-lg text-white cursor-pointer" />
+          <GoPlus className="text-lg text-white" />
         )}
         <h3 className="text-md font-bold ml-3">{question}</h3>
       </header>
       <div
         className={
-          "duration-1000 transition-all flex flex-col overflow-hidden " +
+          "duration-700 transition-all flex flex-col overflow-hidden " +
           (open ? "max-h-96" : "max-h-0")
         }
       >
         {answer.map((item: any, index: number) => (
-          <p key={index} className="text-xs mt-3 leading-6">
+          <p key={index} className="text-xs leading-[1.6em] mt-3">
             {item}
           </p>
         ))}

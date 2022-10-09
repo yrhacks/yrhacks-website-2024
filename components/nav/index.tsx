@@ -18,8 +18,8 @@ const Nav = () => {
             <Image
               src="/assets/logo.png"
               alt="YRHacks Logo"
-              width={width < 768 ? 40 : 70}
-              height={width < 768 ? 40 : 70}
+              width={width < 768 ? 35 : 60}
+              height={width < 768 ? 35 : 60}
               layout={"intrinsic"}
             />
           </div>
@@ -43,7 +43,7 @@ const Nav = () => {
                     <li>
                       <a
                         href={index > 0 ? "/#" + item.toLowerCase() : "/#"}
-                        className="text-white text-sm lg:text-lg font-medium font-helvetica"
+                        className="text-white text-sm lg:text-base font-medium"
                         key={item}
                       >
                         {item}

@@ -39,8 +39,8 @@ const Hero = () => {
 
   return (
     <header className="w-screen h-screen flex flex-col justify-center items-start bg-slate-950 pt-10 px-5 md:px-10 lg:px-48">
-      <div className="absolute top-36 lg:top-48 right-0 w-48 h-48 lg:w-80 lg:h-80 rounded-full bg-blue-600/30 blur-[100px]" />
-      <div className="absolute bottom-24 lg:bottom-16 left-0 w-48 h-48 lg:w-80 lg:h-80 rounded-full bg-rose-600/20 blur-[100px]" />
+      <div className="absolute bottom-24 lg:bottom-16 left-0 w-48 h-48 lg:w-80 lg:h-80 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-rose-600/30 blur-[150px]" />
+      <div className="absolute top-8 lg:top-18 right-0 w-48 h-48 lg:w-96 lg:h-96 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-blue-600/40 blur-[150px]" />
       <p className="text-sm font-semibold text-white/50">SPRING 2023</p>
       <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica">
         YRHacks
