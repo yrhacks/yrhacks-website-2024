@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { MdLocationOn, MdCalendarToday } from "react-icons/md";
-import { TimerContainer } from "../countdown/TimerContainer";
+import Countdown from "../countdown";
 
 const Hero = () => {
   const [days, setDays] = useState<number>(0);
   const [hours, setHours] = useState<number>(0);
   const [minutes, setMinutes] = useState<number>(0);
   const [seconds, setSeconds] = useState<number>(0);
+  const [begun, setBegun] = useState(false);
 
   // launch date: March 03, 2023
   const launchDate = new Date("2023-03-03T04:00:00Z").getTime();
@@ -16,17 +17,10 @@ const Hero = () => {
       const now = new Date().getTime();
       const until = launchDate - now;
 
-      const newDays = Math.floor(until / (1000 * 60 * 60 * 24));
-      const newHours = Math.floor(
-        (until % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const newMinutes = Math.floor((until % (1000 * 60 * 60)) / (1000 * 60));
-      const newSeconds = Math.floor((until % (1000 * 60)) / 1000);
-
-      setDays(newDays);
-      setHours(newHours);
-      setMinutes(newMinutes);
-      setSeconds(newSeconds);
+      setDays(Math.floor(until / (1000 * 60 * 60 * 24)));
+      setHours(Math.floor((until % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+      setMinutes(Math.floor((until % (1000 * 60 * 60)) / (1000 * 60)));
+      setSeconds(Math.floor((until % (1000 * 60)) / 1000));
 
       if (until <= 0) {
         clearInterval(updateTime);
@@ -34,6 +28,7 @@ const Hero = () => {
         setHours(0);
         setMinutes(0);
         setSeconds(0);
+        setBegun(true);
       }
     });
 
@@ -44,9 +39,13 @@ const Hero = () => {
 
   return (
     <header className="w-screen h-screen flex flex-col justify-center items-start bg-slate-950 pt-10 px-5">
-      <h1 className="w-full text-5xl font-bold mb-3">YRHacks</h1>
-      <p className="text-xl font-semibold">is in...</p>
-      <TimerContainer
+      <h1 className="w-full text-5xl font-bold mb-3">
+        YRHacks<span className="text-sm font-medium"> 2023</span>
+      </h1>
+      <p className="text-xl font-semibold">
+        {begun ? "has begun!" : "is in..."}
+      </p>
+      <Countdown
         days={days}
         hours={hours}
         minutes={minutes}
