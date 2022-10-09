@@ -18,7 +18,9 @@ const Dropdown = ({ open, setOpen }: Props) => {
           (item: string, index: number) => (
             <li className="mt-3" onClick={() => setOpen(false)} key={item}>
               <Link href={index > 0 ? "/#" + item.toLowerCase() : "/#"}>
-                <span className="text-white text-lg font-medium">{item}</span>
+                <span className="text-slate-50 text-lg font-medium">
+                  {item}
+                </span>
               </Link>
             </li>
           )

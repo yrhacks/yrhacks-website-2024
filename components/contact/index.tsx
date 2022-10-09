@@ -46,10 +46,10 @@ const Contact = () => {
       id="contact"
       className="bg-slate-950 w-screen h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
     >
-      <h2 className="text-4xl font-semibold text-white mb-5 font-helvetica">
+      <h2 className="text-4xl font-semibold text-slate-50 mb-5 font-helvetica">
         Contact
       </h2>
-      <h4 className="mb-4 text-lg font-normal">Get In Touch!</h4>
+      <h4 className="mb-4 text-lg font-normal text-slate-50">Get In Touch!</h4>
       <div className="w-full flex flex-col lg:flex-row justify-between items-start">
         <form
           onSubmit={handleSubmit}
@@ -61,7 +61,7 @@ const Contact = () => {
             type="text"
             id="name"
             name="name"
-            className="border-slate-50 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
+            className="border-slate-50 text-gray-700 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
             placeholder="Full Name"
             required
             onChange={handleChange}
@@ -70,7 +70,7 @@ const Contact = () => {
             type="text"
             id="email"
             name="email"
-            className="border-slate-50 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
+            className="border-slate-50 text-gray-700 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
             placeholder="Email"
             required
             onChange={handleChange}
@@ -78,7 +78,7 @@ const Contact = () => {
           <textarea
             name="message"
             id="message"
-            className="border-slate-50 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500 hover:bg-zinc-800/80 focus:bg-zinc-700/80"
+            className="border-slate-50 text-gray-700 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500 hover:bg-zinc-800/80 focus:bg-zinc-700/80"
             rows={4}
             placeholder="Message"
             required
@@ -89,7 +89,7 @@ const Contact = () => {
             className="border-2 border-slate-50 duration-700 transition-all ease-in-out hover:bg-slate-50 "
             disabled={submitted}
           >
-            <p className="px-6 py-3 duration-700 transition-all ease-in-out text-white !bg-clip-text hover:text-transparent gradient-purple font-semibold cursor-pointer">
+            <p className="px-6 py-3 duration-700 transition-all ease-in-out text-slate-50 !bg-clip-text hover:text-transparent gradient-purple font-semibold cursor-pointer">
               {submitted ? "Sent!" : "Send"}
             </p>
           </button>
@@ -100,9 +100,9 @@ const Contact = () => {
               href="https://www.instagram.com/yrhacks/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
+              className="text-slate-50 ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
             >
-              <FaInstagram className="text-white text-xl md:text-3xl mr-3" />
+              <FaInstagram className="text-slate-50 text-xl md:text-3xl mr-3" />
               @yrhacks
             </a>
           </div>
@@ -111,9 +111,9 @@ const Contact = () => {
               href="mailto:yorkregionhacks@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
+              className="text-slate-50 ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
             >
-              <AiOutlineMail className="text-white text-xl md:text-3xl mr-3" />
+              <AiOutlineMail className="text-slate-50 text-xl md:text-3xl mr-3" />
               yorkregionhacks@gmail.com
             </a>
           </div>

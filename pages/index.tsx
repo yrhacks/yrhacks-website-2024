@@ -38,13 +38,13 @@ const Home: NextPage = () => {
         <Contact />
       </main>
       <footer className="w-full flex flex-col items-center pb-8 bg-slate-950">
-        <p className="text-sm pb-2">
+        <p className="text-sm pb-2 text-slate-50">
           Copyright © 2022{" "}
           <span className="gradient-purple text-transparent !bg-clip-text font-bold">
             YRHacks
           </span>
         </p>
-        <p className="text-sm">All rights reserved</p>
+        <p className="text-sm text-slate-50">All rights reserved</p>
       </footer>
     </div>
   );

@@ -32,12 +32,12 @@ const Nav = () => {
             {width < 768 ? (
               isOpen ? (
                 <IoCloseOutline
-                  className="text-3xl text-white cursor-pointer"
+                  className="text-3xl text-slate-50 cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 />
               ) : (
                 <IoMenuOutline
-                  className="text-3xl text-white cursor-pointer"
+                  className="text-3xl text-slate-50 cursor-pointer"
                   onClick={() => setIsOpen(true)}
                 />
               )
@@ -47,7 +47,7 @@ const Nav = () => {
                   (item: string, index: number) => (
                     <li key={item}>
                       <Link href={index > 0 ? "/#" + item.toLowerCase() : "/#"}>
-                        <span className="text-white text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text cursor-pointer">
+                        <span className="text-slate-50 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text cursor-pointer">
                           {item}
                         </span>
                       </Link>
