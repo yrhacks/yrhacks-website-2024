@@ -1,17 +1,42 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
+
+const initialState = {
+  name: "",
+  email: "",
+  message: "",
+};
+
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [{ name, email, message }, setState] = useState(initialState);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setState((prevState) => ({ ...prevState, [name]: value }));
+  };
+  const clearState = () => setState({ ...initialState });
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    const data = {
-      name,
-      email,
-      message,
-    };
-    console.log(data);
+    console.log(name, email, message);
+    emailjs
+      .sendForm(
+        "service_ol3x7zp",
+        "template_nj7ov2k",
+        e.target,
+        "SHVnnO8qR9eEzsaN4"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          clearState();
+          setSubmitted(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -24,30 +49,42 @@ const Contact = () => {
       <form
         onSubmit={handleSubmit}
         className="w-full flex flex-col justify-start items-start"
+        name="form"
+        autoComplete="off"
       >
         <input
-          value={name}
-          placeholder="Full Name"
+          type="text"
+          id="name"
+          name="name"
           className="border-slate-400 border-2 p-3 bg-zinc-800 w-full mb-3 text-sm"
-          onChange={(e) => setName(e.target.value)}
+          placeholder="Full Name"
+          required
+          onChange={handleChange}
         />
         <input
-          value={email}
-          placeholder="Email"
+          type="text"
+          id="email"
+          name="email"
           className="border-slate-400 border-2 p-3 bg-zinc-800 w-full mb-3 text-sm"
-          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+          required
+          onChange={handleChange}
         />
         <textarea
-          value={message}
-          placeholder="Message"
+          name="message"
+          id="message"
           className="border-slate-400 border-2 p-3 bg-zinc-800 w-full mb-3 text-sm"
-          onChange={(e) => setMessage(e.target.value)}
-        />
+          rows={4}
+          placeholder="Message"
+          required
+          onChange={handleChange}
+        ></textarea>
         <button
           type="submit"
           className="bg-slate-400 p-3 text-white font-semibold"
+          disabled={submitted}
         >
-          Submit
+          {submitted ? "Sent!" : "Send"}
         </button>
       </form>
     </div>
