@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens : {
+        'xs': '480px'
+      },
       colors: {
         "slate-950": "#0E1116",
       },
