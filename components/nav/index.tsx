@@ -43,7 +43,7 @@ const Nav = () => {
               <ul className="w-full flex flex-row items-center justify-evenly">
                 {["Home", "About", "FAQ", "Partners", "Contact"].map(
                   (item: string, index: number) => (
-                    <li>
+                    <li key={item}>
                       <a
                         href={index > 0 ? "/#" + item.toLowerCase() : "/#"}
                         className="text-white text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"

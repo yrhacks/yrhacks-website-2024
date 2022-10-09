@@ -14,7 +14,7 @@ const Dropdown = ({ open, setOpen }: Props) => {
       <ul>
         {["Home", "About", "FAQ", "Partners", "Contact"].map(
           (item: string, index: number) => (
-            <li className="mt-3" onClick={() => setOpen(false)}>
+            <li className="mt-3" onClick={() => setOpen(false)} key={item}>
               <a
                 href={index > 0 ? "/#" + item.toLowerCase() : "/#"}
                 className="text-white text-lg font-medium"
