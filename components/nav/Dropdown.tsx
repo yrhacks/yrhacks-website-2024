@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface Props {
   open: boolean;
   setOpen: (open: boolean) => void;
@@ -15,13 +17,9 @@ const Dropdown = ({ open, setOpen }: Props) => {
         {["Home", "About", "FAQ", "Partners", "Contact"].map(
           (item: string, index: number) => (
             <li className="mt-3" onClick={() => setOpen(false)} key={item}>
-              <a
-                href={index > 0 ? "/#" + item.toLowerCase() : "/#"}
-                className="text-white text-lg font-medium"
-                key={item}
-              >
-                {item}
-              </a>
+              <Link href={index > 0 ? "/#" + item.toLowerCase() : "/#"}>
+                <span className="text-white text-lg font-medium">{item}</span>
+              </Link>
             </li>
           )
         )}
