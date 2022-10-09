@@ -12,6 +12,14 @@ export const questions = [
     answer: ["YRHacks will be open to all YRDSB high school students."],
   },
   {
+    question: "How much experience is required?",
+    answer: [
+      "No experience is required. First time coders and hackers are more than welcome, and this is a great opportunity to expand your arsenal and get inspired! ",
+      " If you want to aim for a prize, teams would ideally consist of students who have previous knowledge in computer programming. As project planning and pitching is important in hackathons, it may be beneficial to have a business student on the team. ",
+      "",
+    ],
+  },
+  {
     question: "Where do I sign up?",
     answer: [
       'Sign up <a href="https://forms.gle/xVyL9MmosEGCp2dVA">here</a> (form will open in January 2023).',
@@ -24,14 +32,6 @@ export const questions = [
       " If you want to work in a team but cannot find one prior to the event, a team formation event will be hosted during the hackathon.",
       " You can also find a team after registering, even if you didn't specify any team members on the form. If you do so, you only need to let us know during the hackathon, before your project is judged.",
       " You are able to form teams with anyone, regardless of school, SHSM, or any other factor, as long as they are YRDSB students. That means that a team can have a mix of SHSM and non-SHSM participants, or students in different schools.",
-    ],
-  },
-  {
-    question: "How much experience is required?",
-    answer: [
-      "No experience is required. First time coders and hackers are more than welcome, and this is a great opportunity to expand your arsenal and get inspired! ",
-      " If you want to aim for a prize, teams would ideally consist of students who have previous knowledge in computer programming. As project planning and pitching is important in hackathons, it may be beneficial to have a business student on the team. ",
-      "",
     ],
   },
   {
@@ -53,7 +53,7 @@ export const questions = [
     ],
   },
   {
-    question: "What are mentors?",
+    question: "What do mentors do?",
     answer: [
       "Mentors are people who are experienced in programming, design, and idea formation, and are there to support you throughout the event. ",
       " During the event, you will have the chance to request mentors to help you on your design, brainstorm ideas with you, debug your code, design a pitch, set up new technologies, and more! ",
@@ -61,7 +61,7 @@ export const questions = [
     ],
   },
   {
-    question: "What are volunteers?",
+    question: "What do volunteers do?",
     answer: [
       "Volunteers are the people who lead activities and help out during judging!",
       " Throughout the event, fun activities will be hosted like trivia. Volunteers will be running these activities! Also, during judging, before any live pitches, they will be the ones doing mic checks and offering last words of encouragement. Don't be afraid to say hi to them!",

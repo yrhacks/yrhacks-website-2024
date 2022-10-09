@@ -6,7 +6,7 @@ const Faq = () => {
   return (
     <div
       id="faq"
-      className="w-screen flex flex-col justify-start items-center bg-slate-950 px-5 py-10"
+      className="w-screen flex flex-col justify-start items-center bg-slate-950 px-5 py-24"
     >
       <h2 className="text-4xl font-bold w-full pb-6">FAQ</h2>
       <div className="w-full">
