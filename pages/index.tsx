@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import About from "../components/about";
+import Faq from "../components/faq";
 
 import Hero from "../components/hero";
 import Nav from "../components/nav";
@@ -30,6 +32,8 @@ const Home: NextPage = () => {
       <main className="w-full h-full">
         <Nav />
         <Hero />
+        <About />
+        <Faq />
       </main>
     </div>
   );
