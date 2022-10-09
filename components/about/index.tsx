@@ -4,14 +4,12 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-screen h-screen flex flex-col justify-center items-center bg-slate-700 px-5"
+      className="w-screen h-screen flex flex-col justify-center items-start bg-slate-50 px-5"
     >
-      <h2 className="text-4xl font-bold w-full">Who are we?</h2>
+      <h2 className="text-4xl text-slate-950 font-bold">Who are we?</h2>
       <div>
-        <p className="w-full text-xl font-semibold mb-5">
-          A YRDSB <span className="gradient-purple">Hackathon</span> run by{" "}
-          <span className="gradient-pumpkin">students</span> for{" "}
-          <span className="gradient-teal">students</span>!
+        <p className="w-full text-xl text-slate-950 font-semibold my-5">
+          A YRDSB <span className="gradient-teal font-bold">Hackathon</span> run by students for students!
         </p>
       </div>
     </div>
