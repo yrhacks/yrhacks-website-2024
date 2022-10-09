@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import { BsInstagram } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const initialState = {
   name: "",
@@ -43,14 +44,14 @@ const Contact = () => {
   return (
     <main
       id="contact"
-      className="w-full h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
+      className="w-screen h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
     >
       <h2 className="text-4xl font-semibold text-white mb-8">Contact</h2>
       <h4 className="mb-3 text-md">Get In Touch</h4>
-      <div>
+      <div className="w-full flex flex-row justify-between items-start">
         <form
           onSubmit={handleSubmit}
-          className="w-full flex flex-col justify-start items-start"
+          className="w-3/5 flex flex-col justify-start items-start"
           name="form"
           autoComplete="off"
         >
@@ -89,16 +90,27 @@ const Contact = () => {
             {submitted ? "Sent!" : "Send"}
           </button>
         </form>
-        <div>
-          <div className="flex flex-row justify-start items-center">
-            <BsInstagram />
+        <div className="w-2/5 px-8">
+          <div className="flex flex-row justify-start items-center mb-5">
             <a
               href="https://www.instagram.com/yrhacks/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white ml-2"
+              className="text-white ml-2 text-lg flex"
             >
+              <FaInstagram className="text-white text-3xl mr-3" />
               @yrhacks
+            </a>
+          </div>
+          <div className="flex flex-row justify-start items-center">
+            <a
+              href="mailto:yorkregionhacks@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white ml-2 text-lg flex"
+            >
+              <AiOutlineMail className="text-white text-3xl mr-3" />
+              yorkregionhacks@gmail.com
             </a>
           </div>
         </div>
