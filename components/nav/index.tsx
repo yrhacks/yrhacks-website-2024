@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { MdMenu, MdClose } from "react-icons/md";
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 
 import Drawer from "./drawer";
 
@@ -11,28 +11,28 @@ const Nav = () => {
 
   const { width } = useWindowSize();
   return (
-    <div className="relative">
-      <div className="w-full p-5 fixed top-0 bg-gradient-to-br from-blue-900 to-purple-800">
+    <div className="relative z-50">
+      <div className="w-full p-5 fixed top-0 bg-slate-950/80 backdrop-blur-2xl">
         <nav className="w-full flex flex-row justify-between items-center z-20">
           <div className="h-full w-auto flex justify-center items-center">
             <Image
               src="/assets/logo.png"
               alt="YRHacks Logo"
-              width={50}
-              height={50}
+              width={40}
+              height={40}
               layout={"intrinsic"}
             />
           </div>
           <div>
             {width < 768 ? (
               isOpen ? (
-                <MdClose
-                  className="text-4xl text-white cursor-pointer"
+                <IoCloseOutline
+                  className="text-3xl text-white cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 />
               ) : (
-                <MdMenu
-                  className="text-4xl text-white cursor-pointer"
+                <IoMenuOutline
+                  className="text-3xl text-white cursor-pointer"
                   onClick={() => setIsOpen(true)}
                 />
               )
