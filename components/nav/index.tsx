@@ -11,8 +11,8 @@ const Nav = () => {
 
   const { width } = useWindowSize();
   return (
-    <>
-      <nav className="w-full h-16 flex flex-row justify-between items-center px-5 py-10 fixed top-0 z-20">
+    <div className="relative">
+      <nav className="w-full h-16 flex flex-row justify-between items-center px-5 py-10 fixed top-0 z-20 backdrop-blur-sm">
         <div className="h-full w-auto flex justify-center items-center">
           <Image
             src="/assets/logo.png"
@@ -45,9 +45,8 @@ const Nav = () => {
           )}
         </div>
       </nav>
-
       {width < 768 ? <Drawer open={isOpen} /> : null}
-    </>
+    </div>
   );
 };
 

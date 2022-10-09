@@ -6,6 +6,8 @@ import Faq from "../components/faq";
 
 import Hero from "../components/hero";
 import Nav from "../components/nav";
+import Partners from "../components/partners";
+import Contact from "../components/contact";
 
 const Home: NextPage = () => {
   return (
@@ -28,13 +30,18 @@ const Home: NextPage = () => {
           rel="stylesheet"
         />
       </Head>
-
       <main className="w-full h-full">
         <Nav />
         <Hero />
         <About />
         <Faq />
+        <Partners />
+        <Contact />
       </main>
+      <footer className="w-full flex flex-col items-center pb-8">
+        <p className="text-xs pb-2">Copyright © 2022 YRHacks</p>
+        <p className="text-xs">All rights reserved</p>
+      </footer>
     </div>
   );
 };

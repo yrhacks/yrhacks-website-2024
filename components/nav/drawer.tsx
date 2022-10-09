@@ -5,7 +5,7 @@ interface Props {
 const Drawer = ({ open }: Props) => {
   return (
     <nav
-      className={`w-screen flex flex-col absolute px-5 pt-20 pb-5 transition-all duration-700 bg-zinc-900/60 ease-out z-10 ${
+      className={`w-screen flex flex-col fixed px-5 pt-20 pb-5 transition-all duration-700 bg-zinc-900/60 ease-out z-10 ${
         open ? "top-0 backdrop-blur-sm" : "-top-full"
       }`}
     >
