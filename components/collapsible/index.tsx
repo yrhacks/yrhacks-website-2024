@@ -12,7 +12,7 @@ const Collapsible = ({ question, answer }: Props) => {
   return (
     <div className="w-full pb-5">
       <header
-        className="flex flex-row justify-start items-center mt-3 w-full z-20 cursor-pointer duration-500 ease-in-out transition-all hover:text-emerald-500"
+        className="flex flex-row justify-start items-center text-slate-50 mt-3 w-full z-20 cursor-pointer duration-500 ease-in-out transition-all hover:text-emerald-500"
         onClick={() => setOpen(!open)}
       >
         {open ? (
@@ -20,7 +20,7 @@ const Collapsible = ({ question, answer }: Props) => {
         ) : (
           <GoPlus className="text-lg cursor-pointer " />
         )}
-        <h3 className="text-md font-bold ml-3 cursor-pointer ">{question}</h3>
+        <h3 className="text-base font-bold ml-3 cursor-pointer">{question}</h3>
       </header>
       <div
         className={
@@ -29,7 +29,7 @@ const Collapsible = ({ question, answer }: Props) => {
         }
       >
         {answer.map((item: any, index: number) => (
-          <p key={index} className="text-xs leading-[1.6em] mt-3">
+          <p key={index} className="text-base leading-[1.6em] mt-3">
             {item}
           </p>
         ))}
