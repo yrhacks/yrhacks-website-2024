@@ -4,7 +4,7 @@ import Collapsible from "../collapsible";
 
 const Faq = () => {
   return (
-    <div
+    <main
     id="faq"
       className="w-screen flex justify-center items-center bg-slate-50 p-2 xs:p-10 pb-24 relative z-10"
     >
