@@ -4,6 +4,16 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    const data = {
+      name,
+      email,
+      message,
+    };
+    console.log(data);
+  };
+
   return (
     <div
       id="contact"
@@ -11,7 +21,10 @@ const Contact = () => {
     >
       <h2 className="text-4xl font-semibold text-white mb-8">Contact</h2>
       <h4 className="mb-3 text-md">Get In Touch</h4>
-      <form>
+      <form
+        onSubmit={handleSubmit}
+        className="w-full flex flex-col justify-start items-start"
+      >
         <input
           value={name}
           placeholder="Full Name"

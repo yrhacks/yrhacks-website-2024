@@ -8,9 +8,10 @@ const About = () => {
     >
       <h2 className="text-4xl font-bold w-full">Who are we?</h2>
       <div>
-        <p className="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p className="w-full text-xl font-semibold mb-5">
+          A YRDSB <span className="gradient-purple">Hackathon</span> run by{" "}
+          <span className="gradient-pumpkin">students</span> for{" "}
+          <span className="gradient-teal">students</span>!
         </p>
       </div>
     </div>
