@@ -50,10 +50,10 @@ const Contact = () => {
         Contact
       </h2>
       <h4 className="mb-4 text-lg font-normal">Get In Touch!</h4>
-      <div className="w-full flex flex-row justify-between items-start">
+      <div className="w-full flex flex-col lg:flex-row justify-between items-start">
         <form
           onSubmit={handleSubmit}
-          className="w-3/5 flex flex-col justify-start items-start"
+          className="w-full lg:w-3/5 flex flex-col justify-start items-start md:mb-10"
           name="form"
           autoComplete="off"
         >
@@ -61,7 +61,7 @@ const Contact = () => {
             type="text"
             id="name"
             name="name"
-            className="border-slate-50 border-2 p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
+            className="border-slate-50 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
             placeholder="Full Name"
             required
             onChange={handleChange}
@@ -70,7 +70,7 @@ const Contact = () => {
             type="text"
             id="email"
             name="email"
-            className="border-slate-50 border-2 p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
+            className="border-slate-50 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
             placeholder="Email"
             required
             onChange={handleChange}
@@ -78,12 +78,12 @@ const Contact = () => {
           <textarea
             name="message"
             id="message"
-            className="border-slate-50 border-2 p-3 bg-transparent w-full mb-3 text-sm duration-500 hover:bg-zinc-800/80 focus:bg-zinc-700/80"
+            className="border-slate-50 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500 hover:bg-zinc-800/80 focus:bg-zinc-700/80"
             rows={4}
             placeholder="Message"
             required
             onChange={handleChange}
-          ></textarea>
+          />
           <button
             type="submit"
             className="border-2 border-slate-50 duration-700 transition-all ease-in-out hover:bg-slate-50 "
@@ -94,15 +94,15 @@ const Contact = () => {
             </p>
           </button>
         </form>
-        <div className="w-2/5 px-8">
+        <div className="w-full lg:w-2/5 pt-8 md:pt-0 md:px-8">
           <div className="flex flex-row justify-start items-center mb-5">
             <a
               href="https://www.instagram.com/yrhacks/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white ml-2 text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
+              className="text-white ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
             >
-              <FaInstagram className="text-white text-3xl mr-3" />
+              <FaInstagram className="text-white text-xl md:text-3xl mr-3" />
               @yrhacks
             </a>
           </div>
@@ -111,9 +111,9 @@ const Contact = () => {
               href="mailto:yorkregionhacks@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white ml-2 text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
+              className="text-white ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
             >
-              <AiOutlineMail className="text-white text-3xl mr-3" />
+              <AiOutlineMail className="text-white text-xl md:text-3xl mr-3" />
               yorkregionhacks@gmail.com
             </a>
           </div>
