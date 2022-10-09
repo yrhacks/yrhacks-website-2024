@@ -29,7 +29,10 @@ const Collapsible = ({ question, answer }: Props) => {
         }
       >
         {answer.map((item: any, index: number) => (
-          <p key={index} className="text-base leading-[1.6em] mt-3">
+          <p
+            key={index}
+            className="text-base leading-[1.6em] mt-3 text-slate-50"
+          >
             {item}
           </p>
         ))}

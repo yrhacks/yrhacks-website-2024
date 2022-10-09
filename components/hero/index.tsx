@@ -58,13 +58,13 @@ const Hero = () => {
         Registrations for YRHacks 2023 will open in January 2023. Stay tuned!
       </p>
       <div className="flex flex-row items-center w-full mt-6">
-        <MdLocationOn className="text-xl lg:text-2xl mr-2" />
+        <MdLocationOn className="text-xl lg:text-2xl mr-2 text-slate-50" />
         <p className="text-sm lg:text-lg font-semibold text-slate-50">
           Richmond Green S.S. (+Virtual)
         </p>
       </div>
       <div className="flex flex-row items-center w-full mt-3">
-        <MdCalendarToday className="text-xl lg:text-2xl  mr-2" />
+        <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-slate-50" />
         <p className="text-sm lg:text-lg font-semibold text-slate-50">
           March 3-4 2023
         </p>
