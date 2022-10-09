@@ -37,9 +37,14 @@ const Home: NextPage = () => {
         <Partners />
         <Contact />
       </main>
-      <footer className="w-full flex flex-col items-center pb-8">
-        <p className="text-xs pb-2">Copyright © 2022 YRHacks</p>
-        <p className="text-xs">All rights reserved</p>
+      <footer className="w-full flex flex-col items-center pb-8 bg-slate-950">
+        <p className="text-sm pb-2">
+          Copyright © 2022{" "}
+          <span className="gradient-purple text-transparent !bg-clip-text font-bold">
+            YRHacks
+          </span>
+        </p>
+        <p className="text-sm">All rights reserved</p>
       </footer>
     </div>
   );

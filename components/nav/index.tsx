@@ -12,7 +12,7 @@ const Nav = () => {
   const { width } = useWindowSize();
   return (
     <div className="relative z-50">
-      <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-slate-950/80 backdrop-blur-2xl">
+      <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-slate-950/70 backdrop-blur-2xl">
         <nav className="w-full flex flex-row justify-between items-center z-20">
           <div className="h-full w-auto flex justify-center items-center">
             <Image
@@ -43,7 +43,7 @@ const Nav = () => {
                     <li>
                       <a
                         href={index > 0 ? "/#" + item.toLowerCase() : "/#"}
-                        className="text-white text-sm lg:text-base font-medium"
+                        className="text-white text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
                         key={item}
                       >
                         {item}

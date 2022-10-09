@@ -44,10 +44,12 @@ const Contact = () => {
   return (
     <main
       id="contact"
-      className="w-screen h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
+      className="bg-slate-950 w-screen h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
     >
-      <h2 className="text-4xl font-semibold text-white mb-8">Contact</h2>
-      <h4 className="mb-3 text-md">Get In Touch</h4>
+      <h2 className="text-4xl font-semibold text-white mb-5 font-helvetica">
+        Contact
+      </h2>
+      <h4 className="mb-4 text-lg font-normal">Get In Touch!</h4>
       <div className="w-full flex flex-row justify-between items-start">
         <form
           onSubmit={handleSubmit}
@@ -59,7 +61,7 @@ const Contact = () => {
             type="text"
             id="name"
             name="name"
-            className="border-slate-400 border-2 p-3 bg-zinc-800 w-full mb-3 text-sm"
+            className="border-slate-50 border-2 p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
             placeholder="Full Name"
             required
             onChange={handleChange}
@@ -68,7 +70,7 @@ const Contact = () => {
             type="text"
             id="email"
             name="email"
-            className="border-slate-400 border-2 p-3 bg-zinc-800 w-full mb-3 text-sm"
+            className="border-slate-50 border-2 p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
             placeholder="Email"
             required
             onChange={handleChange}
@@ -76,7 +78,7 @@ const Contact = () => {
           <textarea
             name="message"
             id="message"
-            className="border-slate-400 border-2 p-3 bg-zinc-800 w-full mb-3 text-sm"
+            className="border-slate-50 border-2 p-3 bg-transparent w-full mb-3 text-sm duration-500 hover:bg-zinc-800/80 focus:bg-zinc-700/80"
             rows={4}
             placeholder="Message"
             required
@@ -84,10 +86,12 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-slate-400 p-3 text-white font-semibold"
+            className="border-2 border-slate-50 duration-700 transition-all ease-in-out hover:bg-slate-50 "
             disabled={submitted}
           >
-            {submitted ? "Sent!" : "Send"}
+            <p className="px-6 py-3 duration-700 transition-all ease-in-out text-white !bg-clip-text hover:text-transparent gradient-purple font-semibold">
+              {submitted ? "Sent!" : "Send"}
+            </p>
           </button>
         </form>
         <div className="w-2/5 px-8">
@@ -96,7 +100,7 @@ const Contact = () => {
               href="https://www.instagram.com/yrhacks/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white ml-2 text-lg flex"
+              className="text-white ml-2 text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
             >
               <FaInstagram className="text-white text-3xl mr-3" />
               @yrhacks
@@ -107,7 +111,7 @@ const Contact = () => {
               href="mailto:yorkregionhacks@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white ml-2 text-lg flex"
+              className="text-white ml-2 text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
             >
               <AiOutlineMail className="text-white text-3xl mr-3" />
               yorkregionhacks@gmail.com

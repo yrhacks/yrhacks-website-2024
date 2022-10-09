@@ -120,7 +120,8 @@ a {
   box-sizing: border-box;
 }
 
-.gradient-purple {
+.gradient-purple,
+.gradient-purple:hover {
   background: linear-gradient(
     118.33deg,
     #2563eb 3.84%,
@@ -129,12 +130,18 @@ a {
   );
 }
 
-.gradient-teal {
+.gradient-teal,
+.gradient-teal:hover {
   background: linear-gradient(92.13deg, #10b981 11.39%, #1d4ed8 88.22%);
 }
 
-.gradient-pumpkin {
+.gradient-pumpkin,
+.gradient-pumpkin:hover {
   background: linear-gradient(272.17deg, #f59e0b 12.95%, #c2410c 87.72%);
+}
+
+.gradient-rose {
+  background: linear-gradient(272.7deg, #ef4444 8.57%, #be185d 89.17%);
 }
 
 .button {
@@ -142,6 +149,12 @@ a {
   border-radius: 0;
   padding: 15px 20px;
   font-weight: bold;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 @media (prefers-color-scheme: dark) {

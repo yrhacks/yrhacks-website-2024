@@ -12,13 +12,13 @@ const Collapsible = ({ question, answer }: Props) => {
   return (
     <div className="w-full pb-5">
       <header
-        className="flex flex-row justify-start items-center mt-3 w-full z-20 cursor-pointer"
+        className="flex flex-row justify-start items-center mt-3 w-full z-20 cursor-pointer duration-500 ease-in-out transition-all hover:text-emerald-500"
         onClick={() => setOpen(!open)}
       >
         {open ? (
-          <GoDash className="text-lg text-white" />
+          <GoDash className="text-lg " />
         ) : (
-          <GoPlus className="text-lg text-white" />
+          <GoPlus className="text-lg " />
         )}
         <h3 className="text-md font-bold ml-3">{question}</h3>
       </header>
