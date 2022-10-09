@@ -26,7 +26,7 @@ const Faq = () => {
           ))}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

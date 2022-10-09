@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div
+    <main
       id="about"
       className="w-screen pt-36 pb-48 flex flex-col justify-center items-start bg-slate-50 px-5"
     >

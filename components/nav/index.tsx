@@ -12,18 +12,18 @@ const Nav = () => {
   const { width } = useWindowSize();
   return (
     <div className="relative z-50">
-      <div className="w-full p-5 fixed top-0 bg-slate-950/80 backdrop-blur-2xl">
+      <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-slate-950/80 backdrop-blur-2xl">
         <nav className="w-full flex flex-row justify-between items-center z-20">
           <div className="h-full w-auto flex justify-center items-center">
             <Image
               src="/assets/logo.png"
               alt="YRHacks Logo"
-              width={40}
-              height={40}
+              width={width < 768 ? 40 : 70}
+              height={width < 768 ? 40 : 70}
               layout={"intrinsic"}
             />
           </div>
-          <div>
+          <div className="md:w-1/2">
             {width < 768 ? (
               isOpen ? (
                 <IoCloseOutline
@@ -37,13 +37,20 @@ const Nav = () => {
                 />
               )
             ) : (
-              <ul className="flex flex-row items-center">
-                <li className="text-white text-sm font-semibold mr-5">Home</li>
-                <li className="text-white text-sm font-semibold mr-5">About</li>
-                <li className="text-white text-sm font-semibold mr-5">FAQ</li>
-                <li className="text-white text-sm font-semibold mr-5">
-                  Contact
-                </li>
+              <ul className="w-full flex flex-row items-center justify-evenly">
+                {["Home", "About", "FAQ", "Partners", "Contact"].map(
+                  (item: string, index: number) => (
+                    <li>
+                      <a
+                        href={index > 0 ? "/#" + item.toLowerCase() : "/#"}
+                        className="text-white text-sm lg:text-lg font-medium font-helvetica"
+                        key={item}
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  )
+                )}
               </ul>
             )}
           </div>

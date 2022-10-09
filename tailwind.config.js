@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         "slate-950": "#0E1116",
       },
+      fontFamily: {
+        helvetica: ["HelveticaEx", "sans-serif"],
+      },
     },
   },
   plugins: [],

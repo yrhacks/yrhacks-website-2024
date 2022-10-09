@@ -40,9 +40,9 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <main
       id="contact"
-      className="w-full h-screen flex flex-col justify-center items-start px-5"
+      className="w-full h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
     >
       <h2 className="text-4xl font-semibold text-white mb-8">Contact</h2>
       <h4 className="mb-3 text-md">Get In Touch</h4>
@@ -87,7 +87,7 @@ const Contact = () => {
           {submitted ? "Sent!" : "Send"}
         </button>
       </form>
-    </div>
+    </main>
   );
 };
 
