@@ -38,36 +38,36 @@ const Hero = () => {
   }, []);
 
   return (
-    <>
-      <header className="w-screen h-screen flex flex-col justify-center items-start bg-slate-950 pt-10 px-5">
-        <div className="absolute top-48 right-0 w-48 h-48 rounded-full bg-blue-600/30 blur-[100px]" />
-        <div className="absolute bottom-40 left-0 w-48 h-48 rounded-full bg-rose-600/20 blur-[100px]" />
-        <p className="text-sm font-semibold text-white/50">SPRING 2023</p>
-        <h1 className="text-5xl font-bold my-1 font-helvetica">YRHacks</h1>
-        <p className="text-xl font-semibold mb-4">
-          {begun ? "has begun!" : "is in..."}
+    <header className="w-screen h-screen flex flex-col justify-center items-start bg-slate-950 pt-10 px-5 md:px-10 lg:px-48">
+      <div className="absolute top-36 lg:top-48 right-0 w-48 h-48 lg:w-80 lg:h-80 rounded-full bg-blue-600/30 blur-[100px]" />
+      <div className="absolute bottom-24 lg:bottom-16 left-0 w-48 h-48 lg:w-80 lg:h-80 rounded-full bg-rose-600/20 blur-[100px]" />
+      <p className="text-sm font-semibold text-white/50">SPRING 2023</p>
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica">
+        YRHacks
+      </h1>
+      <p className="text-xl font-semibold italic mb-4">
+        {begun ? "has begun!" : "is in..."}
+      </p>
+      <Countdown
+        days={days}
+        hours={hours}
+        minutes={minutes}
+        seconds={seconds}
+      />
+      <p className="text-sm lg:text-xl mt-8">
+        Registrations for YRHacks 2023 will open in January 2023. Stay tuned!
+      </p>
+      <div className="flex flex-row items-center w-full mt-6">
+        <MdLocationOn className="text-xl lg:text-2xl mr-2" />
+        <p className="text-sm lg:text-lg font-semibold">
+          Richmond Green S.S. (+Virtual)
         </p>
-        <Countdown
-          days={days}
-          hours={hours}
-          minutes={minutes}
-          seconds={seconds}
-        />
-        <p className="text-sm mt-8">
-          Registrations for YRHacks 2023 will open in January 2023. Stay tuned!
-        </p>
-        <div className="flex flex-row items-center w-full mt-6">
-          <MdLocationOn className="text-xl mr-2" />
-          <p className="text-sm font-semibold">
-            Richmond Green S.S. (+Virtual)
-          </p>
-        </div>
-        <div className="flex flex-row items-center w-full mt-3">
-          <MdCalendarToday className="text-xl mr-2" />
-          <p className="text-sm font-semibold">March 3-4</p>
-        </div>
-      </header>
-    </>
+      </div>
+      <div className="flex flex-row items-center w-full mt-3">
+        <MdCalendarToday className="text-xl lg:text-2xl  mr-2" />
+        <p className="text-sm lg:text-lg font-semibold">March 3-4 2023</p>
+      </div>
+    </header>
   );
 };
 

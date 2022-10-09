@@ -4,9 +4,9 @@ import Collapsible from "../collapsible";
 
 const Faq = () => {
   return (
-    <div
+    <main
       id="faq"
-      className="w-screen flex flex-col justify-start items-center bg-slate-950 px-5 py-24"
+      className="w-screen flex flex-col justify-start items-center bg-slate-950 px-5 md:px-10 lg:px-48 py-24"
     >
       <h2 className="text-4xl font-bold w-full pb-6">FAQ</h2>
       <div className="w-full">
@@ -18,7 +18,7 @@ const Faq = () => {
           />
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 

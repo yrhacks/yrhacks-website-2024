@@ -4,9 +4,9 @@ import { partners } from "../../data/partners";
 
 const Partners = () => {
   return (
-    <div
+    <main
       id="partners"
-      className="w-screen flex flex-col justify-start items-center bg-slate-700 px-5 py-20"
+      className="w-screen flex flex-col justify-start items-center bg-slate-700 px-5 md:px-10 lg:px-48 py-20"
     >
       <h2 className="text-4xl font-bold w-full pb-10">Our Partners</h2>
       <div className="w-full flex flex-row flex-wrap justify-center items-center mt-4">
@@ -42,7 +42,7 @@ const Partners = () => {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 
