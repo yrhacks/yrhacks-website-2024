@@ -40,14 +40,10 @@ const Hero = () => {
   return (
     <>
       <header className="w-screen h-screen flex flex-col justify-center items-start bg-slate-950 pt-10 px-5">
-        <div className="absolute top-48 right-0 w-48 h-48 rounded-full bg-blue-600/30 blur-[100px]"/>
-        <div className="absolute bottom-40 left-0 w-48 h-48 rounded-full bg-rose-600/20 blur-[100px]"/>
-        <p className="text-sm font-semibold text-white/50">
-          SPRING 2023
-        </p>
-        <h1 className="text-6xl font-extrabold my-1">
-          YRHacks
-        </h1>
+        <div className="absolute top-48 right-0 w-48 h-48 rounded-full bg-blue-600/30 blur-[100px]" />
+        <div className="absolute bottom-40 left-0 w-48 h-48 rounded-full bg-rose-600/20 blur-[100px]" />
+        <p className="text-sm font-semibold text-white/50">SPRING 2023</p>
+        <h1 className="text-5xl font-bold my-1">YRHacks</h1>
         <p className="text-xl font-semibold mb-4">
           {begun ? "has begun!" : "is in..."}
         </p>
@@ -62,7 +58,9 @@ const Hero = () => {
         </p>
         <div className="flex flex-row items-center w-full mt-6">
           <MdLocationOn className="text-xl mr-2" />
-          <p className="text-sm font-semibold">Richmond Green S.S. (+Virtual)</p>
+          <p className="text-sm font-semibold">
+            Richmond Green S.S. (+Virtual)
+          </p>
         </div>
         <div className="flex flex-row items-center w-full mt-3">
           <MdCalendarToday className="text-xl mr-2" />
