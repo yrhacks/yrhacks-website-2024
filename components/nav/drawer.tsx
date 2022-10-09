@@ -1,21 +1,23 @@
 interface Props {
   open: boolean;
+  setOpen: (open: boolean) => void;
 }
 
-const Drawer = ({ open }: Props) => {
+const Drawer = ({ open, setOpen }: Props) => {
   return (
     <nav
-      className={`w-screen flex flex-col fixed px-5 pt-20 pb-5 transition-all duration-700 bg-zinc-900/60 ease-out z-10 ${
-        open ? "top-0 backdrop-blur-sm" : "-top-full"
-      }`}
+      className={
+        "w-screen flex flex-col transition-all px-4 duration-700 ease-out z-10 overflow-hidden " +
+        (open ? "max-h-96 py-4" : "max-h-0")
+      }
     >
       <ul>
-        {["home", "about", "faq", "contact"].map(
+        {["Home", "About", "FAQ", "Partners", "Contact"].map(
           (item: string, index: number) => (
-            <li className="mt-2">
+            <li className="mt-3" onClick={() => setOpen(false)}>
               <a
-                href={index > 0 ? "/#" + item : "/"}
-                className="text-white text-xl font-medium capitalize"
+                href={index > 0 ? "/#" + item.toLowerCase() : "/#"}
+                className="text-white text-lg font-medium"
                 key={item}
               >
                 {item}

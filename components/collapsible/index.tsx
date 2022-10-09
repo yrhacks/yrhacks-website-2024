@@ -2,11 +2,11 @@ import { useState } from "react";
 import { GoPlus, GoDash } from "react-icons/go";
 
 interface Props {
-  header: string;
-  body: any;
+  question: string;
+  answer: any;
 }
 
-const Collapsible = ({ header, body }: Props) => {
+const Collapsible = ({ question, answer }: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -20,7 +20,7 @@ const Collapsible = ({ header, body }: Props) => {
         ) : (
           <GoPlus className="text-lg text-white cursor-pointer" />
         )}
-        <h3 className="text-md font-bold ml-3">{header}</h3>
+        <h3 className="text-md font-bold ml-3">{question}</h3>
       </header>
       <div
         className={
@@ -28,7 +28,7 @@ const Collapsible = ({ header, body }: Props) => {
           (open ? "max-h-96" : "max-h-0")
         }
       >
-        {body.map((item: any, index: number) => (
+        {answer.map((item: any, index: number) => (
           <p key={index} className="text-xs mt-3 leading-6">
             {item}
           </p>
