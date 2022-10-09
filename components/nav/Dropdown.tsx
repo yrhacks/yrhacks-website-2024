@@ -3,7 +3,7 @@ interface Props {
   setOpen: (open: boolean) => void;
 }
 
-const Drawer = ({ open, setOpen }: Props) => {
+const Dropdown = ({ open, setOpen }: Props) => {
   return (
     <nav
       className={
@@ -30,4 +30,4 @@ const Drawer = ({ open, setOpen }: Props) => {
   );
 };
 
-export default Drawer;
+export default Dropdown;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 
-import Drawer from "./drawer";
+import Dropdown from "./Dropdown";
 
 import useWindowSize from "../../hooks/useWindowSize";
 
@@ -14,7 +14,10 @@ const Nav = () => {
     <div className="relative z-50">
       <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-slate-950/70 backdrop-blur-2xl">
         <nav className="w-full flex flex-row justify-between items-center z-20">
-          <div className="h-full w-auto flex justify-center items-center">
+          <a
+            className="h-full w-auto flex justify-center items-center"
+            href="/#"
+          >
             <Image
               src="/assets/logo.png"
               alt="YRHacks Logo"
@@ -22,7 +25,7 @@ const Nav = () => {
               height={width < 768 ? 35 : 60}
               layout={"intrinsic"}
             />
-          </div>
+          </a>
           <div className="md:w-1/2">
             {width < 768 ? (
               isOpen ? (
@@ -55,7 +58,7 @@ const Nav = () => {
             )}
           </div>
         </nav>
-        {width < 768 ? <Drawer open={isOpen} setOpen={setIsOpen} /> : null}
+        {width < 768 ? <Dropdown open={isOpen} setOpen={setIsOpen} /> : null}
       </div>
     </div>
   );

@@ -89,7 +89,7 @@ const Contact = () => {
             className="border-2 border-slate-50 duration-700 transition-all ease-in-out hover:bg-slate-50 "
             disabled={submitted}
           >
-            <p className="px-6 py-3 duration-700 transition-all ease-in-out text-white !bg-clip-text hover:text-transparent gradient-purple font-semibold">
+            <p className="px-6 py-3 duration-700 transition-all ease-in-out text-white !bg-clip-text hover:text-transparent gradient-purple font-semibold cursor-pointer">
               {submitted ? "Sent!" : "Send"}
             </p>
           </button>
