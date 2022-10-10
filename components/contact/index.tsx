@@ -46,7 +46,7 @@ const Contact = () => {
       id="contact"
       className="relative bg-slate-950 w-screen h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
     >
-      <div className="absolute bottom-16 right-16 lg:right-72 w-52 h-52 rounded-tr-md rounded-bl-md rounded-tl-full rounded-br-full bg-gradient-to-br from-blue-700/80 to-purple-300/80 blur-[150px] z-10" />
+      <div className="absolute bottom-16 right-16 lg:right-72 w-52 h-52 rounded-tr-md rounded-bl-md rounded-tl-full rounded-br-full bg-gradient-to-br from-blue-700/80 to-purple-300/80 blur-[100px] lg:blur-[150px] z-10" />
       <h2 className="text-4xl font-semibold text-slate-50 mb-5 font-helvetica">
         Contact
       </h2>

@@ -39,8 +39,8 @@ const Hero = () => {
 
   return (
     <header className="w-screen h-screen flex flex-col justify-center items-start bg-slate-950 pt-10 px-5 md:px-10 lg:px-48">
-      <div className="absolute bottom-0 left-0 w-48 h-48 lg:w-80 lg:h-80 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-rose-600/50 blur-[150px] z-10" />
-      <div className="absolute top-32 lg:top-64 right-24 w-48 h-48 lg:w-64 lg:h-64 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-blue-600/50 blur-[130px] z-10" />
+      <div className="absolute bottom-0 left-0 w-48 h-48 lg:w-80 lg:h-80 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-rose-600/50 blur-[100px] lg:blur-[150px] z-10" />
+      <div className="absolute top-32 lg:top-64 right-24 w-48 h-48 lg:w-64 lg:h-64 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-blue-600/50 blur-[100px] lg:blur-[130px] z-10" />
 
       <p className="text-sm font-semibold text-slate-50/50">SPRING 2023</p>
       <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-slate-50">

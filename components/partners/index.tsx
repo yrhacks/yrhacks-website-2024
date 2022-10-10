@@ -8,8 +8,8 @@ const Partners = () => {
       id="partners"
       className="w-screen relative flex flex-col justify-start items-center bg-slate-950 px-5 md:px-10 lg:px-48 py-20"
     >
-      <div className="absolute top-80 right-0 lg:right-72 w-52 h-52 rounded-tr-md rounded-bl-md rounded-tl-full rounded-br-full bg-gradient-to-br from-red-700/80 to-orange-300/80 blur-[150px] z-10" />
-      <div className="absolute bottom-16 left-0 w-48 h-48 lg:w-80 lg:h-80 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-gradient-to-tl from-red-700/80 to-pink-400/80 blur-[150px] z-10" />
+      <div className="absolute top-80 right-0 lg:right-72 w-52 h-52 rounded-tr-md rounded-bl-md rounded-tl-full rounded-br-full bg-gradient-to-br from-red-700/80 to-orange-300/80 blur-[100px] lg:blur-[150px] z-10" />
+      <div className="absolute bottom-16 left-0 w-48 h-48 lg:w-80 lg:h-80 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-gradient-to-tl from-red-700/80 to-pink-400/80 blur-[100px] lg:blur-[150px] z-10" />
       <h2 className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50">
         Our Partners
       </h2>
