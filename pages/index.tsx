@@ -1,12 +1,32 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import About from "../components/about";
-import Faq from "../components/faq";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
 
-import Hero from "../components/hero";
-import Nav from "../components/nav";
-import Partners from "../components/partners";
-import Contact from "../components/contact";
+import Head from "next/head";
+
+const Nav = dynamic(() => import("../components/nav"), {
+  ssr: false,
+});
+
+const Hero = dynamic(() => import("../components/hero"), {
+  ssr: false,
+});
+
+const About = dynamic(() => import("../components/about"), {
+  ssr: false,
+});
+
+const Faq = dynamic(() => import("../components/faq"), {
+  ssr: false,
+});
+
+const Partners = dynamic(() => import("../components/partners"), {
+  ssr: false,
+});
+
+const Contact = dynamic(() => import("../components/contact"), {
+  ssr: false,
+});
 
 const Home: NextPage = () => {
   return (
@@ -20,14 +40,26 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full h-full">
-        <Nav />
-        <Hero />
-        <About />
-        <Faq />
-        <Partners />
-        <Contact />
+        <Suspense fallback={`Loading...`}>
+          <Nav />
+        </Suspense>
+        <Suspense fallback={`Loading...`}>
+          <Hero />
+        </Suspense>
+        <Suspense fallback={`Loading...`}>
+          <About />
+        </Suspense>
+        <Suspense fallback={`Loading...`}>
+          <Faq />
+        </Suspense>
+        <Suspense fallback={`Loading...`}>
+          <Partners />
+        </Suspense>
+        <Suspense fallback={`Loading...`}>
+          <Contact />
+        </Suspense>
       </main>
-      <footer className="w-full flex flex-col items-center pb-8 bg-slate-950">
+      <footer className="w-full flex flex-col items-center pb-8 bg-slate-950 -z-10">
         <p className="text-sm pb-2 text-slate-50">
           Copyright © 2022{" "}
           <span className="gradient-purple text-transparent !bg-clip-text font-bold">
