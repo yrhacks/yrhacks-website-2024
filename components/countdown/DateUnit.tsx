@@ -7,7 +7,7 @@ interface Props {
 
 const DateUnit = ({ value, unit }: Props) => {
   return (
-    <div className="w-full flex flex-col items-center justify-center px-2 py-3 hover:bg-gray-800/40 duration-300 ease-in-out">
+    <div className="w-full flex flex-col items-center justify-center px-2 py-3">
       <h4 className="text-2xl gradient-purple text-transparent !bg-clip-text font-helvetica font-bold md:text-6xl">
         {String(value).padStart(2, "0")}
       </h4>
