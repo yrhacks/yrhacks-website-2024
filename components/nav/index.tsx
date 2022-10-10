@@ -11,6 +11,9 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { width } = useWindowSize();
+
+  const navSize = width < 768 ? 35 : 60;
+
   return (
     <div className="relative z-50">
       <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-slate-950/70 backdrop-blur-2xl">
@@ -22,8 +25,8 @@ const Nav = () => {
             <Image
               src="/assets/Logo.png"
               alt="YRHacks Logo"
-              width={width < 768 ? 35 : 60}
-              height={width < 768 ? 35 : 60}
+              width={navSize}
+              height={navSize}
               layout={"intrinsic"}
               className="cursor-pointer"
             />
