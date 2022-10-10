@@ -49,7 +49,7 @@ const Contact = () => {
     >
       <div className="absolute bottom-0 -right-48 md:bottom-32 md:right-32 lg:-bottom-20 lg:right-48 w-[512px] h-[512px] md:w-[700px] md:h-[700px] opacity-40">
         <Image
-          src="/assets/contact-gradient.png"
+          src="/assets/img/contact-gradient.svg"
           alt="gradient"
           layout="fill"
           objectFit="contain"

@@ -10,7 +10,7 @@ const Partners = () => {
     >
       <div className="absolute bottom-0 -left-48 md:bottom-32 md:-left-44 lg:-bottom-64 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-40">
         <Image
-          src="/assets/partners-gradient-left.png"
+          src="/assets/img/partners-gradient-left.svg"
           alt="gradient"
           layout="fill"
           objectFit="contain"
@@ -19,7 +19,7 @@ const Partners = () => {
       </div>
       <div className="absolute -top-24 -right-48 w-[512px] h-[512px] md:w-[900px] md:h-[900px] opacity-40">
         <Image
-          src="/assets/partners-gradient-right.png"
+          src="/assets/img/partners-gradient-right.svg"
           alt="gradient"
           layout="fill"
           objectFit="contain"

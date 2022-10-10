@@ -20,11 +20,13 @@ const Collapsible = ({ question, answer }: Props) => {
         ) : (
           <GoPlus className="text-lg cursor-pointer " />
         )}
-        <h3 className="text-base md:text-lg font-bold ml-3 cursor-pointer">{question}</h3>
+        <h3 className="text-base md:text-lg font-bold ml-3 cursor-pointer">
+          {question}
+        </h3>
       </header>
       <div
         className={
-          "duration-700 transition-all flex flex-col overflow-hidden " +
+          "duration-700 transition-all flex flex-col overflow-hidden ease-in-out " +
           (open ? "max-h-96" : "max-h-0")
         }
       >

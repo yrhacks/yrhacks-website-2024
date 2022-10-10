@@ -42,7 +42,7 @@ const Hero = () => {
     <header className="relative w-screen h-screen flex flex-col justify-center items-start bg-transparent pt-10 px-5 md:px-10 lg:px-48">
       <div className="absolute top-64 -left-48 md:top-80 md:-left-44 lg:top-48 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-50">
         <Image
-          src="/assets/hero-gradient-left.png"
+          src="/assets/img/hero-gradient-left.svg"
           alt="gradient"
           layout="fill"
           objectFit="contain"
@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
       <div className="absolute -top-4 -right-40 lg:-top-8 lg:-right-24 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-50">
         <Image
-          src="/assets/hero-gradient-right.png"
+          src="/assets/img/hero-gradient-right.svg"
           alt="gradient"
           layout="fill"
           objectFit="contain"

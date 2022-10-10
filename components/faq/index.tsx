@@ -11,7 +11,7 @@ const Faq = () => {
     >
       <div className="absolute top-64 -left-48 md:top-80 md:-left-44 lg:top-48 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-40">
         <Image
-          src="/assets/faq-gradient-left.png"
+          src="/assets/img/faq-gradient-left.svg"
           alt="gradient"
           layout="fill"
           objectFit="contain"
@@ -20,7 +20,7 @@ const Faq = () => {
       </div>
       <div className="absolute -top-96 -right-52 w-[512px] h-[512px] md:w-[900px] md:h-[900px] opacity-40">
         <Image
-          src="/assets/faq-gradient-right.png"
+          src="/assets/img/faq-gradient-right.svg"
           alt="gradient"
           layout="fill"
           objectFit="contain"
