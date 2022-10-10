@@ -1,8 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import Image from "next/image";
-import { FaInstagram } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
+import { FiInstagram, FiMail } from "react-icons/fi";
 
 const initialState = {
   name: "",
@@ -74,7 +73,7 @@ const Contact = () => {
               type="text"
               id="name"
               name="name"
-              className="p-3 mb-3 w-full text-gray-700 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:border-purple-600/70"
+              className="p-3 mb-3 w-full text-slate-50 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-slate-50/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
               placeholder="Full Name"
               required
               onChange={handleChange}
@@ -83,7 +82,7 @@ const Contact = () => {
               type="text"
               id="email"
               name="email"
-              className="p-3 mb-3 w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:border-purple-600/70"
+              className="p-3 mb-3 w-full text-slate-50 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-slate-50/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
               placeholder="Email"
               required
               onChange={handleChange}
@@ -91,7 +90,7 @@ const Contact = () => {
             <textarea
               name="message"
               id="message"
-              className="p-3 mb-3 w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg resize-none focus:border-purple-600/70"
+              className="p-3 mb-3 w-full text-slate-50 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-slate-50/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg resize-y min-h-[80px] h-40 max-h-96 focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
               rows={6}
               placeholder="Message"
               required
@@ -99,10 +98,10 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className="hover:bg-slate-50/5 text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg"
+              className="w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 shadow-xl hover:shadow-purple-600/10 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
               disabled={submitted}
             >
-              <p className="h-full w-full px-6 py-3 duration-300 transition-all ease-in-out text-slate-50 !bg-clip-text hover:text-transparent gradient-purple font-semibold cursor-pointer">
+              <p className="h-full w-full px-6 py-3 duration-300 transition-all ease-in-out text-slate-50 !bg-clip-text hover:text-transparent gradient-purple font-bold cursor-pointer">
                 {submitted ? "Sent!" : "Send"}
               </p>
             </button>
@@ -113,9 +112,9 @@ const Contact = () => {
                 href="https://www.instagram.com/yrhacks/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-50 ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
+                className="text-slate-50 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-purple !bg-clip-text"
               >
-                <FaInstagram className="text-slate-50 text-xl md:text-3xl mr-3" />
+                <FiInstagram className="text-slate-50 group-hover:text-indigo-600 duration-300 text-lg md:text-2xl mr-3" />
                 @yrhacks
               </a>
             </div>
@@ -124,9 +123,9 @@ const Contact = () => {
                 href="mailto:yorkregionhacks@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-50 ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
+                className="text-slate-50 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-purple !bg-clip-text"
               >
-                <AiOutlineMail className="text-slate-50 text-xl md:text-3xl mr-3" />
+                <FiMail className="text-slate-50 group-hover:text-indigo-600 duration-300 text-lg md:text-2xl mr-3" />
                 yorkregionhacks@gmail.com
               </a>
             </div>
