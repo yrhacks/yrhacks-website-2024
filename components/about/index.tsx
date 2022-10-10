@@ -4,7 +4,7 @@ const About = () => {
   return (
     <main
       id="about"
-      className="w-screen py-32 flex flex-col justify-center items-start bg-slate-950 px-5 md:px-10 lg:px-48"
+      className="w-screen py-32 flex flex-col justify-center items-start bg-transparent px-5 md:px-10 lg:px-48"
     >
       <h2 className="text-2xl md:text-3xl text-slate-50 font-bold">
         YRHacks is a YRDSB{" "}

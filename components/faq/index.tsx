@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { questions } from "../../data/faq";
 import Collapsible from "../collapsible";
 
@@ -6,10 +7,26 @@ const Faq = () => {
   return (
     <main
       id="faq"
-      className="w-screen flex justify-center items-center bg-slate-950 px-5 md:px-10 lg:px-48 pb-24 relative z-10"
+      className="w-screen flex justify-center items-center bg-transparent px-5 md:px-10 lg:px-48 pb-24 relative z-10"
     >
-      <div className="absolute bottom-24 lg:bottom-16 left-32 w-48 h-48 lg:w-80 lg:h-80 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-gradient-to-br from-emerald-400/80 to-indigo-900/80 blur-[100px] lg:blur-[130px] z-10" />
-      <div className="absolute top-8 lg:top-18 right-0 w-48 h-48 lg:w-72 lg:h-72 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-gradient-to-br from-cyan-500/80 to-violet-800/80 blur-[100px] lg:blur-[130px] z-10" />
+      <div className="absolute top-64 -left-48 md:top-80 md:-left-44 lg:top-48 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-40">
+        <Image
+          src="/assets/faq-gradient-left.png"
+          alt="gradient"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+        />
+      </div>
+      <div className="absolute -top-96 -right-52 w-[512px] h-[512px] md:w-[900px] md:h-[900px] opacity-40">
+        <Image
+          src="/assets/faq-gradient-right.png"
+          alt="gradient"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+        />
+      </div>
       <div className="w-full flex flex-col justify-start items-center rounded-lg z-20">
         <h2 className="text-4xl font-bold w-full pb-6 font-helvetica text-slate-50">
           FAQ

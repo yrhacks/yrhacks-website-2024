@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="w-full h-full">
+      <main className="w-screen h-full bg-slate-950">
         <Suspense fallback={`Loading...`}>
           <Nav />
         </Suspense>
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           <Contact />
         </Suspense>
       </main>
-      <footer className="w-full flex flex-col items-center pb-8 bg-slate-950 -z-10">
+      <footer className="w-full flex flex-col items-center pb-14 pt-20 bg-slate-950 -z-10">
         <p className="text-sm pb-2 text-slate-50">
           Copyright © 2022{" "}
           <span className="gradient-purple text-transparent !bg-clip-text font-bold">

@@ -9,7 +9,7 @@ const Dropdown = ({ open, setOpen }: Props) => {
   return (
     <nav
       className={
-        "w-screen flex flex-col transition-all px-4 duration-700 ease-out z-10 overflow-hidden " +
+        "w-screen flex flex-col transition-all px-4 duration-700 ease-in-out z-10 overflow-hidden " +
         (open ? "max-h-96 py-4" : "max-h-0")
       }
     >

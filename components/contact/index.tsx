@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
@@ -44,9 +45,17 @@ const Contact = () => {
   return (
     <main
       id="contact"
-      className="relative bg-slate-950 w-screen h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
+      className="relative bg-transparent w-screen h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
     >
-      <div className="absolute bottom-16 right-16 lg:right-72 w-52 h-52 rounded-tr-md rounded-bl-md rounded-tl-full rounded-br-full bg-gradient-to-br from-blue-700/80 to-purple-300/80 blur-[100px] lg:blur-[150px] z-10" />
+      <div className="absolute bottom-0 -right-48 md:bottom-32 md:right-32 lg:-bottom-20 lg:right-48 w-[512px] h-[512px] md:w-[700px] md:h-[700px] opacity-40">
+        <Image
+          src="/assets/contact-gradient.png"
+          alt="gradient"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+        />
+      </div>
       <h2 className="text-4xl font-semibold text-slate-50 mb-5 font-helvetica">
         Contact
       </h2>

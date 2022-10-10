@@ -1,15 +1,31 @@
 import React from "react";
-
+import Image from "next/image";
 import { partners } from "../../data/partners";
 
 const Partners = () => {
   return (
     <main
       id="partners"
-      className="w-screen relative flex flex-col justify-start items-center bg-slate-950 px-5 md:px-10 lg:px-48 py-20"
+      className="w-screen relative flex flex-col justify-start items-center bg-transparent px-5 md:px-10 lg:px-48 py-20"
     >
-      <div className="absolute top-80 right-0 lg:right-72 w-52 h-52 rounded-tr-md rounded-bl-md rounded-tl-full rounded-br-full bg-gradient-to-br from-red-700/80 to-orange-300/80 blur-[100px] lg:blur-[150px] z-10" />
-      <div className="absolute bottom-16 left-0 w-48 h-48 lg:w-80 lg:h-80 rounded-tr-full rounded-bl-full rounded-tl-md rounded-br-md bg-gradient-to-tl from-red-700/80 to-pink-400/80 blur-[100px] lg:blur-[150px] z-10" />
+      <div className="absolute bottom-0 -left-48 md:bottom-32 md:-left-44 lg:-bottom-64 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-40">
+        <Image
+          src="/assets/partners-gradient-left.png"
+          alt="gradient"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+        />
+      </div>
+      <div className="absolute -top-24 -right-48 w-[512px] h-[512px] md:w-[900px] md:h-[900px] opacity-40">
+        <Image
+          src="/assets/partners-gradient-right.png"
+          alt="gradient"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+        />
+      </div>
       <h2 className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50">
         Our Partners
       </h2>
@@ -24,12 +40,12 @@ const Partners = () => {
           {partners.board_partners.map((partner, index) => (
             <div className="h-full" key={index}>
               <a
-                className="h-full flex flex-col justify-center items-center duration-600 transition-all ease-in-out border-[1px] hover:border-amber-500/40 border-slate-50/10 bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg"
+                className="h-full flex flex-col justify-center items-center duration-300 transition-all ease-in-out border-[1px] hover:border-amber-500/40 border-slate-50/10 bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg"
                 href={partner.link}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="text-slate-50 text-center flex justify-center items-center py-4 px-6 text-sm w-full h-full duration-600 ease-in-out transition-all font-normal lg:hover:font-bold lg:hover:text-transparent gradient-pumpkin !bg-clip-text cursor-pointer">
+                <span className="text-slate-50 text-center flex justify-center items-center py-4 px-6 text-sm w-full h-full duration-300 ease-in-out transition-all font-normal lg:hover:font-bold lg:hover:text-transparent gradient-pumpkin !bg-clip-text cursor-pointer">
                   {partner.name}
                 </span>
               </a>
@@ -49,12 +65,12 @@ const Partners = () => {
             <div className="h-full" key={index}>
               <a
                 key={index}
-                className="h-full flex flex-col justify-center items-center duration-600 transition-all ease-in-out border-[1px] hover:border-rose-500/40 border-slate-50/10 bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg"
+                className="h-full flex flex-col justify-center items-center duration-300 transition-all ease-in-out border-[1px] hover:border-rose-500/40 border-slate-50/10 bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg"
                 href={partner.link}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="text-slate-50 text-center py-4 px-6 flex justify-center items-center text-sm w-full h-full duration-600 ease-in-out transition-all font-normal hover:font-bold hover:tracking-wide hover:text-transparent gradient-rose !bg-clip-text cursor-pointer">
+                <span className="text-slate-50 text-center py-4 px-6 flex justify-center items-center text-sm w-full h-full duration-300 ease-in-out transition-all font-normal hover:font-bold hover:tracking-wide hover:text-transparent gradient-rose !bg-clip-text cursor-pointer">
                   {partner.name}
                 </span>
               </a>
