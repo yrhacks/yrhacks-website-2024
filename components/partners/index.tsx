@@ -29,7 +29,7 @@ const Partners = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="text-slate-50 text-center flex justify-center items-center py-4 px-6 text-sm w-full h-full duration-500 ease-in-out transition-all font-normal hover:font-bold hover:tracking-wide hover:text-transparent gradient-pumpkin !bg-clip-text cursor-pointer">
+                <span className="text-slate-50 text-center flex justify-center items-center py-4 px-6 text-sm w-full h-full duration-500 ease-in-out transition-all font-normal lg:hover:font-bold lg:hover:tracking-wide hover:text-transparent lg:gradient-pumpkin !bg-clip-text cursor-pointer">
                   {partner.name}
                 </span>
               </a>

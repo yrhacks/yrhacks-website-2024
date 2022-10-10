@@ -12,7 +12,7 @@ const Collapsible = ({ question, answer }: Props) => {
   return (
     <div className="w-full pb-5">
       <header
-        className="flex flex-row justify-start items-center text-slate-50 mt-3 w-full z-20 cursor-pointer duration-500 ease-in-out transition-all hover:text-emerald-500"
+        className="flex flex-row justify-start items-center text-slate-50 mt-3 w-full z-20 cursor-pointer duration-500 ease-in-out transition-all lg:hover:text-emerald-500"
         onClick={() => setOpen(!open)}
       >
         {open ? (

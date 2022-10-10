@@ -21,9 +21,7 @@ export const questions = [
   },
   {
     question: "Where do I sign up?",
-    answer: [
-      'Sign up <a href="https://forms.gle/xVyL9MmosEGCp2dVA">here</a> (form will open in January 2023).',
-    ],
+    answer: ["Sign ups will open in January 2023."],
   },
   {
     question: "How will teams work?",
