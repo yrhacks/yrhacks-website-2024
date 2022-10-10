@@ -47,7 +47,7 @@ const Contact = () => {
       id="contact"
       className="relative bg-transparent w-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48 py-20"
     >
-      <div className="absolute bottom-0 -right-48 md:bottom-32 md:right-32 lg:-bottom-20 lg:right-48 w-[512px] h-[512px] md:w-[700px] md:h-[700px] opacity-40">
+      <div className="absolute bottom-0 -right-48 md:bottom-32 md:right-32 lg:-bottom-20 lg:right-48 w-[512px] h-[512px] md:w-[700px] md:h-[700px] opacity-40 blur-2xl">
         <Image
           src="/assets/img/contact-gradient.svg"
           alt="gradient"
