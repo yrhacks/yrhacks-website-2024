@@ -14,8 +14,8 @@ const Partners = () => {
         Our Partners
       </h2>
       <div className="w-full flex flex-row flex-wrap justify-center items-center mt-5 mb-10">
-        <h4 className="w-full font-bold text-2xl mb-5 text-slate-50">
-          <span className="gradient-pumpkin text-transparent !bg-clip-text font-helvetica">
+        <h4 className="w-full font-bold text-2xl mb-5 text-slate-50 font-helvetica">
+          <span className="gradient-pumpkin text-transparent !bg-clip-text">
             Board
           </span>{" "}
           Partners
@@ -24,12 +24,12 @@ const Partners = () => {
           {partners.board_partners.map((partner, index) => (
             <div className="h-full" key={index}>
               <a
-                className="h-full flex flex-col justify-center items-center border-2 border-slate-50 duration-700 transition-all ease-in-out hover:bg-slate-50"
+                className="h-full flex flex-col justify-center items-center duration-600 transition-all ease-in-out border-[1px] hover:border-amber-500/40 border-slate-50/10 bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg"
                 href={partner.link}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="text-slate-50 text-center flex justify-center items-center py-4 px-6 text-sm w-full h-full duration-500 ease-in-out transition-all font-normal lg:hover:font-bold lg:hover:tracking-wide lg:hover:text-transparent gradient-pumpkin !bg-clip-text cursor-pointer">
+                <span className="text-slate-50 text-center flex justify-center items-center py-4 px-6 text-sm w-full h-full duration-600 ease-in-out transition-all font-normal lg:hover:font-bold lg:hover:text-transparent gradient-pumpkin !bg-clip-text cursor-pointer">
                   {partner.name}
                 </span>
               </a>
@@ -49,12 +49,12 @@ const Partners = () => {
             <div className="h-full" key={index}>
               <a
                 key={index}
-                className="flex flex-col h-full justify-center items-center border-2 border-slate-50 duration-700 transition-all ease-in-out hover:bg-slate-50"
+                className="h-full flex flex-col justify-center items-center duration-600 transition-all ease-in-out border-[1px] hover:border-rose-500/40 border-slate-50/10 bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg"
                 href={partner.link}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="text-slate-50 text-center py-4 px-6 flex justify-center items-center text-sm w-full h-full duration-500 ease-in-out transition-all font-normal hover:font-bold hover:tracking-wide hover:text-transparent gradient-rose !bg-clip-text cursor-pointer">
+                <span className="text-slate-50 text-center py-4 px-6 flex justify-center items-center text-sm w-full h-full duration-600 ease-in-out transition-all font-normal hover:font-bold hover:tracking-wide hover:text-transparent gradient-rose !bg-clip-text cursor-pointer">
                   {partner.name}
                 </span>
               </a>
