@@ -15,7 +15,7 @@ const Nav = () => {
   const navSize = width < 768 ? 35 : 60;
 
   return (
-    <div className="relative z-50">
+    <div className="relative z-50 select-none">
       <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-slate-950/70 backdrop-blur-2xl">
         <nav className="w-full flex flex-row justify-between items-center z-20">
           <Link
@@ -31,7 +31,7 @@ const Nav = () => {
               className="cursor-pointer"
             />
           </Link>
-          <div className="md:w-1/2">
+          <div>
             {width < 768 ? (
               isOpen ? (
                 <IoCloseOutline
@@ -45,12 +45,12 @@ const Nav = () => {
                 />
               )
             ) : (
-              <ul className="w-full flex flex-row items-center justify-evenly">
+              <ul className="w-full flex items-center space-x-6 xl:space-x-8">
                 {["Home", "About", "FAQ", "Partners", "Contact"].map(
                   (item: string, index: number) => (
                     <li key={item}>
                       <Link href={index > 0 ? "/#" + item.toLowerCase() : "/#"}>
-                        <span className="text-slate-50 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text cursor-pointer">
+                        <span className="text-slate-50 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/5 rounded-md bg-transparent py-2 px-2.5 cursor-pointer">
                           {item}
                         </span>
                       </Link>

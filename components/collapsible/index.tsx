@@ -20,7 +20,7 @@ const Collapsible = ({ question, answer }: Props) => {
         ) : (
           <GoPlus className="text-lg cursor-pointer " />
         )}
-        <h3 className="text-base font-bold ml-3 cursor-pointer">{question}</h3>
+        <h3 className="text-base md:text-lg font-bold ml-3 cursor-pointer">{question}</h3>
       </header>
       <div
         className={
@@ -31,7 +31,7 @@ const Collapsible = ({ question, answer }: Props) => {
         {answer.map((item: any, index: number) => (
           <p
             key={index}
-            className="text-base leading-[1.6em] mt-3 text-slate-50"
+            className="text-base leading-[1.6em] mt-3 text-slate-50/70"
           >
             {item}
           </p>
