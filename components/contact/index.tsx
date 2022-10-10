@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <main
       id="contact"
-      className="relative bg-transparent w-screen h-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
+      className="relative bg-transparent w-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48 py-20"
     >
       <div className="absolute bottom-0 -right-48 md:bottom-32 md:right-32 lg:-bottom-20 lg:right-48 w-[512px] h-[512px] md:w-[700px] md:h-[700px] opacity-40">
         <Image
@@ -56,76 +56,80 @@ const Contact = () => {
           quality={100}
         />
       </div>
-      <h2 className="text-4xl font-semibold text-slate-50 mb-5 font-helvetica">
-        Contact
-      </h2>
-      <h4 className="mb-4 text-lg font-normal text-slate-50">Get In Touch!</h4>
-      <div className="w-full flex flex-col lg:flex-row justify-between items-start">
-        <form
-          onSubmit={handleSubmit}
-          className="w-full lg:w-3/5 flex flex-col justify-start items-start md:mb-10"
-          name="form"
-          autoComplete="off"
-        >
-          <input
-            type="text"
-            id="name"
-            name="name"
-            className="border-slate-50 text-gray-700 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
-            placeholder="Full Name"
-            required
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            id="email"
-            name="email"
-            className="border-slate-50 text-gray-700 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500  hover:bg-zinc-800/80 focus:bg-zinc-700/80"
-            placeholder="Email"
-            required
-            onChange={handleChange}
-          />
-          <textarea
-            name="message"
-            id="message"
-            className="border-slate-50 text-gray-700 border-2 rounded-none p-3 bg-transparent w-full mb-3 text-sm duration-500 hover:bg-zinc-800/80 focus:bg-zinc-700/80"
-            rows={4}
-            placeholder="Message"
-            required
-            onChange={handleChange}
-          />
-          <button
-            type="submit"
-            className="border-2 border-slate-50 duration-700 transition-all ease-in-out hover:bg-slate-50 "
-            disabled={submitted}
+      <div className="w-full h-full z-20 ">
+        <h2 className="text-4xl font-semibold text-slate-50 mb-5 font-helvetica">
+          Contact
+        </h2>
+        <h4 className="mb-4 text-lg font-normal text-slate-50">
+          Get In Touch!
+        </h4>
+        <div className="w-full flex flex-col lg:flex-row justify-between items-start">
+          <form
+            onSubmit={handleSubmit}
+            className="w-full lg:w-3/5 flex flex-col justify-start items-start md:mb-10"
+            name="form"
+            autoComplete="off"
           >
-            <p className="px-6 py-3 duration-700 transition-all ease-in-out text-slate-50 !bg-clip-text hover:text-transparent gradient-purple font-semibold cursor-pointer">
-              {submitted ? "Sent!" : "Send"}
-            </p>
-          </button>
-        </form>
-        <div className="w-full lg:w-2/5 pt-8 md:pt-0 md:px-8">
-          <div className="flex flex-row justify-start items-center mb-5">
-            <a
-              href="https://www.instagram.com/yrhacks/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-50 ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="p-3 mb-3 w-full text-gray-700 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:border-purple-600/70"
+              placeholder="Full Name"
+              required
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              className="p-3 mb-3 w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:border-purple-600/70"
+              placeholder="Email"
+              required
+              onChange={handleChange}
+            />
+            <textarea
+              name="message"
+              id="message"
+              className="p-3 mb-3 w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg resize-none focus:border-purple-600/70"
+              rows={6}
+              placeholder="Message"
+              required
+              onChange={handleChange}
+            />
+            <button
+              type="submit"
+              className="hover:bg-slate-50/5 text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/5 to-slate-50/[0.01] rounded-md backdrop-blur-lg"
+              disabled={submitted}
             >
-              <FaInstagram className="text-slate-50 text-xl md:text-3xl mr-3" />
-              @yrhacks
-            </a>
-          </div>
-          <div className="flex flex-row justify-start items-center">
-            <a
-              href="mailto:yorkregionhacks@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-50 ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
-            >
-              <AiOutlineMail className="text-slate-50 text-xl md:text-3xl mr-3" />
-              yorkregionhacks@gmail.com
-            </a>
+              <p className="h-full w-full px-6 py-3 duration-300 transition-all ease-in-out text-slate-50 !bg-clip-text hover:text-transparent gradient-purple font-semibold cursor-pointer">
+                {submitted ? "Sent!" : "Send"}
+              </p>
+            </button>
+          </form>
+          <div className="w-full lg:w-2/5 pt-8 md:pt-0 md:px-8">
+            <div className="flex flex-row justify-start items-center mb-5">
+              <a
+                href="https://www.instagram.com/yrhacks/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-50 ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
+              >
+                <FaInstagram className="text-slate-50 text-xl md:text-3xl mr-3" />
+                @yrhacks
+              </a>
+            </div>
+            <div className="flex flex-row justify-start items-center">
+              <a
+                href="mailto:yorkregionhacks@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-50 ml-2 text-sm md:text-lg flex duration-300 ease-in-out transition-all hover:text-transparent gradient-purple !bg-clip-text"
+              >
+                <AiOutlineMail className="text-slate-50 text-xl md:text-3xl mr-3" />
+                yorkregionhacks@gmail.com
+              </a>
+            </div>
           </div>
         </div>
       </div>
