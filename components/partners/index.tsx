@@ -8,6 +8,9 @@ const Partners = () => {
       id="partners"
       className="w-screen relative flex flex-col justify-start items-center bg-transparent px-5 md:px-10 lg:px-48 py-20"
     >
+      <div className="absolute bottom-0 -left-48 md:bottom-48 md:-left-44 lg:-bottom-48 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-40 blur-2xl partners-gradient-left" />
+      <div className="absolute -top-72 -right-48 w-[512px] h-[512px] md:w-[900px] md:h-[900px] opacity-40 blur-2xl partners-gradient-right" />
+      <div className="absolute -bottom-1/2 right-0 rotate-45 w-[512px] h-[512px] md:w-[900px] md:h-[900px] opacity-40 blur-2xl faq-gradient-right" />
       {/*
       <div className="absolute bottom-0 -left-48 md:bottom-48 md:-left-44 lg:-bottom-48 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-40 blur-2xl">
         <Image

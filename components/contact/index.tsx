@@ -46,27 +46,8 @@ const Contact = () => {
       id="contact"
       className="relative bg-transparent w-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48 py-20"
     >
-      {/*
-      <div className="absolute -top-24 -left-48 rotate-90 md:-top-96 md:-left-44 lg:-top-96 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-40 blur-2xl">
-        <Image
-          src="/assets/img/faq-gradient-left.svg"
-          alt="gradient"
-          layout="fill"
-          objectFit="contain"
-          quality={100}
-          priority
-        />
-      </div>
-      <div className="absolute bottom-0 -right-48 md:bottom-32 md:right-32 lg:-bottom-20 lg:right-48 w-[512px] h-[512px] md:w-[700px] md:h-[700px] opacity-40 blur-2xl">
-        <Image
-          src="/assets/img/contact-gradient.svg"
-          alt="gradient"
-          layout="fill"
-          objectFit="contain"
-          quality={100}
-          priority
-        />
-  </div>*/}
+      <div className="absolute -top-24 -left-48 rotate-90 md:-top-96 md:-left-44 lg:-top-96 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-40 blur-2xl faq-gradient-left" />
+      <div className="absolute bottom-0 -right-48 md:bottom-32 md:right-32 lg:-bottom-20 lg:right-48 w-[512px] h-[512px] md:w-[700px] md:h-[700px] opacity-40 blur-2xl contact-gradient" />
       <div className="w-full h-full z-20 ">
         <h2 className="text-4xl font-semibold text-slate-50 mb-5 font-helvetica">
           Contact
