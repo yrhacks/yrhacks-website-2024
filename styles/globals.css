@@ -131,6 +131,13 @@ a {
   text-decoration: none;
 }
 
+.body-container {
+  background-image: url("../public/assets/img/desktop-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .gradient-purple,
 .gradient-purple:hover {
   background: linear-gradient(
@@ -171,5 +178,11 @@ button:focus {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-container {
+    background-image: url("../public/assets/img/mobile-background.png");
   }
 }

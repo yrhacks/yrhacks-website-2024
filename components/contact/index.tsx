@@ -46,6 +46,7 @@ const Contact = () => {
       id="contact"
       className="relative bg-transparent w-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48 py-20"
     >
+      {/*
       <div className="absolute -top-24 -left-48 rotate-90 md:-top-96 md:-left-44 lg:-top-96 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-40 blur-2xl">
         <Image
           src="/assets/img/faq-gradient-left.svg"
@@ -65,7 +66,7 @@ const Contact = () => {
           quality={100}
           priority
         />
-      </div>
+  </div>*/}
       <div className="w-full h-full z-20 ">
         <h2 className="text-4xl font-semibold text-slate-50 mb-5 font-helvetica">
           Contact

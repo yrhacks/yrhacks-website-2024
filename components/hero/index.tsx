@@ -40,6 +40,7 @@ const Hero = () => {
 
   return (
     <header className="relative w-screen h-screen flex flex-col justify-center items-start bg-transparent pt-10 px-5 md:px-10 lg:px-48">
+      {/*
       <div className="absolute top-64 -left-48 md:top-80 md:-left-44 lg:top-48 lg:-left-40 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-50 blur-2xl">
         <Image
           src="/assets/img/hero-gradient-left.svg"
@@ -59,7 +60,7 @@ const Hero = () => {
           quality={100}
           priority
         />
-      </div>
+  </div>*/}
       <div className="bg-transparent z-10 w-full">
         <p className="text-sm font-semibold text-slate-50/50">SPRING 2023</p>
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-slate-50">
