@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { GoPlus, GoDash } from "react-icons/go";
-
+import AnimateHeight from "react-animate-height";
 interface Props {
   question: string;
   answer: any;
@@ -24,21 +24,16 @@ const Collapsible = ({ question, answer }: Props) => {
           {question}
         </h3>
       </header>
-      <div
-        className={
-          "duration-200 transition-all flex flex-col overflow-hidden ease-in-out " +
-          (open ? "max-h-96" : "max-h-0")
-        }
-      >
+      <AnimateHeight duration={200} height={open ? "auto" : 0}>
         {answer.map((item: any, index: number) => (
           <p
             key={index}
-            className="text-base leading-[1.6em] mt-3 text-slate-50/70"
+            className="text-base leading-[1.6em] mt-3 text-slate-50/70 pr-8"
           >
             {item}
           </p>
         ))}
-      </div>
+      </AnimateHeight>
     </div>
   );
 };

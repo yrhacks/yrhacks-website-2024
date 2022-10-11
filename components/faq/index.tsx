@@ -31,7 +31,7 @@ const Faq = () => {
         <h2 className="text-4xl font-bold w-full pb-6 font-helvetica text-slate-50">
           FAQ
         </h2>
-        <div className="w-full">
+        <div className="w-full lg:grid lg:grid-cols-2">
           {questions.map((question, index) => (
             <Collapsible
               key={index}
