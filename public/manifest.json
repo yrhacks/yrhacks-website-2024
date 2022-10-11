@@ -1,0 +1,59 @@
+{
+  "name": "YRHacks",
+  "short_name": "YRHacks",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E1116",
+  "theme_color": "#0E1116",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logos/logo-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logos/logo-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logos/logo-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logos/logo-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logos/logo-152x152.png",
+      "type": "image/png",
+      "sizes": "152x152",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logos/logo-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logos/logo-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logos/logo-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

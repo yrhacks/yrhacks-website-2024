@@ -4,6 +4,15 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <meta
+          name="description"
+          content="YRHacks - A YRDSB Hackathon run by students for students!"
+        />
+        <meta name="theme-color" content="#0E1116" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logos/logo-96x96.png" />
+        <meta name="apple-mobile-web-app-status-bar" content="#0E1116" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

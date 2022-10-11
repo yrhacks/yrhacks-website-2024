@@ -60,9 +60,9 @@ const Contact = () => {
         <h2 className="text-4xl font-semibold text-slate-50 mb-5 font-helvetica">
           Contact
         </h2>
-        <h4 className="mb-4 text-lg font-normal text-slate-50">
+        <h3 className="mb-4 text-lg font-normal text-slate-50">
           Get In Touch!
-        </h4>
+        </h3>
         <div className="w-full flex flex-col lg:flex-row justify-between items-start">
           <form
             onSubmit={handleSubmit}

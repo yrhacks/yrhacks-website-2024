@@ -32,12 +32,12 @@ const Partners = () => {
         Our Partners
       </h2>
       <div className="w-full flex flex-row flex-wrap justify-center items-center mt-5 mb-10">
-        <h4 className="w-full font-bold text-2xl mb-5 text-slate-50 font-helvetica">
+        <h3 className="w-full font-bold text-2xl mb-5 text-slate-50 font-helvetica">
           <span className="gradient-pumpkin text-transparent !bg-clip-text">
             Board
           </span>{" "}
           Partners
-        </h4>
+        </h3>
         <div className="w-full grid grid-cols-2 gap-2 lg:gap-3">
           {partners.board_partners.map((partner, index) => (
             <div className="h-full" key={index}>
@@ -56,12 +56,12 @@ const Partners = () => {
         </div>
       </div>
       <div className="w-full flex flex-wrap justify-center mt-4">
-        <h4 className="w-full font-bold text-2xl mb-5 font-helvetica text-slate-50">
+        <h3 className="w-full font-bold text-2xl mb-5 font-helvetica text-slate-50">
           <span className="gradient-rose text-transparent !bg-clip-text">
             Previous
           </span>{" "}
           Partners
-        </h4>
+        </h3>
         <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3">
           {partners.normal_partners.map((partner, index) => (
             <div className="h-full" key={index}>
