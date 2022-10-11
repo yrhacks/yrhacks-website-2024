@@ -14,7 +14,7 @@ const Faq = () => {
           FAQ
         </h2>
         <div className="flex flex-row justify-between items-start">
-          <div className="w-1/2 flex flex-col">
+          <div className="w-full lg:w-1/2 flex flex-col">
             {questions
               .slice(0, Math.floor(questions.length / 2))
               .map((question, index) => (
@@ -25,7 +25,7 @@ const Faq = () => {
                 />
               ))}
           </div>
-          <div className="w-1/2 flex flex-col">
+          <div className="w-full lg:w-1/2 flex flex-col">
             {questions
               .slice(Math.floor(questions.length / 2))
               .map((question, index) => (
