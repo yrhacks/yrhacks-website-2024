@@ -15,6 +15,7 @@ const Partners = () => {
           layout="fill"
           objectFit="contain"
           quality={100}
+          priority
         />
       </div>
       <div className="absolute -top-24 -right-48 w-[512px] h-[512px] md:w-[900px] md:h-[900px] opacity-40 blur-2xl">
@@ -24,6 +25,7 @@ const Partners = () => {
           layout="fill"
           objectFit="contain"
           quality={100}
+          priority
         />
       </div>
       <h2 className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50">

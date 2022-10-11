@@ -16,6 +16,7 @@ const Faq = () => {
           layout="fill"
           objectFit="contain"
           quality={100}
+          priority
         />
       </div>
       <div className="absolute -top-96 right-12 rotate-45 w-[512px] h-[512px] md:w-[900px] md:h-[900px] opacity-40 blur-2xl">
@@ -25,6 +26,7 @@ const Faq = () => {
           layout="fill"
           objectFit="contain"
           quality={100}
+          priority
         />
       </div>
       <div className="w-full flex flex-col justify-start items-center rounded-lg z-20">

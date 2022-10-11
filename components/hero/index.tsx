@@ -47,6 +47,7 @@ const Hero = () => {
           layout="fill"
           objectFit="contain"
           quality={100}
+          priority
         />
       </div>
       <div className="absolute -top-4 -right-40 lg:-top-8 lg:-right-24 w-[512px] h-[512px] md:w-[800px] md:h-[800px] opacity-50 blur-2xl">
@@ -56,6 +57,7 @@ const Hero = () => {
           layout="fill"
           objectFit="contain"
           quality={100}
+          priority
         />
       </div>
       <div className="bg-transparent z-10 w-full">

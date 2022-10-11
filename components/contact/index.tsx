@@ -53,6 +53,7 @@ const Contact = () => {
           layout="fill"
           objectFit="contain"
           quality={100}
+          priority
         />
       </div>
       <div className="w-full h-full z-20 ">

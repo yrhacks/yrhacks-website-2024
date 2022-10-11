@@ -46,7 +46,7 @@ const Nav = () => {
               )
             ) : (
               <ul className="w-full flex items-center space-x-4 xl:space-x-6">
-                {["Home", "About", "FAQ", "Partners", "Contact"].map(
+                {["Home", "About", "Partners", "FAQ", "Contact"].map(
                   (item: string, index: number) => (
                     <li key={item}>
                       <Link href={index > 0 ? "/#" + item.toLowerCase() : "/#"}>
