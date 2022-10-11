@@ -3,15 +3,15 @@ import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import Image from "next/image";
 
-const Nav = dynamic(() => import("../components/nav"), { ssr: false });
-const Hero = dynamic(() => import("../components/hero"), { ssr: false });
-const About = dynamic(() => import("../components/about"), { ssr: false });
-const Faq = dynamic(() => import("../components/faq"), { ssr: false });
+const Nav = dynamic(() => import("../components/nav"));
+const Hero = dynamic(() => import("../components/hero"));
+const About = dynamic(() => import("../components/about"));
+const Faq = dynamic(() => import("../components/faq"));
 const Partners = dynamic(() => import("../components/partners"), {
   ssr: false,
 });
-const Contact = dynamic(() => import("../components/contact"), { ssr: false });
-const Footer = dynamic(() => import("../components/footer"), { ssr: false });
+const Contact = dynamic(() => import("../components/contact"));
+const Footer = dynamic(() => import("../components/footer"));
 
 const Home: NextPage = () => {
   return (
