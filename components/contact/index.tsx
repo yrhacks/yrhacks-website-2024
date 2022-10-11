@@ -66,7 +66,7 @@ const Contact = () => {
               type="text"
               id="name"
               name="name"
-              className="p-3 mb-3 w-full text-slate-50 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-slate-50/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.03] to-transparent rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
+              className="p-3 mb-3 w-full text-slate-50 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-300/60 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.03] to-transparent rounded-md backdrop-blur-lg focus:ring-1 focus:ring-offset-1 focus:ring-offset-purple-500/30 focus:ring-purple-600/50"
               placeholder="Full Name"
               required
               onChange={handleChange}
@@ -75,7 +75,7 @@ const Contact = () => {
               type="text"
               id="email"
               name="email"
-              className="p-3 mb-3 w-full text-slate-50 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-slate-50/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.03] to-transparent rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
+              className="p-3 mb-3 w-full text-slate-50 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-300/60 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.03] to-transparent rounded-md backdrop-blur-lg focus:ring-1 focus:ring-offset-1 focus:ring-offset-purple-500/30 focus:ring-purple-600/50"
               placeholder="Email"
               required
               onChange={handleChange}
@@ -83,7 +83,7 @@ const Contact = () => {
             <textarea
               name="message"
               id="message"
-              className="p-3 mb-3 w-full text-slate-50 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-slate-50/40 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.03] to-transparent rounded-md backdrop-blur-lg resize-y min-h-[80px] h-40 max-h-96 focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
+              className="p-3 mb-3 w-full text-slate-50 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-300/60 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.03] to-transparent rounded-md backdrop-blur-lg resize-y min-h-[80px] h-40 max-h-96 focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/30 focus:ring-purple-600/50"
               rows={6}
               placeholder="Message"
               required

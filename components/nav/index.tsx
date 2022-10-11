@@ -26,7 +26,7 @@ const Nav = () => {
               width={60}
               height={60}
               layout={"intrinsic"}
-              className="cursor-pointer"
+              className="cursor-pointer logo-spin"
             />
           </Link>
           <div>
