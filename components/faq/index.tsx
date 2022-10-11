@@ -13,8 +13,8 @@ const Faq = () => {
         <h2 className="text-4xl font-bold w-full pb-6 font-helvetica text-slate-50">
           FAQ
         </h2>
-        <div className="flex flex-row justify-center items-start flex-wrap">
-          <div className="w-full lg:w-1/2 flex flex-col">
+        <div className="flex flex-row justify-between items-start flex-wrap">
+          <div className="w-full lg:w-[48%] flex flex-col">
             {questions
               .slice(0, Math.floor(questions.length / 2))
               .map((question, index) => (
@@ -25,7 +25,7 @@ const Faq = () => {
                 />
               ))}
           </div>
-          <div className="w-full lg:w-1/2 flex flex-col">
+          <div className="w-full lg:w-[48%] flex flex-col">
             {questions
               .slice(Math.floor(questions.length / 2))
               .map((question, index) => (

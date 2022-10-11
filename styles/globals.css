@@ -222,7 +222,8 @@ button:focus {
 }
 
 .logo-spin:hover {
-  animation: logo-spin 2s ease-in-out infinite;
+  /* animation: logo-spin 2s ease-in-out infinite; */
+  animation: logo-tilt 0.75s ease-in-out;
 }
 
 @keyframes logo-spin {
@@ -237,6 +238,18 @@ button:focus {
   }
   100% {
     transform: rotate(360deg) scale(1, 1);
+  }
+}
+
+@keyframes logo-tilt {
+  0% {
+    transform: rotate(0deg) scale(1, 1);
+  }
+  50% {
+    transform: rotate(10deg) scale(1.05, 1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1, 1);
   }
 }
 
