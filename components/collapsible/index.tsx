@@ -24,7 +24,7 @@ const Collapsible = ({ question, answer }: Props) => {
           {question}
         </h3>
       </header>
-      <AnimateHeight duration={200} height={open ? "auto" : 0}>
+      <AnimateHeight duration={300} height={open ? "auto" : 0}>
         {answer.map((item: any, index: number) => (
           <p
             key={index}

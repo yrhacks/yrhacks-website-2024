@@ -99,7 +99,7 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className="w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 hover:shadow-xl hover:shadow-purple-600/10 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.08] via-slate-50/[0.03] to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
+              className="w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 hover:shadow-[0_0_25px_-5px] hover:shadow-purple-600/10 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.08] via-slate-50/[0.03] to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
               disabled={submitted}
             >
               <p className="h-full w-full px-6 py-3 duration-300 transition-all ease-in-out text-slate-50 !bg-clip-text hover:text-transparent gradient-purple font-bold cursor-pointer">
