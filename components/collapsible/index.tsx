@@ -25,7 +25,8 @@ const Collapsible = ({ question, answer }: Props) => {
       </header>
       <div
         className={
-          "flex flex-col overflow-hidden " + (open ? "max-h-96" : "max-h-0")
+          "flex flex-col overflow-hidden duration-0 " +
+          (open ? "max-h-96" : "max-h-0")
         }
       >
         {answer.map((item: any, index: number) => (

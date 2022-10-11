@@ -13,6 +13,7 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logos/logo-96x96.png" />
         <meta name="apple-mobile-web-app-status-bar" content="#0E1116" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
