@@ -1663,11 +1663,6 @@ chownr@^1.1.1:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.4.tgz#6fc9d7b42d32a583596337666e7d08084da2cc6b"
   integrity sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==
 
-classnames@^2.3.1:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
-  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
-
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -3432,13 +3427,6 @@ randombytes@^2.1.0:
   integrity sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==
   dependencies:
     safe-buffer "^5.1.0"
-
-react-animate-height@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/react-animate-height/-/react-animate-height-3.0.4.tgz#80c9cc25e8569709ad1c626b968dbe5108d0ce46"
-  integrity sha512-k+mBS8yCzpFp+7BdrHsL5bXd6CO/2bYO2SvRGKfxK+Ss3nzplAJLlgnd6Zhcxe/avdpy/CgcziicFj7pIHgG5g==
-  dependencies:
-    classnames "^2.3.1"
 
 react-dom@18.2.0:
   version "18.2.0"
