@@ -222,8 +222,8 @@ button:focus {
 }
 
 .logo-spin:hover {
-  /* animation: logo-spin 2s ease-in-out infinite; */
-  animation: logo-tilt 0.75s ease-in-out;
+  animation: logo-spin 2s ease-in-out infinite;
+  /*animation: logo-tilt 0.75s ease-in-out;*/
 }
 
 @keyframes logo-spin {
