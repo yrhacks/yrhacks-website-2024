@@ -11,7 +11,10 @@ const initialState = {
 
 const Contact = () => {
   const [{ name, email, message }, setState] = useState(initialState);
-  const [submitted, setSubmitted] = useState(false);
+  const [emailInvalid, setEmailInvalid] = useState(false);
+  const [messageInvalid, setMessageInvalid] = useState(false);
+  const [failed, setFailed] = useState(false);
+  const [submitLabel, setSubmitLabel] = useState("Send");
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -21,7 +24,19 @@ const Contact = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log(name, email, message);
+
+    if (!validateEmail(email)) {
+      setEmailInvalid(true);
+      return;
+    }
+    setEmailInvalid(false);
+    if (message.trim().length === 0) {
+      setMessageInvalid(true);
+      return;
+    }
+    setMessageInvalid(false);
+    setSubmitLabel("Sending...");
+
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
@@ -29,16 +44,21 @@ const Contact = () => {
         e.target,
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-          setSubmitted(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then((result) => {
+        clearState();
+        setFailed(false);
+        setSubmitLabel("Sent!");
+      })
+      .catch((error) => {
+        setFailed(true);
+        setSubmitLabel("Send");
+      });
+  };
+
+  const validateEmail = (email: string) => {
+    return String(email)
+      .toLowerCase()
+      .match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
   };
 
   return (
@@ -91,13 +111,36 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className="w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 hover:shadow-[0_0_25px_-5px] hover:shadow-purple-600/10 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.08] via-slate-50/[0.03] to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70"
-              disabled={submitted}
+              className="w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] enabled:hover:border-purple-600/40 enabled:hover:shadow-[0_0_25px_-5px] enabled:hover:shadow-purple-600/10 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.08] via-slate-50/[0.03] to-slate-50/[0.01] rounded-md backdrop-blur-lg enabled:focus:ring-2 enabled:focus:ring-offset-1 enabled:focus:ring-offset-purple-500/50 enabled:focus:ring-purple-600/70 disabled:from-slate-100/10 disabled:to-slate-100/30"
+              disabled={submitLabel != "Send"}
             >
-              <p className="h-full w-full px-6 py-3 duration-300 transition-all ease-in-out text-slate-50 !bg-clip-text hover:text-transparent gradient-purple font-bold cursor-pointer">
-                {submitted ? "Sent!" : "Send"}
+              <p
+                className={
+                  "h-full w-full px-6 py-3 duration-300 transition-all ease-in-out text-slate-50 !bg-clip-text gradient-purple font-bold " +
+                  (!(submitLabel != "Send") &&
+                    "hover:text-transparent cursor-pointer")
+                }
+              >
+                {submitLabel}
               </p>
             </button>
+            <div className="h-8">
+              {emailInvalid && (
+                <p className="text-red-500 text-sm font-semibold mt-3">
+                  Please enter a valid email address.
+                </p>
+              )}
+              {messageInvalid && (
+                <p className="text-red-500 text-sm font-semibold mt-3">
+                  Please enter a message.
+                </p>
+              )}
+              {failed && (
+                <p className="text-red-500 text-sm font-semibold mt-3">
+                  Something went wrong. Please try again.
+                </p>
+              )}
+            </div>
           </form>
           <div className="w-full lg:w-2/5 pt-8 md:pt-0 md:px-8">
             <div className="flex flex-row justify-start items-center mb-5">
