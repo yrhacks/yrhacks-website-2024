@@ -7,6 +7,7 @@ const Faq = () => {
   return (
     <main
       id="faq"
+      data-aos="fade-up"
       className="w-screen flex justify-center items-center bg-transparent px-5 md:px-10 lg:px-48 py-24 relative z-10"
     >
       <div className="w-full flex flex-col justify-start items-center rounded-lg z-20">
