@@ -7,9 +7,7 @@ const Nav = dynamic(() => import("../components/nav"));
 const Hero = dynamic(() => import("../components/hero"));
 const About = dynamic(() => import("../components/about"));
 const Faq = dynamic(() => import("../components/faq"));
-const Partners = dynamic(() => import("../components/partners"), {
-  ssr: false,
-});
+const Partners = dynamic(() => import("../components/partners"));
 const Contact = dynamic(() => import("../components/contact"));
 const Footer = dynamic(() => import("../components/footer"));
 
