@@ -18,9 +18,9 @@ const Collapsible = ({ question, answer }: Props) => {
         onClick={() => setOpen(!open)}
       >
         {open ? (
-          <GoDash className="text-lg cursor-pointer " />
+          <GoDash className="text-lg cursor-pointer text-slate-50" />
         ) : (
-          <GoPlus className="text-lg cursor-pointer " />
+          <GoPlus className="text-lg cursor-pointer text-slate-50" />
         )}
         <h3 className="text-base md:text-lg font-bold ml-3 cursor-pointer text-slate-50">
           {question}
