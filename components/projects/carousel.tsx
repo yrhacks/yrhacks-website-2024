@@ -30,7 +30,7 @@ const Carousel = () => {
     <div className="relative p-2 w-full bg-transparent flex flex-row flex-nowrap justify-between items-center">
       <button disabled={!prevBtnEnabled}>
         <TiChevronLeft
-          className="text-slate-50 hover:text-orange-700 duration-150 text-3xl lg:text-7xl mx-2"
+          className="text-slate-50/90 hover:text-orange-700 duration-150 text-3xl lg:text-7xl mx-2"
           onClick={scrollPrev}
         />
       </button>
@@ -41,7 +41,7 @@ const Carousel = () => {
               className="relative min-w-full flex flex-col items-center justify-start"
               key={index}
             >
-              <h3 className="text-slate-50 text-xl font-helvetica lg:text-4xl mb-2 lg:mb-4 font-bold text-center">
+              <h3 className="text-slate-50/90 text-xl font-helvetica lg:text-4xl mb-2 lg:mb-4 font-bold text-center">
                 {project.award}
               </h3>
               <div className="relative rounded-lg">
@@ -57,10 +57,10 @@ const Carousel = () => {
               <h4 className="gradient-pumpkin text-transparent font-helvetica !bg-clip-text font-extrabold text-2xl lg:text-4xl pt-2 text-center">
                 {project.name}
               </h4>
-              <h5 className="font-medium text-slate-50 text-sm md:text-base py-1 lg:py-3 text-center">
+              <h5 className="font-medium text-slate-50/90 text-sm md:text-base py-1 lg:py-3 text-center">
                 Created by: {project.developers.join(", ")}
               </h5>
-              <p className="text-slate-50 font-normal text-lg text-center">
+              <p className="text-slate-50/90 font-normal text-lg text-center">
                 {project.description}
               </p>
             </div>
@@ -69,7 +69,7 @@ const Carousel = () => {
       </div>
       <button disabled={!nextBtnEnabled}>
         <TiChevronRight
-          className="text-slate-50 hover:text-amber-500 duration-150 text-3xl lg:text-7xl mx-2"
+          className="text-slate-50/90 hover:text-amber-500 duration-150 text-3xl lg:text-7xl mx-2"
           onClick={scrollNext}
         />
       </button>

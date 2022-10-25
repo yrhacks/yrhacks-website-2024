@@ -16,22 +16,26 @@ const Dropdown = ({ open, setOpen }: Props) => {
       <ul>
         <li className="mt-3" onClick={() => setOpen(false)}>
           <Link href="/#">
-            <span className="text-slate-50 text-lg font-medium">Home</span>
+            <span className="text-slate-50/90 text-lg font-medium">Home</span>
           </Link>
         </li>
         <li className="mt-3" onClick={() => setOpen(false)}>
           <Link href="/team">
-            <span className="text-slate-50 text-lg font-medium">Our Team</span>
+            <span className="text-slate-50/90 text-lg font-medium">
+              Our Team
+            </span>
           </Link>
         </li>
         <li className="mt-3" onClick={() => setOpen(false)}>
           <Link href="/faq">
-            <span className="text-slate-50 text-lg font-medium">FAQ</span>
+            <span className="text-slate-50/90 text-lg font-medium">FAQ</span>
           </Link>
         </li>
         <li className="mt-3" onClick={() => setOpen(false)}>
           <Link href="/#contact">
-            <span className="text-slate-50 text-lg font-medium">Contact</span>
+            <span className="text-slate-50/90 text-lg font-medium">
+              Contact
+            </span>
           </Link>
         </li>
       </ul>

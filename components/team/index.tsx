@@ -18,10 +18,10 @@ const Team = () => {
             height={200}
             className="rounded-full"
           />
-          <h3 className="text-2xl font-bold font-helvetica text-slate-50">
+          <h3 className="text-2xl font-bold font-helvetica text-slate-50/90">
             {member.name}
           </h3>
-          <p className="text-slate-50">{member.role}</p>
+          <p className="text-slate-50/90">{member.role}</p>
         </div>
       ))}
     </main>

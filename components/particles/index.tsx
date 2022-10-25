@@ -2,7 +2,10 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 
-const ParticlesBackground = () => {
+interface Props {
+  props?: any;
+}
+const ParticlesBackground: React.FC<Props> = ({ props }) => {
   const particlesInit = useCallback(async (engine: any) => {
     await loadFull(engine);
   }, []);
@@ -100,7 +103,7 @@ const ParticlesBackground = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       className="w-full h-full fixed -z-10"
-      options={options}
+      options={{ ...options, ...props }}
     />
   );
 };

@@ -49,13 +49,13 @@ const Hero = () => {
         </p>
         <h1
           data-aos="fade-up"
-          className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-slate-50"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-slate-50/90"
         >
           YRHacks
         </h1>
         <p
           data-aos="fade-up"
-          className="text-xl font-semibold italic mb-4 text-slate-50"
+          className="text-xl font-semibold italic mb-4 text-slate-50/90"
         >
           {begun ? "has begun!" : "is in..."}
         </p>
@@ -68,7 +68,7 @@ const Hero = () => {
         <p
           data-aos="fade-up"
           data-aos-delay="700"
-          className="text-sm lg:text-xl mt-8 text-slate-50"
+          className="text-sm lg:text-xl mt-8 text-slate-50/90"
         >
           Registrations for YRHacks 2023 will open in January 2023. Stay tuned!
         </p>
@@ -77,8 +77,8 @@ const Hero = () => {
           data-aos-delay="1000"
           className="flex flex-row items-center w-full mt-6"
         >
-          <MdLocationOn className="text-xl lg:text-2xl mr-2 text-slate-50" />
-          <p className="text-sm lg:text-lg font-semibold text-slate-50">
+          <MdLocationOn className="text-xl lg:text-2xl mr-2 text-slate-50/90" />
+          <p className="text-sm lg:text-lg font-semibold text-slate-50/90">
             Richmond Green S.S. (+Virtual)
           </p>
         </div>
@@ -87,8 +87,8 @@ const Hero = () => {
           data-aos-delay="1000"
           className="flex flex-row items-center w-full mt-3"
         >
-          <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-slate-50" />
-          <p className="text-sm lg:text-lg font-semibold text-slate-50">
+          <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-slate-50/90" />
+          <p className="text-sm lg:text-lg font-semibold text-slate-50/90">
             March 3-4 2023
           </p>
         </div>

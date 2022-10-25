@@ -13,7 +13,7 @@ const Partners = () => {
       {/*<div className="absolute -bottom-1/2 right-0 rotate-45 w-[512px] h-[512px] md:w-[900px] md:h-[900px] opacity-40 blur-2xl faq-gradient-right" />*/}
       <h2
         data-aos="fade-up"
-        className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50"
+        className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50/90"
       >
         Our Partners
       </h2>
@@ -21,7 +21,7 @@ const Partners = () => {
         data-aos="fade-up"
         className="w-full flex flex-row flex-wrap justify-center items-center mt-5 mb-10"
       >
-        <h3 className="w-full font-bold text-2xl mb-5 text-slate-50 font-helvetica">
+        <h3 className="w-full font-bold text-2xl mb-5 text-slate-50/90 font-helvetica">
           <span className="gradient-pumpkin text-transparent !bg-clip-text">
             Board
           </span>{" "}
@@ -36,7 +36,7 @@ const Partners = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="text-slate-50 text-center flex justify-center items-center py-4 px-6 text-sm w-full h-full duration-300 ease-in-out transition-all font-normal lg:hover:font-bold lg:hover:text-transparent gradient-pumpkin !bg-clip-text cursor-pointer">
+                <span className="text-slate-50/90 text-center flex justify-center items-center py-4 px-6 text-sm w-full h-full duration-300 ease-in-out transition-all font-normal lg:hover:font-bold lg:hover:text-transparent gradient-pumpkin !bg-clip-text cursor-pointer">
                   {partner.name}
                 </span>
               </a>
@@ -48,7 +48,7 @@ const Partners = () => {
         data-aos="fade-up"
         className="w-full flex flex-wrap justify-center mt-4"
       >
-        <h3 className="w-full font-bold text-2xl mb-5 font-helvetica text-slate-50">
+        <h3 className="w-full font-bold text-2xl mb-5 font-helvetica text-slate-50/90">
           <span className="gradient-rose text-transparent !bg-clip-text">
             Previous
           </span>{" "}
@@ -64,7 +64,7 @@ const Partners = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="text-slate-50 text-center py-4 px-6 flex justify-center items-center text-sm w-full h-full duration-300 ease-in-out transition-all font-normal hover:font-bold hover:tracking-wide hover:text-transparent gradient-rose !bg-clip-text cursor-pointer">
+                <span className="text-slate-50/90 text-center py-4 px-6 flex justify-center items-center text-sm w-full h-full duration-300 ease-in-out transition-all font-normal hover:font-bold hover:tracking-wide hover:text-transparent gradient-rose !bg-clip-text cursor-pointer">
                   {partner.name}
                 </span>
               </a>

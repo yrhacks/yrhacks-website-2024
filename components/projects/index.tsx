@@ -8,7 +8,7 @@ const Projects = () => {
       data-aos="fade-up"
       className="w-screen py-32 flex flex-col justify-center items-start bg-transparent px-5 md:px-10 lg:px-48"
     >
-      <h2 className="text-2xl md:text-4xl text-slate-50 font-bold font-helvetica mb-10">
+      <h2 className="text-2xl md:text-4xl text-slate-50/90 font-bold font-helvetica mb-10">
         Winners of{" "}
         <span className="text-transparent gradient-purple !bg-clip-text">
           YRHacks 2022
