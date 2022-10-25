@@ -18,7 +18,7 @@ const Faq: NextPage = () => {
       >
         <div className="w-full flex flex-col justify-start items-center rounded-lg z-20">
           <h2 className="text-4xl font-bold w-full pb-6 font-helvetica text-slate-50">
-            FAQ
+            Frequently Asked Questions
           </h2>
           <div className="flex flex-row justify-between items-start flex-wrap">
             <div className="w-full lg:w-[48%] flex flex-col">

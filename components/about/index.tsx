@@ -6,7 +6,7 @@ const About = () => {
     <main
       id="about"
       data-aos="fade-up"
-      className="z-50 w-screen py-32 flex flex-col justify-center items-start bg-transparent px-5 md:px-10 lg:px-48"
+      className="w-screen py-32 flex flex-col justify-center items-start bg-transparent px-5 md:px-10 lg:px-48"
     >
       <h2 className="text-2xl md:text-3xl text-slate-50 font-bold">
         YRHacks is a YRDSB{" "}
@@ -24,7 +24,7 @@ const About = () => {
         Interested in participating in YRHacks 2023? Stay tuned for sign-ups in
         Spring 2023 by joining our{" "}
         <Link href="/#contact">
-          <span className="text-emerald-500 text-lg duration-400 transition-all ease-in-out font-medium gradient-teal hover:text-transparent !bg-clip-text cursor-pointer">
+          <span className="underline text-lg duration-400 transition-all ease-in-out font-medium gradient-teal hover:text-transparent !bg-clip-text cursor-pointer">
             mailing list!
           </span>
         </Link>

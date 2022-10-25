@@ -14,17 +14,26 @@ const Dropdown = ({ open, setOpen }: Props) => {
       }
     >
       <ul>
-        {["Home", "About", "Partners", "FAQ", "Contact"].map(
-          (item: string, index: number) => (
-            <li className="mt-3" onClick={() => setOpen(false)} key={item}>
-              <Link href={index > 0 ? "/#" + item.toLowerCase() : "/#"}>
-                <span className="text-slate-50 text-lg font-medium">
-                  {item}
-                </span>
-              </Link>
-            </li>
-          )
-        )}
+        <li className="mt-3" onClick={() => setOpen(false)}>
+          <Link href="/#">
+            <span className="text-slate-50 text-lg font-medium">Home</span>
+          </Link>
+        </li>
+        <li className="mt-3" onClick={() => setOpen(false)}>
+          <Link href="/about">
+            <span className="text-slate-50 text-lg font-medium">About</span>
+          </Link>
+        </li>
+        <li className="mt-3" onClick={() => setOpen(false)}>
+          <Link href="/faq">
+            <span className="text-slate-50 text-lg font-medium">FAQ</span>
+          </Link>
+        </li>
+        <li className="mt-3" onClick={() => setOpen(false)}>
+          <Link href="/#contact">
+            <span className="text-slate-50 text-lg font-medium">Contact</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
