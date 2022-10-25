@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <div className="relative z-50 select-none">
-      <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-slate-950/70 backdrop-blur-2xl">
+      <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-black-900/40 backdrop-blur-3xl">
         <nav className="w-full flex flex-row justify-between items-center z-20">
           <Link
             className="h-full w-auto flex justify-center items-center"
