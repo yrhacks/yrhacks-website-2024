@@ -130,14 +130,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-/*
-.body-container {
-  background-image: url("../public/assets/img/desktop-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}*/
-
 .gradient-purple,
 .gradient-purple:hover {
   background: linear-gradient(
@@ -169,46 +161,6 @@ a {
   font-weight: bold;
 }
 
-.hero-gradient-right {
-  background-image: url("/assets/img/hero-gradient-right.svg");
-}
-
-.hero-gradient-left {
-  background-image: url("/assets/img/hero-gradient-left.svg");
-}
-
-.partners-gradient-left {
-  background-image: url("/assets/img/partners-gradient-left.svg");
-}
-
-.partners-gradient-right {
-  background-image: url("/assets/img/partners-gradient-right.svg");
-}
-
-.faq-gradient-left {
-  background-image: url("/assets/img/faq-gradient-left.svg");
-}
-
-.faq-gradient-right {
-  background-image: url("/assets/img/faq-gradient-right.svg");
-}
-
-.contact-gradient {
-  background-image: url("/assets/img/contact-gradient.svg");
-}
-
-.hero-gradient-right,
-.hero-gradient-left,
-.partners-gradient-left,
-.partners-gradient-right,
-.faq-gradient-left,
-.faq-gradient-right,
-.contact-gradient {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 input:focus,
 textarea:focus,
 button:focus {
@@ -223,7 +175,6 @@ button:focus {
 
 .logo-spin:hover {
   animation: logo-spin 2s ease-in-out infinite;
-  /*animation: logo-tilt 0.75s ease-in-out;*/
 }
 
 @keyframes logo-spin {
@@ -238,18 +189,6 @@ button:focus {
   }
   100% {
     transform: rotate(360deg) scale(1, 1);
-  }
-}
-
-@keyframes logo-tilt {
-  0% {
-    transform: rotate(0deg) scale(1, 1);
-  }
-  50% {
-    transform: rotate(10deg) scale(1.05, 1.05);
-  }
-  100% {
-    transform: rotate(0deg) scale(1, 1);
   }
 }
 

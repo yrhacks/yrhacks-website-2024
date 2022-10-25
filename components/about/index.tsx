@@ -37,15 +37,15 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 mt-10">
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
           <h3 className="text-5xl lg:text-6xl text-slate-50/90 font-bold font-helvetica text-center">
-            300+
+            350
           </h3>
           <p className="text-slate-50/90 tracking-wider text-lg text-center leading-7 pt-4">
-            students from XX+ schools
+            students from 25+ schools
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
           <h3 className="text-5xl lg:text-6xl text-slate-50/90 font-bold font-helvetica text-center">
-            50+
+            70+
           </h3>
           <p className="text-slate-50/90 tracking-wider text-lg text-center leading-7 pt-4">
             projects submitted
@@ -53,7 +53,7 @@ const About = () => {
         </div>
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
           <h3 className="text-5xl lg:text-6xl text-slate-50/90 font-bold font-helvetica text-center">
-            30+
+            25+
           </h3>
           <p className="text-slate-50/90 tracking-wider text-lg text-center leading-7 pt-4">
             mentors and sponsors
@@ -62,8 +62,9 @@ const About = () => {
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
           <FaTools className="text-5xl lg:text-6xl text-slate-50/90" />
           <p className="text-slate-50/90 tracking-wider text-lg text-center leading-7 pt-4">
-            Participate in dozens of workshops where students can learn various
-            skills such as web development, graphic design, and more!
+            Participate over a dozen workshops where students can learn various
+            skills such as web development and graphic design, as well as fun
+            activities to take a break from hacking!
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
@@ -76,8 +77,8 @@ const About = () => {
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
           <FaLeaf className="text-5xl lg:text-6xl text-slate-50/90" />
           <p className="text-slate-50/90 tracking-wider text-lg text-center leading-7 pt-4">
-            Meet new students and work together to create something amazing, and
-            earn cool prizes and swag!
+            Meet other talented students and work together to create something
+            amazing, and win cool prizes and swag!
           </p>
         </div>
       </div>

@@ -9,102 +9,99 @@ export const partners = {
       link: "https://ontario.ca/shsm",
     },
   ],
-  normal_partners: [
+  past_partners: [
     {
-      name: "Huawei",
-      link: "https://www.huawei.com/ca/",
-    },
-    {
-      name: "Wolfram",
-      link: "https://www.wolfram.com/",
-    },
-    {
-      name: "Prodigy",
-      link: "https://www.prodigygame.com/main-en/",
-    },
-    {
-      name: "IBM",
-      link: "https://www.ibm.com/ca-en/",
-    },
-    {
-      name: "Somm",
-      link: "https://www.somm.io/",
-    },
-    {
-      name: "Voiceflow",
-      link: "https://www.voiceflow.com/",
-    },
-    {
-      name: "University of Toronto - Mississauga",
-      link: "https://www.utm.utoronto.ca/",
-    },
-    {
-      name: "Co:here Neural Network",
-      link: "https://cohere.ai/",
-    },
-    {
-      name: "HackStudent",
-      link: "https://toronto.hackstudent.com/",
-    },
-    {
-      name: "StickerGiant",
-      link: "https://www.stickergiant.com/",
+      name: "AMD",
+      link: "https://www.amd.com/en",
     },
     {
       name: "Art of Problem Solving",
       link: "https://artofproblemsolving.com/",
     },
     {
-      name: "The Canadian Youth Champions",
-      link: "https://www.thecyc.org/",
-    },
-    {
-      name: "Ryerson DMZ",
-      link: "https://dmz.ryerson.ca/",
-    },
-    {
-      name: "YorkU",
-      link: "https://www.yorku.ca/",
-    },
-    {
-      name: "Triway Education Center",
-      link: "https://triwayeducation.com/",
+      name: "Best @ YorkU",
+      link: "https://lassonde.yorku.ca",
     },
     {
       name: "The Canadian Youth Champions",
       link: "https://www.thecyc.org/",
-    },
-    {
-      name: "Immigrant Youth Center",
-      link: "http://www.cicsiyc.org/",
-    },
-    {
-      name: "Staples",
-      link: "https://www.staples.ca/",
-    },
-    {
-      name: "EchoAR",
-      link: "https://www.echoar.xyz/",
-    },
-    {
-      name: "Repl.it",
-      link: "https://repl.it/",
     },
     {
       name: "CockroachDB",
       link: "https://www.cockroachlabs.com/",
     },
     {
+      name: "Co:here Neural Network",
+      link: "https://cohere.ai/",
+    },
+    {
+      name: "EchoAR",
+      link: "https://www.echoar.xyz/",
+    },
+    {
       name: "EdgePrim",
       link: "https://edgeprim.com/",
     },
     {
-      name: "Best @ YorkU",
-      link: "https://lassonde.yorku.ca",
+      name: "HackStudent",
+      link: "https://toronto.hackstudent.com/",
     },
     {
-      name: "AMD",
-      link: "https://www.amd.com/en",
+      name: "Huawei",
+      link: "https://www.huawei.com/ca/",
+    },
+
+    {
+      name: "IBM",
+      link: "https://www.ibm.com/ca-en/",
+    },
+    {
+      name: "Immigrant Youth Center",
+      link: "http://www.cicsiyc.org/",
+    },
+    {
+      name: "Prodigy",
+      link: "https://www.prodigygame.com/main-en/",
+    },
+    {
+      name: "Repl.it",
+      link: "https://repl.it/",
+    },
+    {
+      name: "Ryerson DMZ",
+      link: "https://dmz.ryerson.ca/",
+    },
+    {
+      name: "Somm",
+      link: "https://www.somm.io/",
+    },
+    {
+      name: "Staples",
+      link: "https://www.staples.ca/",
+    },
+    {
+      name: "StickerGiant",
+      link: "https://www.stickergiant.com/",
+    },
+    {
+      name: "Triway Education Center",
+      link: "https://triwayeducation.com/",
+    },
+    {
+      name: "University of Toronto - Mississauga",
+      link: "https://www.utm.utoronto.ca/",
+    },
+    {
+      name: "Voiceflow",
+      link: "https://www.voiceflow.com/",
+    },
+    {
+      name: "Wolfram",
+      link: "https://www.wolfram.com/",
+    },
+    {
+      name: "YorkU",
+      link: "https://www.yorku.ca/",
     },
   ],
 };
