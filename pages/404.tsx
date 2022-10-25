@@ -95,10 +95,10 @@ const Page: NextPage = () => {
           404
         </h1>
         <h2 className="font-helvetica text-2xl text-center md:text-3xl text-slate-50/80 font-medium mt-5">
-          Hmm, there doesn't seem to be a page here.
+          Hmm, there doesn&apos;t seem to be a page here.
         </h2>
         <h3 className="text-xl text-slate-50/80 text-center mt-20">
-          Here's our{" "}
+          Here&apos;s our{" "}
           <Link href="/#">
             <span className="text-transparent font-bold gradient-purple !bg-clip-text cursor-pointer">
               home page
