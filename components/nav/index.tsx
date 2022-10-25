@@ -52,7 +52,7 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about">
+                  <Link href="/team">
                     <span className="text-slate-50/90 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
                       Our Team
                     </span>
