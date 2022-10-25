@@ -20,8 +20,8 @@ const Dropdown = ({ open, setOpen }: Props) => {
           </Link>
         </li>
         <li className="mt-3" onClick={() => setOpen(false)}>
-          <Link href="/about">
-            <span className="text-slate-50 text-lg font-medium">About</span>
+          <Link href="/team">
+            <span className="text-slate-50 text-lg font-medium">Our Team</span>
           </Link>
         </li>
         <li className="mt-3" onClick={() => setOpen(false)}>

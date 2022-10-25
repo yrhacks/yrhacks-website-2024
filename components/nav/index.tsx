@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <div className="relative z-50 select-none">
-      <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-black-900/40 backdrop-blur-3xl">
+      <div className="w-full px-5 md:px-10 lg:px-48 py-4 lg:py-6 fixed top-0 bg-stone-900/5 backdrop-blur-3xl">
         <nav className="w-full flex flex-row justify-between items-center z-20">
           <Link
             className="h-full w-auto flex justify-center items-center"
@@ -54,7 +54,7 @@ const Nav = () => {
                 <li>
                   <Link href="/about">
                     <span className="text-slate-50 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
-                      About
+                      Our Team
                     </span>
                   </Link>
                 </li>

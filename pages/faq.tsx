@@ -13,11 +13,22 @@ const Faq: NextPage = () => {
       <Nav />
       <div
         id="faq"
-        className="w-screen flex justify-center items-center bg-transparent px-5 md:px-10 lg:px-48 py-48 relative z-10"
+        className="w-screen flex justify-center items-center bg-transparent px-5 md:px-10 lg:px-48 pt-48 relative z-10"
       >
         <div className="w-full flex flex-col justify-start items-center rounded-lg z-20">
-          <h2 className="text-4xl font-bold w-full pb-6 font-helvetica text-slate-50">
-            Frequently Asked Questions
+          <h2 className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50">
+            <span className="!bg-clip-text text-transparent gradient-purple">
+              F
+            </span>
+            requently{" "}
+            <span className="!bg-clip-text text-transparent gradient-purple">
+              A
+            </span>
+            sked{" "}
+            <span className="!bg-clip-text text-transparent gradient-purple">
+              Q
+            </span>
+            uestions
           </h2>
           <div className="flex flex-row justify-between items-start flex-wrap">
             <div className="w-full lg:w-[48%] flex flex-col">

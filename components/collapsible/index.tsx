@@ -9,7 +9,7 @@ const Collapsible = ({ question, answer }: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={"w-full mb-3 mr-8 rounded-md " + (open && "flash")}>
+    <div className={"w-full mb-1 md:mb-3 mr-8 rounded-md " + (open && "flash")}>
       <header
         className={
           "flex flex-row justify-start items-center p-3 rounded-md w-full z-20 cursor-pointer duration-500 transition-all hover:bg-slate-50/5 " +

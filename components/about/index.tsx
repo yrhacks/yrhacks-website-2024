@@ -36,7 +36,7 @@ const About = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-10">
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
-          <h3 className="text-6xl text-slate-50 font-bold font-helvetica text-center">
+          <h3 className="text-5xl lg:text-6xl text-slate-50 font-bold font-helvetica text-center">
             300+
           </h3>
           <p className="text-slate-50 tracking-wider text-lg text-center leading-7 pt-4">
@@ -44,7 +44,7 @@ const About = () => {
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
-          <h3 className="text-6xl text-slate-50 font-bold font-helvetica text-center">
+          <h3 className="text-5xl lg:text-6xl text-slate-50 font-bold font-helvetica text-center">
             50+
           </h3>
           <p className="text-slate-50 tracking-wider text-lg text-center leading-7 pt-4">
@@ -52,7 +52,7 @@ const About = () => {
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
-          <h3 className="text-6xl text-slate-50 font-bold font-helvetica text-center">
+          <h3 className="text-5xl lg:text-6xl text-slate-50 font-bold font-helvetica text-center">
             30+
           </h3>
           <p className="text-slate-50 tracking-wider text-lg text-center leading-7 pt-4">
@@ -60,21 +60,21 @@ const About = () => {
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
-          <FaTools className="text-6xl text-slate-50" />
+          <FaTools className="text-5xl lg:text-6xl text-slate-50" />
           <p className="text-slate-50 tracking-wider text-lg text-center leading-7 pt-4">
             Participate in dozens of workshops where students can learn various
             skills such as web development, graphic design, and more!
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
-          <FaGlobe className="text-6xl text-slate-50" />
+          <FaGlobe className="text-5xl lg:text-6xl text-slate-50" />
           <p className="text-slate-50 tracking-wider text-lg text-center leading-7 pt-4">
             Network with industry professionals and learn about the latest
             trends in technology!
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
-          <FaLeaf className="text-6xl text-slate-50" />
+          <FaLeaf className="text-5xl lg:text-6xl text-slate-50" />
           <p className="text-slate-50 tracking-wider text-lg text-center leading-7 pt-4">
             Meet new students and work together to create something amazing, and
             earn cool prizes and swag!
