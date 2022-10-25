@@ -12,7 +12,7 @@ const Footer = dynamic(() => import("../components/footer"));
 
 const Home: NextPage = () => {
   return (
-    <main className="w-screen h-full bg-slate-950 relative body-container">
+    <main className="w-screen h-full bg-transparent relative body-container">
       <ParticlesBackground />
       <Suspense fallback={<div>Loading...</div>}>
         <Nav />

@@ -28,7 +28,7 @@ const Collapsible = ({ question, answer }: Props) => {
       </header>
       <div
         className={
-          "flex flex-col overflow-hidden rounded-lg px-4 pb-3 " +
+          "flex flex-col overflow-hidden rounded-lg px-4 pb-3 duration-1000 transition-all ease-in-out " +
           (open ? "max-h-96" : "max-h-0")
         }
       >

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="w-screen flex flex-col items-center pb-14 pt-20 bg-transparent"
+      className="w-screen flex flex-col items-center pb-14 pt-20 bg-transparent z-10"
     >
       <p className="text-sm pb-2 text-slate-50">
         Copyright © 2022{" "}

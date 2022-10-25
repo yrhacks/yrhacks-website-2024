@@ -99,7 +99,7 @@ const ParticlesBackground = () => {
     <Particles
       init={particlesInit}
       loaded={particlesLoaded}
-      className="w-full h-full absolute"
+      className="w-full h-full fixed -z-10"
       options={options}
     />
   );

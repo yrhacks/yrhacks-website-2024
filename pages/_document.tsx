@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="YRHacks - A YRDSB Hackathon run by students for students!"
+          content="YRHacks - An annual Hackathon run by students, for students! Available to all YRDSB high school students."
         />
         <meta name="theme-color" content="#0E1116" />
         <link rel="manifest" href="/manifest.json" />

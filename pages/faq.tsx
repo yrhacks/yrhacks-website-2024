@@ -8,12 +8,11 @@ import ParticlesBackground from "../components/particles";
 
 const Faq: NextPage = () => {
   return (
-    <main className="w-screen h-full bg-slate-950 overflow-y-hidden">
+    <main className="w-screen h-full bg-transparent overflow-y-hidden">
       <ParticlesBackground />
       <Nav />
       <div
         id="faq"
-        data-aos="fade-up"
         className="w-screen flex justify-center items-center bg-transparent px-5 md:px-10 lg:px-48 py-48 relative z-10"
       >
         <div className="w-full flex flex-col justify-start items-center rounded-lg z-20">
