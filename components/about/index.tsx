@@ -36,7 +36,7 @@ const About = () => {
             Contact us
           </span>
         </Link>{" "}
-        and we'll get back to you!
+        and we&apos;ll get back to you!
       </p>
     </main>
   );
