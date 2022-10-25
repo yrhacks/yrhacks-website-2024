@@ -4,10 +4,12 @@ import { questions } from "../data/faq";
 import Collapsible from "../components/collapsible";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
+import ParticlesBackground from "../components/particles";
 
 const Faq: NextPage = () => {
   return (
     <main className="w-screen h-full bg-slate-950 overflow-y-hidden">
+      <ParticlesBackground />
       <Nav />
       <div
         id="faq"
