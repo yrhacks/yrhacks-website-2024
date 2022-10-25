@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -22,21 +23,19 @@ const About = () => {
       <p className="text-slate-50 text-lg font-medium mt-8 w-full">
         Interested in participating in YRHacks 2023? Stay tuned for sign-ups in
         Spring 2023 by joining our{" "}
-        <a
-          href="/#contact"
-          className="text-slate-50 underline hover:underline text-lg duration-400 transition-all ease-in-out font-medium gradient-teal hover:text-transparent !bg-clip-text cursor-pointer"
-        >
-          mailing list!
-        </a>
+        <Link href="/#contact">
+          <span className="text-emerald-500 text-lg duration-400 transition-all ease-in-out font-medium gradient-teal hover:text-transparent !bg-clip-text cursor-pointer">
+            mailing list!
+          </span>
+        </Link>
       </p>
       <p className="text-slate-50 text-lg font-medium mt-8 w-full">
         Interested in becoming a sponsor?{" "}
-        <a
-          href="/#contact"
-          className="text-slate-50 underline hover:underline text-lg duration-400 transition-all ease-in-out font-medium gradient-teal hover:text-transparent !bg-clip-text cursor-pointer"
-        >
-          Contact us
-        </a>{" "}
+        <Link href="/#contact">
+          <span className="text-slate-50 underline hover:underline text-lg duration-400 transition-all ease-in-out font-medium gradient-teal hover:text-transparent !bg-clip-text cursor-pointer">
+            Contact us
+          </span>
+        </Link>{" "}
         and we'll get back to you!
       </p>
     </main>

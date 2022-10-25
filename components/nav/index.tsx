@@ -44,17 +44,34 @@ const Nav = () => {
               )
             ) : (
               <ul className="w-full flex items-center space-x-4 xl:space-x-6">
-                {["Home", "About", "Partners", "FAQ", "Contact"].map(
-                  (item: string, index: number) => (
-                    <li key={item}>
-                      <Link href={index > 0 ? "/#" + item.toLowerCase() : "/#"}>
-                        <span className="text-slate-50 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
-                          {item}
-                        </span>
-                      </Link>
-                    </li>
-                  )
-                )}
+                <li>
+                  <Link href="/">
+                    <span className="text-slate-50 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
+                      Home
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                    <span className="text-slate-50 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
+                      About
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/faq">
+                    <span className="text-slate-50 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
+                      FAQ
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#contact">
+                    <span className="text-slate-50 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
+                      Contact
+                    </span>
+                  </Link>
+                </li>
               </ul>
             )}
           </div>
