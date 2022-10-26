@@ -5,7 +5,7 @@ const Subscribe = () => {
   const [message, setMessage] = useState("");
   const [sendSuccess, setSendSuccess] = useState(false);
 
-  const subscribe = async (e: any) => {
+  const subscribe = async (e) => {
     e.preventDefault();
     const res = await fetch("/api/subscribe", {
       body: JSON.stringify({
