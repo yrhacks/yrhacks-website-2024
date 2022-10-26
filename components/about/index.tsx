@@ -62,9 +62,9 @@ const About = () => {
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
           <FaTools className="text-5xl lg:text-6xl text-slate-50/90" />
           <p className="text-slate-50/90 tracking-wider text-lg text-center leading-7 pt-4">
-            Participate over a dozen workshops where students can learn various
-            skills such as web development and graphic design, as well as fun
-            activities to take a break from hacking!
+            Participate in over a dozen workshops to learn various skills such
+            as web development and graphic design, as well as fun activities to
+            take a break from hacking!
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center py-10 px-5">
