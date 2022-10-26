@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import Image from "next/image";
 import { FiInstagram, FiMail } from "react-icons/fi";
+import Subscribe from "./subscribe";
 
 const initialState = {
   name: "",
@@ -73,10 +73,10 @@ const Contact = () => {
         <h3 className="mb-4 text-lg font-normal text-slate-50/90">
           Get In Touch!
         </h3>
-        <div className="w-full flex flex-col lg:flex-row justify-between items-start">
+        <div className="w-full flex flex-col lg:flex-row justify-between lg:items-stretch items-center">
           <form
             onSubmit={handleSubmit}
-            className="w-full lg:w-3/5 flex flex-col justify-start items-start md:mb-10"
+            className="w-full lg:w-3/5 flex flex-col justify-between items-start md:mb-10"
             name="form"
             autoComplete="off"
           >
@@ -90,7 +90,7 @@ const Contact = () => {
               onChange={handleChange}
             />
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               className="p-3 mb-3 w-full text-slate-50/90 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-300/60 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.03] to-transparent rounded-md backdrop-blur-lg focus:ring-1 focus:ring-offset-1 focus:ring-offset-purple-500/30 focus:ring-purple-600/50"
@@ -147,7 +147,7 @@ const Contact = () => {
               )}
             </div>
           </form>
-          <div className="w-full lg:w-2/5 pt-8 md:pt-0 md:px-8">
+          <div className="w-full lg:w-2/5 pt-8 md:pt-0 md:px-8 flex flex-col h-full justify-between items-start">
             <div className="flex flex-row justify-start items-center mb-5">
               <a
                 href="https://www.instagram.com/yrhacks/"
@@ -170,6 +170,7 @@ const Contact = () => {
                 yorkregionhacks@gmail.com
               </a>
             </div>
+            <Subscribe />
           </div>
         </div>
       </div>

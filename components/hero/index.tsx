@@ -79,7 +79,7 @@ const Hero = () => {
         >
           <MdLocationOn className="text-xl lg:text-2xl mr-2 text-slate-50/90" />
           <p className="text-sm lg:text-lg font-semibold text-slate-50/90">
-            Richmond Green S.S. (+Virtual)
+            Richmond Hill H.S. (+Virtual)
           </p>
         </div>
         <div
