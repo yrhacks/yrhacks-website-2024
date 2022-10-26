@@ -10,7 +10,13 @@ import ParticlesBackground from "../components/particles";
 export const About: NextPage = () => {
   return (
     <main className="w-screen bg-transparent overflow-y-hidden">
-      <ParticlesBackground />
+      <ParticlesBackground
+        props={{
+          background: {
+            image: "url('/assets/img/bg-pumpkin.svg')",
+          },
+        }}
+      />
       <Nav />
       <header
         id="team"
@@ -35,11 +41,18 @@ export const About: NextPage = () => {
         <div
           data-aos="fade-up"
           data-aos-delay={1000}
-          className="flex flex-row justify-between items-start flex-wrap px-6 lg:px-24 mt-10"
+          className="flex flex-col justify-start items-center flex-wrap px-6 lg:px-24 mt-10"
         >
           <p className="text-center text-lg font-helvetica text-slate-50/90">
             We are a group of high school students from across York Region who
-            are passionate about technology and innovation.
+            are passionate about{" "}
+            <span className="!bg-clip-text font-bold text-transparent gradient-pumpkin">
+              technology
+            </span>{" "}
+            and{" "}
+            <span className="!bg-clip-text font-bold text-transparent gradient-rose">
+              innovation.
+            </span>
           </p>
           <p className="text-center text-lg font-helvetica text-slate-50/90 mt-6">
             We are working very hard to bring you an awesome hackathon

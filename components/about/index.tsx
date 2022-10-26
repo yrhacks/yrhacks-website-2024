@@ -11,7 +11,7 @@ const About = () => {
     >
       <h2 className="text-2xl md:text-3xl text-slate-50/90 font-bold">
         YRHacks is a YRDSB{" "}
-        <span className="gradient-teal text-transparent !bg-clip-text font-bold">
+        <span className="gradient-purple text-transparent !bg-clip-text font-bold">
           Hackathon
         </span>{" "}
         run by students, for students.
@@ -20,7 +20,7 @@ const About = () => {
         Interested in participating in YRHacks 2023? Stay tuned for sign-ups in
         Spring 2023 by joining our{" "}
         <Link href="/#contact">
-          <span className="font-bold underline text-lg duration-400 transition-all ease-in-out gradient-teal text-transparent !bg-clip-text cursor-pointer">
+          <span className="font-bold underline text-lg duration-400 transition-all ease-in-out gradient-purple text-transparent !bg-clip-text cursor-pointer">
             mailing list!
           </span>
         </Link>
@@ -28,7 +28,7 @@ const About = () => {
       <p className="text-slate-50/90 text-lg font-medium mt-8 w-full">
         Interested in becoming a sponsor?{" "}
         <Link href="/#contact">
-          <span className="font-bold text-lg duration-400 transition-all ease-in-out gradient-teal text-transparent !bg-clip-text cursor-pointer">
+          <span className="font-bold text-lg duration-400 transition-all ease-in-out gradient-purple text-transparent !bg-clip-text cursor-pointer">
             Contact us
           </span>
         </Link>{" "}

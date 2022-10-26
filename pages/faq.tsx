@@ -9,7 +9,13 @@ import ParticlesBackground from "../components/particles";
 const Faq: NextPage = () => {
   return (
     <main className="w-screen h-full bg-transparent overflow-y-hidden">
-      <ParticlesBackground />
+      <ParticlesBackground
+        props={{
+          background: {
+            image: "url('/assets/img/bg-teal.svg')",
+          },
+        }}
+      />
       <Nav />
       <div
         id="faq"
@@ -17,15 +23,15 @@ const Faq: NextPage = () => {
       >
         <div className="w-full flex flex-col justify-start items-center rounded-lg z-20">
           <h2 className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50/90">
-            <span className="!bg-clip-text text-transparent gradient-purple">
+            <span className="!bg-clip-text text-transparent gradient-teal">
               F
             </span>
             requently{" "}
-            <span className="!bg-clip-text text-transparent gradient-purple">
+            <span className="!bg-clip-text text-transparent gradient-teal">
               A
             </span>
             sked{" "}
-            <span className="!bg-clip-text text-transparent gradient-purple">
+            <span className="!bg-clip-text text-transparent gradient-teal">
               Q
             </span>
             uestions

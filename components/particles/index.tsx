@@ -94,7 +94,7 @@ const ParticlesBackground: React.FC<Props> = ({ props }) => {
     detectRetina: true,
     fpsLimit: 60,
     background: {
-      image: "url('/assets/img/ParticlesBackground.svg')",
+      image: "url('/assets/img/bg-purple.svg')",
     },
   };
 
