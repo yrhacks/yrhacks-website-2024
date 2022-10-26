@@ -19,7 +19,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/contact/subscribe.jsx"
+    "components/contact/subscribe.jsx",
+    "pages/api/subscribe.js"
   ],
   "exclude": ["node_modules"]
 }
