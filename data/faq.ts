@@ -26,7 +26,7 @@ export const questions = [
   {
     question: "How will teams work?",
     answer: [
-      "When registering, you can specify up to three other participants to form a team with them. As a team, you will work on the same project, be judged together, and win prizes together!",
+      "When registering, you can specify up to three other participants to form a team with. As a team, you will work on the same project, be judged together, and win prizes together!",
       " If you want to work in a team but cannot find one prior to the event, a team formation event will be hosted during the hackathon.",
       " You can also find a team after registering, even if you didn't specify any team members on the form. If you do so, you only need to let us know during the hackathon, before your project is judged.",
       " You are able to form teams with anyone, regardless of school, SHSM, or any other factor, as long as they are YRDSB students. That means that a team can have a mix of SHSM and non-SHSM participants, or students in different schools.",
@@ -35,7 +35,7 @@ export const questions = [
   {
     question: "What equipment should I own?",
     answer: [
-      "All the equipment you need is a computer or laptop, and an internet connection! You will need the IDE, game engine, compilers, etc. of your choice. Also make sure you are able to use ZOOM and Discord, which will be the two main platforms used during this hackathon. If you are not comfortable with using Discord, as it is a non-board approved platform, board-approved tools will be provided as an equal alternative.",
+      "All the equipment you need is a computer or laptop, and an internet connection! You will need the IDE, game engine, compilers, etc. of your choice. Make sure you are able to use ZOOM and Discord prior to the hackathon, as they will be the two main platforms used. If you are not comfortable with using Discord, as it is a non-board approved platform, board-approved tools will be provided as an equal alternative.",
     ],
   },
   {
@@ -53,16 +53,17 @@ export const questions = [
   {
     question: "What do mentors do?",
     answer: [
-      "Mentors are people who are experienced in programming, design, and idea formation, and are there to support you throughout the event. ",
+      "Mentors are people who are experienced in programming, design, and idea formation, who are there to support you throughout the event. ",
       " During the event, you will have the chance to request mentors to help you on your design, brainstorm ideas with you, debug your code, design a pitch, set up new technologies, and more! ",
-      " During the event, don't be afraid to work with a mentor to resolve a problem!",
+      " Don't be afraid to work with a mentor to resolve a problem!",
     ],
   },
   {
     question: "What do volunteers do?",
     answer: [
-      "Volunteers are the people who lead activities and help out during judging!",
-      " Throughout the event, fun activities will be hosted like trivia. Volunteers will be running these activities! Also, during judging, before any live pitches, they will be the ones doing mic checks and offering last words of encouragement. Don't be afraid to say hi to them!",
+      "Volunteers lead activities and help out during judging.",
+      " Throughout the event, fun activities such as trivia will be hosted. Volunteers will be running these activities! ",
+      " During judging, before any live pitches, they will perform mic checks and offering last words of encouragement. Make sure you say hi to them!",
     ],
   },
 ];
