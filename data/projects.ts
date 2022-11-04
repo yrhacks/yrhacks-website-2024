@@ -134,7 +134,12 @@ export const projects = [
     id: 15,
     award: "Health & Wellness Prize",
     name: "Maskan",
-    developers: ["Aryan Gupta", "Aryan Gupta", "Aryan Gupta", "Aryan Gupta"],
+    developers: [
+      "Handan Ozkurt",
+      "Hossein Heydarinejad",
+      "Kaneisha Thusyanthan",
+      "Stephanie Tong",
+    ],
     description:
       "With the lifting of mask mandates, some people fear entering stores due to not knowing whether other patrons in the store are masked. To combat this, our project enables an AI created using OpenCV and Python to transfer data to a website displaying the number of masked and unmasked customers.",
     image: "/assets/img/projects/Maskan.png",
