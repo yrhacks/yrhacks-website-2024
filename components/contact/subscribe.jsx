@@ -80,9 +80,10 @@ const Subscribe = () => {
       >
         <p
           className={
-            "h-full w-full px-6 py-3 duration-300 transition-all ease-in-out text-slate-600/90 !bg-clip-text gradient-purple font-bold " +
-            (!sendSuccess &&
-              "hover:text-transparent cursor-pointer text-slate-50/90")
+            "h-full w-full px-6 py-3 duration-300 transition-all ease-in-out !bg-clip-text gradient-purple font-bold " +
+            (!sendSuccess
+              ? "hover:text-transparent cursor-pointer text-slate-50/90"
+              : "text-slate-600/90")
           }
         >
           {sendSuccess ? "Subscribed!" : "Subscribe!"}
