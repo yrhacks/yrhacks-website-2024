@@ -2,11 +2,25 @@ import React, { useRef, useState } from "react";
 
 const Subscribe = () => {
   const inputEl = useRef(null);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(
+    "We'll send you important reminders and information about YRHacks 2023."
+  );
   const [sendSuccess, setSendSuccess] = useState(false);
+
+  const testEmail = (email) => {
+    const re = /\d\d\d\d\d\d\d\d\d@gapps\.yrdsb\.ca/g;
+    return re.test(email);
+  };
 
   const subscribe = async (e) => {
     e.preventDefault();
+    if (!testEmail(inputEl.current.value)) {
+      setMessage(
+        "Please enter a valid YRDSB email, e.g. 341030799@gapps.yrdsb.ca"
+      );
+      return;
+    }
+    setMessage("Subscribing...");
     const res = await fetch("/api/subscribe", {
       body: JSON.stringify({
         email: inputEl.current.value,
@@ -23,7 +37,6 @@ const Subscribe = () => {
       setMessage(error);
       return;
     }
-    inputEl.current.value = "";
     setMessage("Success! You are now subscribed to our newsletter.");
     setSendSuccess(true);
   };
@@ -42,14 +55,20 @@ const Subscribe = () => {
         id="email-input"
         name="email"
         className="p-3 mb-3 w-full text-slate-50/90 placeholder:text-slate-50/50 text-sm duration-300 transition-all ease-in-out border-[1px] hover:border-purple-300/60 border-slate-50/10 bg-transparent bg-gradient-to-br from-slate-50/[0.03] to-transparent rounded-md backdrop-blur-lg focus:ring-1 focus:ring-offset-1 focus:ring-offset-purple-500/30 focus:ring-purple-600/50"
-        placeholder="Email"
+        placeholder="YRDSB Email"
+        autoCapitalize="off"
+        autoCorrect="off"
+        autoComplete="off"
         required
         ref={inputEl}
       />
-      <p className="text-slate-50/90 text-base font-normal mb-3">
-        {message
-          ? message
-          : `We'll send you important reminders and information about YRHacks 2023.`}
+      <p
+        className={
+          "text-base font-normal mb-3 " +
+          (message.includes("YRDSB") ? "text-red-500/90" : "text-slate-50/90")
+        }
+      >
+        {message}
       </p>
       <button
         type="submit"
@@ -62,10 +81,11 @@ const Subscribe = () => {
         <p
           className={
             "h-full w-full px-6 py-3 duration-300 transition-all ease-in-out text-slate-50/90 !bg-clip-text gradient-purple font-bold " +
-            (!sendSuccess && "hover:text-transparent cursor-pointer")
+            (!sendSuccess &&
+              "hover:text-transparent cursor-pointer text-slate-600/90")
           }
         >
-          Subscribe!
+          {sendSuccess ? "Subscribed!" : "Subscribe!"}
         </p>
       </button>
     </form>
