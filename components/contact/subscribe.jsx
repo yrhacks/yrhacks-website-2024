@@ -73,7 +73,7 @@ const Subscribe = () => {
       <button
         type="submit"
         className={
-          "w-full text-gray-400 text-sm duration-300 transition-all ease-in-out border-[1px] enabled:hover:border-purple-600/40 enabled:hover:shadow-[0_0_25px_-5px] enabled:hover:shadow-purple-600/10 border-slate-50/10 enabled:bg-transparent enabled:bg-gradient-to-br enabled:from-slate-50/[0.08] enabled:via-slate-50/[0.03] enabled:to-slate-50/[0.01] rounded-md backdrop-blur-lg enabled:focus:ring-2 enabled:focus:ring-offset-1 enabled:focus:ring-offset-purple-500/50 enabled:focus:ring-purple-600/70 " +
+          "w-full text-sm duration-300 transition-all ease-in-out border-[1px] enabled:hover:border-purple-600/40 enabled:hover:shadow-[0_0_25px_-5px] enabled:hover:shadow-purple-600/10 border-slate-50/10 enabled:bg-transparent enabled:bg-gradient-to-br enabled:from-slate-50/[0.08] enabled:via-slate-50/[0.03] enabled:to-slate-50/[0.01] rounded-md backdrop-blur-lg enabled:focus:ring-2 enabled:focus:ring-offset-1 enabled:focus:ring-offset-purple-500/50 enabled:focus:ring-purple-600/70 " +
           (sendSuccess ? "send-success" : "sending")
         }
         disabled={sendSuccess}
