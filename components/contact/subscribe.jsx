@@ -12,6 +12,14 @@ const Subscribe = () => {
     return re.test(email);
   };
 
+  const parseDetails = (details) => {
+    let parsedDetails = "";
+    for (let i = 0; i <= details.indexOf("}".charCodeAt(0)); i++) {
+      parsedDetails += String.fromCharCode(details[i]);
+    }
+    return JSON.parse(parsedDetails).detail;
+  };
+
   const subscribe = async (e) => {
     e.preventDefault();
     if (!testEmail(inputEl.current.value)) {
@@ -31,9 +39,13 @@ const Subscribe = () => {
       method: "PUT",
     });
 
-    const { error } = await res.json();
+    const { error, response } = await res.json();
     if (error) {
-      setMessage(error);
+      setMessage(
+        "Error: " +
+          parseDetails(response._outBuffer.data) +
+          " Email yorkregionhacks@gmail.com for help."
+      );
       return;
     }
     setMessage("Success! You are now subscribed to our newsletter.");

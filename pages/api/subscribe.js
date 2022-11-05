@@ -5,8 +5,6 @@ var md5 = require("md5");
 export default async (req, res) => {
   const { email } = req.body;
 
-  console.log({ email });
-
   if (!email) {
     return res.status(400).json({ error: "Email is required" });
   }
@@ -34,14 +32,18 @@ export default async (req, res) => {
         method: "PUT",
       }
     );
+
     if (response.status >= 400) {
       return res.status(400).json({
         error: `An error was encountered. Email us at yorkregionhacks@gmail.com and we'll subscribe you the old fashioned way.`,
+        response: response.body,
       });
     }
-
-    return res.status(201).json({ error: "" });
+    return res.status(201).json({ error: "", response: response.body });
   } catch (error) {
-    return res.status(500).json({ error: error.message || error.toString() });
+    return res.status(500).json({
+      error: error.message || error.toString(),
+      response: response.body,
+    });
   }
 };
