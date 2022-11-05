@@ -64,7 +64,7 @@ const Contact = () => {
   return (
     <main
       id="contact"
-      className="relative bg-transparent w-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48 py-20"
+      className="relative bg-transparent w-screen flex flex-col justify-center items-start px-5 md:px-10 lg:px-48"
     >
       <div data-aos="fade-up" className="w-full h-full z-20">
         <h2 className="text-4xl font-semibold text-slate-50/90 mb-5 font-helvetica">

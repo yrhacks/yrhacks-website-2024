@@ -28,11 +28,10 @@ const Subscribe = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      method: "POST",
+      method: "PUT",
     });
 
     const { error } = await res.json();
-
     if (error) {
       setMessage(error);
       return;
@@ -42,7 +41,7 @@ const Subscribe = () => {
   };
 
   return (
-    <form onSubmit={subscribe} className="pt-7 mx-1">
+    <form onSubmit={subscribe} className="pt-7 mx-1 w-full">
       <p className="text-slate-50/90 text-lg font-bold leading-6 pb-3">
         Sign up for our{" "}
         <span className="text-transparent !bg-clip-text gradient-purple">
