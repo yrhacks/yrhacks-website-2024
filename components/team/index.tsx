@@ -12,7 +12,7 @@ const Team = () => {
       {team.map((member, index) => (
         <div
           key={index}
-          className="flex flex-col justify-center items-center px-2"
+          className="flex flex-col justify-start items-center px-2"
         >
           <div
             className={
