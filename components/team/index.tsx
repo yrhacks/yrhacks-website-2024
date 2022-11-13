@@ -29,11 +29,13 @@ const Team = () => {
               objectFit={"cover"}
             />
           </div>
-          <h3 className="text-xl font-bold font-helvetica text-slate-50/90 mt-3">
+          <h3 className="text-center text-lg md:text-xl font-bold font-helvetica text-slate-50/90 mt-3">
             {member.name}
           </h3>
-          <p className="text-lg italic text-slate-50/90  my-1">{member.role}</p>
-          <p className="text-xs text-slate-50/90">
+          <h4 className="text-center text-base md:text-lg italic text-slate-50/90  my-1">
+            {member.role}
+          </h4>
+          <p className="text-center text-xs text-slate-50/90">
             Grade {member.grade} @ {member.school}
           </p>
           <p className="text-sm text-slate-50/90 text-center mt-2">

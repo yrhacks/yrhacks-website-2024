@@ -1,5 +1,15 @@
 export const team = [
   {
+    name: "Jennifer Yu",
+    role: "Lead Organizer",
+    grade: "11",
+    school: "Maple H.S.",
+    blurb:
+      "Heyo! I'm an avid speedcuber and Marvel fan. Can't wait to see you at YRHacks!",
+    image: "/assets/team/jenniferyu.jpg",
+    colour: "gradient-rose",
+  },
+  {
     name: "Ishaan Dey",
     role: "Logistics Executive",
     grade: "12",
@@ -47,5 +57,24 @@ export const team = [
       "I'm Doris, an outreach executive at YRHacks! Fun fact: I love The Weeknd and drinking bubble tea!",
     image: "/assets/team/dorislam.jpg",
     colour: "gradient-purple",
+  },
+  {
+    name: "Julia Liu",
+    role: "Marketing Executive",
+    grade: "11",
+    school: "Richmond Hill H.S.",
+    blurb: "Hello! Isn't this website so well made?",
+    image: "/assets/team/julialiu.jpg",
+    colour: "gradient-rose",
+  },
+  {
+    name: "Fiona Cai",
+    role: "Finance Executive",
+    grade: "10",
+    school: "Bayview S.S.",
+    blurb:
+      "Hey there! I love everything floral (roses >>) and I'm super excited to see you guys at YRHacks!",
+    image: "/assets/team/fionacai.jpg",
+    colour: "gradient-rose",
   },
 ];
