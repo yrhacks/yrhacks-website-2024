@@ -64,7 +64,7 @@ export const team = [
     grade: "11",
     school: "Richmond Hill H.S.",
     blurb: "Hello! Isn't this website so well made?",
-    image: "/assets/team/julialiu.jpg",
+    image: "/assets/team/julialiu.png",
     colour: "gradient-rose",
   },
   {
