@@ -20,14 +20,14 @@ export const team = [
     colour: "gradient-purple",
   },
   {
-    name: "Joyce Wu",
-    role: "Outreach Executive",
-    grade: "11",
-    school: "Bayview S.S.",
+    name: "Rachel Zhang",
+    role: "Logistics Executive",
+    grade: "12",
+    school: "Pierre Elliott Trudeau H.S.",
     blurb:
-      "YRHacks is amazing, join YRHacks! And drink lots of hot water and get lots of sleep.",
-    image: "/assets/team/joycewu.png",
-    colour: "gradient-pumpkin",
+      "This will be the best highlight of your high school journey. Join to gain technical skills in interdisciplinary fields. 100% recommended for hackers of all levels!",
+    image: "/assets/team/rachelzhang.png",
+    colour: "gradient-purple",
   },
   {
     name: "Ryan Zhu",
@@ -57,6 +57,16 @@ export const team = [
       "I'm Doris, an outreach executive at YRHacks! Fun fact: I love The Weeknd and drinking bubble tea!",
     image: "/assets/team/dorislam.jpg",
     colour: "gradient-purple",
+  },
+  {
+    name: "Joyce Wu",
+    role: "Outreach Executive",
+    grade: "11",
+    school: "Bayview S.S.",
+    blurb:
+      "YRHacks is amazing, join YRHacks! And drink lots of hot water and get lots of sleep.",
+    image: "/assets/team/joycewu.png",
+    colour: "gradient-pumpkin",
   },
   {
     name: "Julia Liu",

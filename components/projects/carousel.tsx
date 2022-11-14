@@ -31,6 +31,7 @@ const Carousel = () => {
       <button
         disabled={!prevBtnEnabled}
         className="hover:drop-shadow-[0_0_10px_rgba(37,99,235,0.5)]"
+        name="Previous Project"
       >
         <TiChevronLeft
           className="text-slate-50/90 hover:text-blue-600 duration-200 text-3xl lg:text-7xl mx-2"
@@ -73,6 +74,7 @@ const Carousel = () => {
       <button
         disabled={!nextBtnEnabled}
         className="hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.5)]"
+        name="Next Project"
       >
         <TiChevronRight
           className="text-slate-50/90 hover:text-rose-700 duration-200 text-3xl lg:text-7xl mx-2"
