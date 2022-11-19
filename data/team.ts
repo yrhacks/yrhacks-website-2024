@@ -7,7 +7,7 @@ export const team = [
     blurb:
       "Heyo! I'm an avid speedcuber and Marvel fan. Can't wait to see you at YRHacks!",
     image: "/assets/team/jenniferyu.jpg",
-    colour: "gradient-rose",
+    colour: "gradient-purple",
   },
   {
     name: "Ishaan Dey",
@@ -17,7 +17,7 @@ export const team = [
     blurb:
       "Hi, I'm Ishaan 😎! I'm so excited to help with YRHacks this year and bring you guys an amazing event.",
     image: "/assets/team/ishaandey.jpg",
-    colour: "gradient-purple",
+    colour: "gradient-teal",
   },
   {
     name: "Rachel Zhang",
@@ -27,7 +27,7 @@ export const team = [
     blurb:
       "This will be the best highlight of your high school journey. Join to gain technical skills in interdisciplinary fields. 100% recommended for hackers of all levels!",
     image: "/assets/team/rachelzhang.png",
-    colour: "gradient-purple",
+    colour: "gradient-teal",
   },
   {
     name: "Ryan Zhu",
@@ -37,7 +37,7 @@ export const team = [
     blurb:
       "Like the website 😉? I also write music; try to find me on MuseScore or Spotify!",
     image: "/assets/team/ryanzhu.jpg",
-    colour: "gradient-rose",
+    colour: "gradient-lavender",
   },
   {
     name: "Eddie Zhuang",
@@ -46,7 +46,7 @@ export const team = [
     school: "Pierre Elliott Trudeau H.S.",
     blurb: "I love YRHacks. It's the best thing that's ever happened to me.",
     image: "/assets/team/eddiezhuang.jpeg",
-    colour: "gradient-teal",
+    colour: "gradient-lavender",
   },
   {
     name: "Doris Lam",
@@ -56,7 +56,7 @@ export const team = [
     blurb:
       "I'm Doris, an outreach executive at YRHacks! Fun fact: I love The Weeknd and drinking bubble tea!",
     image: "/assets/team/dorislam.jpg",
-    colour: "gradient-purple",
+    colour: "gradient-pumpkin",
   },
   {
     name: "Joyce Wu",
@@ -75,7 +75,16 @@ export const team = [
     school: "Richmond Hill H.S.",
     blurb: "Hello! Isn't this website so well made?",
     image: "/assets/team/julialiu.png",
-    colour: "gradient-rose",
+    colour: "gradient-gold",
+  },
+  {
+    name: "Nuthanan Tharmarajah",
+    role: "Marketing Executive",
+    grade: "11",
+    school: "Maple H.S.",
+    blurb: "Hey! I love bubble tea & coding! Can't wait to see you at YRHacks!",
+    image: "/assets/team/nuthanantharmarajah.png",
+    colour: "gradient-gold",
   },
   {
     name: "Fiona Cai",

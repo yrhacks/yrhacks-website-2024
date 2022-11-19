@@ -13,7 +13,7 @@ export const About: NextPage = () => {
       <ParticlesBackground
         props={{
           background: {
-            image: "url('/assets/img/bg-pumpkin.svg')",
+            image: "url('/assets/img/bg-gray.svg')",
           },
         }}
       />
