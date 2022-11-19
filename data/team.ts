@@ -10,6 +10,16 @@ export const team = [
     colour: "gradient-purple",
   },
   {
+    name: "Fiona Cai",
+    role: "Logistics Executive",
+    grade: "10",
+    school: "Bayview S.S.",
+    blurb:
+      "Hey there! I love everything floral (roses >>) and I'm super excited to see you guys at YRHacks!",
+    image: "/assets/team/fionacai.jpg",
+    colour: "gradient-teal",
+  },
+  {
     name: "Ishaan Dey",
     role: "Logistics Executive",
     grade: "12",
@@ -59,6 +69,15 @@ export const team = [
     colour: "gradient-pumpkin",
   },
   {
+    name: "Nuthanan Tharmarajah",
+    role: "Outreach Executive",
+    grade: "11",
+    school: "Maple H.S.",
+    blurb: "Hey! I love bubble tea & coding! Can't wait to see you at YRHacks!",
+    image: "/assets/team/nuthanantharmarajah.png",
+    colour: "gradient-pumpkin",
+  },
+  {
     name: "Joyce Wu",
     role: "Outreach Executive",
     grade: "11",
@@ -75,25 +94,6 @@ export const team = [
     school: "Richmond Hill H.S.",
     blurb: "Hello! Isn't this website so well made?",
     image: "/assets/team/julialiu.png",
-    colour: "gradient-gold",
-  },
-  {
-    name: "Nuthanan Tharmarajah",
-    role: "Marketing Executive",
-    grade: "11",
-    school: "Maple H.S.",
-    blurb: "Hey! I love bubble tea & coding! Can't wait to see you at YRHacks!",
-    image: "/assets/team/nuthanantharmarajah.png",
-    colour: "gradient-gold",
-  },
-  {
-    name: "Fiona Cai",
-    role: "Finance Executive",
-    grade: "10",
-    school: "Bayview S.S.",
-    blurb:
-      "Hey there! I love everything floral (roses >>) and I'm super excited to see you guys at YRHacks!",
-    image: "/assets/team/fionacai.jpg",
     colour: "gradient-rose",
   },
 ];
