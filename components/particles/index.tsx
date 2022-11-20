@@ -19,8 +19,8 @@ const ParticlesBackground: React.FC<Props> = ({ props }) => {
     },
     particles: {
       number: {
-        value: 20,
-        limit: 30,
+        value: 18,
+        limit: 27,
         density: {
           enable: true,
           value_area: 400,
@@ -47,7 +47,7 @@ const ParticlesBackground: React.FC<Props> = ({ props }) => {
         },
       },
       size: {
-        value: 30,
+        value: 25,
         random: true,
         anim: {
           enable: true,
@@ -92,7 +92,7 @@ const ParticlesBackground: React.FC<Props> = ({ props }) => {
       },
     },
     detectRetina: true,
-    fpsLimit: 60,
+    fpsLimit: 25,
     background: {
       image: "url('/assets/img/bg-purple.svg')",
     },
