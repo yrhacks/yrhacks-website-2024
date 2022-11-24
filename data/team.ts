@@ -1,5 +1,15 @@
 export const team = [
   {
+    name: "Jeffery Wu",
+    role: "Lead Organizer",
+    grade: "12",
+    school: "Alexander Mackenzie H.S.",
+    blurb: "",
+    image: "/assets/logos/logo-512x512.png",
+    bg: "/assets/team/planet.svg",
+    colour: "gradient-purple",
+  },
+  {
     name: "Jennifer Yu",
     role: "Lead Organizer",
     grade: "11",
@@ -7,6 +17,7 @@ export const team = [
     blurb:
       "Heyo! I'm an avid speedcuber and Marvel fan. Can't wait to see you at YRHacks!",
     image: "/assets/team/jenniferyu.jpg",
+    bg: "/assets/team/planet.svg",
     colour: "gradient-purple",
   },
   {
@@ -17,6 +28,29 @@ export const team = [
     blurb:
       "Hi, I'm Ishaan 😎! I'm so excited to help with YRHacks this year and bring you guys an amazing event.",
     image: "/assets/team/ishaandey.jpg",
+    bg: "/assets/team/meteor.svg",
+    colour: "gradient-teal",
+  },
+  {
+    name: "Dave Singh",
+    role: "Logistics Executive",
+    grade: "10",
+    school: "Thornhill S.S.",
+    blurb:
+      "There is no better memory than coding at 2 am for YRHACKS. I'm sure you'll love it.  ",
+    image: "/assets/team/davesingh.png",
+    bg: "/assets/team/meteor.svg",
+    colour: "gradient-teal",
+  },
+  {
+    name: "Kenny Wu",
+    role: "Logistics Executive",
+    grade: "11",
+    school: "Milliken Mills H.S.",
+    blurb:
+      "Hey, I'm Kenny! I love coding and that little guy in the picture. See you at YRHacks!",
+    image: "/assets/team/kennywu.png",
+    bg: "/assets/team/meteor.svg",
     colour: "gradient-teal",
   },
   {
@@ -27,6 +61,7 @@ export const team = [
     blurb:
       "This will be the best highlight of your high school journey. Join to gain technical skills in interdisciplinary fields. 100% recommended for hackers of all levels!",
     image: "/assets/team/rachelzhang.png",
+    bg: "/assets/team/meteor.svg",
     colour: "gradient-teal",
   },
   {
@@ -35,8 +70,9 @@ export const team = [
     grade: "12",
     school: "Markville S.S.",
     blurb:
-      "Like the website 😉? I also write music; try to find me on MuseScore or Spotify!",
+      "Like the website 😉? I also write music; try finding me on MuseScore or Spotify!",
     image: "/assets/team/ryanzhu.jpg",
+    bg: "/assets/team/gear.svg",
     colour: "gradient-lavender",
   },
   {
@@ -46,6 +82,7 @@ export const team = [
     school: "Pierre Elliott Trudeau H.S.",
     blurb: "I love YRHacks. It's the best thing that's ever happened to me.",
     image: "/assets/team/eddiezhuang.jpeg",
+    bg: "/assets/team/gear.svg",
     colour: "gradient-lavender",
   },
   {
@@ -56,16 +93,28 @@ export const team = [
     blurb:
       "Hey there! I love everything floral (roses >>) and I'm super excited to see you guys at YRHacks!",
     image: "/assets/team/fionacai.jpg",
+    bg: "/assets/team/cent.svg",
     colour: "gradient-rose",
   },
   {
-    name: "Julia Liu",
-    role: "Marketing Executive",
+    name: "Yash Uppal",
+    role: "Finance Logistics",
     grade: "11",
-    school: "Richmond Hill H.S.",
-    blurb: "Hello! Isn't this website so well made?",
-    image: "/assets/team/julialiu.png",
-    colour: "gradient-gold",
+    school: "Unionville H.S.",
+    blurb: "",
+    image: "/assets/logos/logo-512x512.png",
+    bg: "/assets/team/cent.svg",
+    colour: "gradient-rose",
+  },
+  {
+    name: "Derrick Ha",
+    role: "Outreach Executive",
+    grade: "11",
+    school: "Bayview S.S.",
+    blurb: "💀",
+    image: "/assets/team/derrickha.jpg",
+    bg: "/assets/team/globe.svg",
+    colour: "gradient-pumpkin",
   },
   {
     name: "Doris Lam",
@@ -75,6 +124,7 @@ export const team = [
     blurb:
       "I'm Doris, an outreach executive at YRHacks! Fun fact: I love The Weeknd and drinking bubble tea!",
     image: "/assets/team/dorislam.jpg",
+    bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
   },
   {
@@ -84,6 +134,7 @@ export const team = [
     school: "Maple H.S.",
     blurb: "Hey! I love bubble tea & coding! Can't wait to see you at YRHacks!",
     image: "/assets/team/nuthanantharmarajah.png",
+    bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
   },
   {
@@ -94,6 +145,17 @@ export const team = [
     blurb:
       "YRHacks is amazing, join YRHacks! And drink lots of hot water and get lots of sleep.",
     image: "/assets/team/joycewu.png",
+    bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
+  },
+  {
+    name: "Julia Liu",
+    role: "Marketing Executive",
+    grade: "11",
+    school: "Richmond Hill H.S.",
+    blurb: "Hello! Isn't this website so well made?",
+    image: "/assets/team/julialiu.png",
+    bg: "/assets/team/speech.svg",
+    colour: "gradient-gold",
   },
 ];

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { partners } from "../../data/partners";
 
 const Partners = () => {
@@ -8,16 +7,10 @@ const Partners = () => {
       id="partners"
       className="w-screen relative flex flex-col justify-start items-center bg-transparent px-5 md:px-10 lg:px-48 py-20 z-0 "
     >
-      <h2
-        data-aos="fade-up"
-        className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50/90"
-      >
+      <h2 className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50/90">
         Our Partners
       </h2>
-      <div
-        data-aos="fade-up"
-        className="w-full flex flex-row flex-wrap justify-center items-center mt-5 mb-10"
-      >
+      <div className="w-full flex flex-row flex-wrap justify-center items-center mt-5 mb-10">
         <h3 className="w-full font-bold text-2xl mb-5 text-slate-50/90 font-helvetica">
           <span className="gradient-pumpkin text-transparent !bg-clip-text">
             Board
@@ -41,10 +34,7 @@ const Partners = () => {
           ))}
         </div>
       </div>
-      <div
-        data-aos="fade-up"
-        className="w-full flex flex-wrap justify-center mt-4"
-      >
+      <div className="w-full flex flex-wrap justify-center mt-4">
         <h3 className="w-full font-bold text-2xl mb-5 font-helvetica text-slate-50/90">
           <span className="gradient-rose text-transparent !bg-clip-text">
             Past
