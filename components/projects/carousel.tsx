@@ -30,11 +30,11 @@ const Carousel = () => {
     <div className="relative p-2 w-full bg-transparent flex flex-row flex-nowrap justify-between items-center">
       <button
         disabled={!prevBtnEnabled}
-        className="hover:drop-shadow-[0_0_10px_rgba(37,99,235,0.5)]"
+        className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]"
         name="Previous Project"
       >
         <TiChevronLeft
-          className="text-slate-50/90 hover:text-blue-600 duration-200 text-3xl lg:text-7xl mx-2"
+          className="text-slate-50/90 hover:text-slate-50 duration-200 text-3xl lg:text-7xl mx-2"
           onClick={scrollPrev}
         />
       </button>
@@ -45,10 +45,20 @@ const Carousel = () => {
               className="relative min-w-full flex flex-col items-center justify-start"
               key={index}
             >
-              <h3 className="text-slate-50/90 text-xl font-helvetica lg:text-3xl mb-2 lg:mb-4 font-bold text-center">
+              <h3
+                className={
+                  "text-xl font-helvetica lg:text-3xl mb-2 lg:mb-4 font-bold text-center !bg-clip-text text-transparent " +
+                  project.color
+                }
+              >
                 {project.award}
               </h3>
-              <div className="relative flex items-center justify-center p-2 bg-gradient-to-br from-blue-600 via-purple-600 to-rose-700">
+              <div
+                className={
+                  "relative flex items-center justify-center p-2 " +
+                  project.color
+                }
+              >
                 <Image
                   src={project.image}
                   alt={project.name}
@@ -58,7 +68,7 @@ const Carousel = () => {
                   height={300}
                 />
               </div>
-              <h4 className="gradient-purple text-transparent font-helvetica !bg-clip-text font-extrabold text-xl lg:text-3xl mt-3 text-center">
+              <h4 className="text-slate-50/90 font-helvetica font-extrabold text-xl lg:text-3xl mt-3 text-center">
                 {project.name}
               </h4>
               <h5 className="font-bold text-slate-50/90 text-sm md:text-base py-1 lg:py-2 text-center">
@@ -73,11 +83,11 @@ const Carousel = () => {
       </div>
       <button
         disabled={!nextBtnEnabled}
-        className="hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.5)]"
+        className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]"
         name="Next Project"
       >
         <TiChevronRight
-          className="text-slate-50/90 hover:text-rose-700 duration-200 text-3xl lg:text-7xl mx-2"
+          className="text-slate-50/90 hover:text-slate-50 duration-200 text-3xl lg:text-7xl mx-2"
           onClick={scrollNext}
         />
       </button>
