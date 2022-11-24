@@ -24,7 +24,7 @@ export const projects = [
     developers: ["Jeslyn Zhang", "Thisha Sudhakaran", "Rosalyn Tu"],
     description:
       "A new online prescription test that is free of charge and usable anywhere in the world. Thanks to our scaling algorithm, your score will be converted to an accurate prescription based on the Canadian valid optical prescription criteria. C-ing clearly is the new advancement to affordable, accessible, and efficient healthcare.",
-    image: "/assets/img/Project.png",
+    image: "/assets/img/placeholder.jpg",
   },
   {
     id: 4,

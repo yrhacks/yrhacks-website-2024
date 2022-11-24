@@ -19,8 +19,8 @@ const ParticlesBackground: React.FC<Props> = ({ props }) => {
     },
     particles: {
       number: {
-        value: 18,
-        limit: 27,
+        value: 15,
+        limit: 20,
         density: {
           enable: true,
           value_area: 400,
