@@ -77,49 +77,61 @@ const Team = () => {
       <div
         id="team"
         // data-aos="fade-up"
-        className="grid grid-cols-4 gap-10 p-5 max-w-screen-xl"
+        className="grid grid-cols-4 gap-10 m-8 max-w-screen-xl"
       >
         {team.map((member, index) => (
           <div
             key={index}
             className={`flex flex-col justify-start items-center col-span-${member.colSpan}`}
           >
-            <div className={`rounded-full p-3 w-52 h-52 ${member.colour}`}>
-              <div className="relative w-full h-full">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  style={{
-                    borderRadius: "50%",
-                  }}
-                  layout="fill"
-                  object-fit="contain"
-                />
+            <div className="flex flex-col justify-start items-center max-w-xs">
+              <div className={`relative rounded-full p-3 w-52 h-52 ${member.colour}`}>
+                <div className="absolute w-72 h-72 inset-1/2 -translate-x-1/2 -translate-y-1/2">
+                  <Image
+                    src={member.bg}
+                    alt={member.name}
+                    layout="fill"
+                    object-fit="contain"
+                  />
+                </div>
+
+                <div className="relative w-full h-full">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    style={{
+                      borderRadius: "50%",
+                    }}
+                    layout="fill"
+                    object-fit="contain"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div className="p-1">
-              <h3 className="text-center text-lg md:text-xl font-bold font-helvetica text-slate-50/90 mt-3">
-                {member.name}
-              </h3>
-              <h4 className="text-center text-base md:text-md italic text-slate-50/90">
-                {member.role}
-              </h4>
-              <p className="text-center text-xs text-slate-50/90 mb-3">
-                Grade {member.grade} @ {member.school}
-              </p>
+              <div className="p-1">
+                <h3 className="text-center text-lg md:text-xl font-bold font-helvetica text-slate-50/90 mt-3">
+                  {member.name}
+                </h3>
+                <h4 className="text-center text-base md:text-md italic text-slate-50/90">
+                  {member.role}
+                </h4>
+                <p className="text-center text-xs text-slate-50/90 mb-3">
+                  Grade {member.grade} @ {member.school}
+                </p>
 
-              <p
-                className={
-                  "text-xs md:text-sm text-slate-50/90 text-center"
-                }
-              >
-                {member.blurb}
-              </p>
+                <p
+                  className={
+                    "text-xs md:text-sm text-slate-50/90 text-center"
+                  }
+                >
+                  {member.blurb}
+                </p>
+              </div>
             </div>
           </div>
         )
         )}
+
       </div>
     </main >
   );
