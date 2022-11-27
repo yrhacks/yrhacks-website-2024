@@ -15,62 +15,58 @@ const Team = () => {
       <div
         id="team"
         data-aos="fade-up"
-        className="grid grid-cols-2 lg:grid-cols-4 gap-10 m-8 max-w-screen-2xl"
+        className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 m-2 lg:m-10 max-w-screen-lg"
       >
         {team.map((member, index) => (
           <div
             key={index}
-            className={`flex flex-col justify-start items-center col-span-1 ${getColSpan(index)}`}
+            className={`flex flex-col justify-start shrink items-center col-span-1 ${getColSpan(index)}`}
           >
-            <div className="relative flex flex-col justify-start items-center max-w-xs">
-              <div className={`relative w-28 lg:w-44 h-28 lg:h-44`}>
-                {/* background image */}
-                <div className="absolute w-48 lg:w-72 h-48 lg:h-72 inset-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <Image
-                    src={member.bg}
-                    alt={member.name}
-                    layout="fill"
-                    object-fit="contain"
-                  />
-                </div>
-
-                {/* coloured border */}
-                <div className={`absolute rounded-full w-32 lg:w-52 h-32 lg:h-52 inset-1/2 -translate-x-1/2 -translate-y-1/2 ${member.colour}`} />
-
-                {/* human image */}
-                <div className="absolute w-full h-full">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    style={{
-                      borderRadius: "50%",
-                    }}
-                    layout="fill"
-                    object-fit="contain"
-                  />
-                </div>
+            <div className={`relative w-40 lg:w-64 h-40 lg:h-64`}>
+              {/* background image */}
+              <div className="absolute w-full h-full">
+                <Image
+                  src={member.bg}
+                  alt={member.name}
+                  layout="fill"
+                  object-fit="contain"
+                />
               </div>
 
-              <div className="py-5">
-                <h3 className="text-center text-lg md:text-xl font-bold font-helvetica text-slate-50/90 mt-3">
-                  {member.name}
-                </h3>
-                <h4 className="text-center text-base md:text-md italic text-slate-50/90">
-                  {member.role}
-                </h4>
-                <p className="text-center text-xs text-slate-50/90 mb-3">
-                  Grade {member.grade} @ {member.school}
-                </p>
+              {/* coloured border */}
+              <div className={`absolute rounded-full w-28 lg:w-44 h-28 lg:h-44 inset-1/2 -translate-x-1/2 -translate-y-1/2 ${member.colour}`} />
 
-                <p
-                  className={
-                    "text-xs md:text-sm text-slate-50/90 text-center"
-                  }
-                >
-                  {member.blurb}
-                </p>
+              {/* human image */}
+              <div className="absolute w-24 lg:w-36 h-24 lg:h-36 inset-1/2 -translate-x-1/2 -translate-y-1/2">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  style={{
+                    borderRadius: "50%",
+                  }}
+                  layout="fill"
+                  object-fit="contain"
+                />
               </div>
             </div>
+
+            <h3 className="text-center text-md lg:text-xl font-bold font-helvetica text-slate-50/90">
+              {member.name}
+            </h3>
+            <h4 className="text-center text-sm lg:text-md italic text-slate-50/90">
+              {member.role}
+            </h4>
+            <p className="text-center text-xs text-slate-50/90 mb-3">
+              Grade {member.grade} @ {member.school}
+            </p>
+
+            <p
+              className={
+                "text-xs lg:text-sm text-slate-50/90 text-center"
+              }
+            >
+              {member.blurb}
+            </p>
           </div>
         )
         )}
