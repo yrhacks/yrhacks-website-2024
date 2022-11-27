@@ -8,6 +8,7 @@ export const team = [
     image: "/assets/logos/logo-512x512.png",
     bg: "/assets/team/planet.svg",
     colour: "gradient-purple",
+    colSpan: 2,
   },
   {
     name: "Jennifer Yu",
@@ -19,6 +20,7 @@ export const team = [
     image: "/assets/team/jenniferyu.jpg",
     bg: "/assets/team/planet.svg",
     colour: "gradient-purple",
+    colSpan: 2,
   },
   {
     name: "Ishaan Dey",
@@ -157,5 +159,6 @@ export const team = [
     image: "/assets/team/julialiu.jpg",
     bg: "/assets/team/speech.svg",
     colour: "gradient-gold",
+    colSpan: 4,
   },
 ];
