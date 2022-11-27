@@ -84,16 +84,18 @@ const Team = () => {
             key={index}
             className={`flex flex-col justify-start items-center col-span-${member.colSpan}`}
           >
-            <div className="relative w-52 h-52">
-              <Image
-                src={member.image}
-                alt={member.name}
-                style={{
-                  borderRadius: "50%",
-                }}
-                layout="fill"
-                object-fit="contain"
-              />
+            <div className={`rounded-full p-3 w-52 h-52 ${member.colour}`}>
+              <div className="relative w-full h-full">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  style={{
+                    borderRadius: "50%",
+                  }}
+                  layout="fill"
+                  object-fit="contain"
+                />
+              </div>
             </div>
 
             <div className="p-1">
@@ -119,7 +121,7 @@ const Team = () => {
         )
         )}
       </div>
-    </main>
+    </main >
   );
 };
 
