@@ -73,50 +73,57 @@ const Team = () => {
     //   ))}
     // </main>
 
-    <main
-      id="team"
-      //data-aos="fade-up"
-      className="grid grid-cols-4 gap-5 p-5"
-    >
-      {team.map((member, index) => (
-        <div
-          key={index}
-          className="flex flex-col grow justify-start align-center grid-auto-rows p-5"
-        >
-          <div className="relative">
-            <Image
-              src={member.image}
-              alt={member.name}
-              style={{
-                borderRadius: "50%",
-              }}
-              layout="fill"
-              object-fit="contain"
-            />
-          </div>
+    <main className="flex flex-col items-center">
+      <div
+        id="team"
+        // data-aos="fade-up"
+        className="grid grid-cols-4 gap-10 p-5 justify-center max-w-screen-xl"
+      >
+        {team.map((member, index) => {
+          let col_span = 1;
+          if (index <= 1) col_span = 2;
+          else if (index == 14) col_span = 4;
 
-          <div className="p-3">
-            <h3 className="text-center text-lg md:text-xl font-bold font-helvetica text-slate-50/90 mt-3">
-              {member.name}
-            </h3>
-            <h4 className="text-center text-base md:text-md italic text-slate-50/90">
-              {member.role}
-            </h4>
-            <p className="text-center text-xs text-slate-50/90 mb-3">
-              Grade {member.grade} @ {member.school}
-            </p>
-
-            <p
-              className={
-                "text-xs md:text-sm text-slate-50/90 text-center" +
-                (index < 2 && " md:px-16")
-              }
+          return (
+            <div
+              key={index}
+              className={`flex flex-col justify-start items-center col-start-auto col-span-${col_span}`}
             >
-              {member.blurb}
-            </p>
-          </div>
-        </div>
-      ))}
+              <div className="relative w-52 h-52">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  style={{
+                    borderRadius: "50%",
+                  }}
+                  layout="fill"
+                  object-fit="contain"
+                />
+              </div>
+
+              <div className="p-1">
+                <h3 className="text-center text-lg md:text-xl font-bold font-helvetica text-slate-50/90 mt-3">
+                  {member.name}
+                </h3>
+                <h4 className="text-center text-base md:text-md italic text-slate-50/90">
+                  {member.role}
+                </h4>
+                <p className="text-center text-xs text-slate-50/90 mb-3">
+                  Grade {member.grade} @ {member.school}
+                </p>
+
+                <p
+                  className={
+                    "text-xs md:text-sm text-slate-50/90 text-center"
+                  }
+                >
+                  {member.blurb}
+                </p>
+              </div>
+            </div>
+          )
+        })}
+      </div>
     </main>
   );
 };
