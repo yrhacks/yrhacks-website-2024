@@ -22,8 +22,9 @@ const Team = () => {
             key={index}
             className={`flex flex-col justify-start items-center col-span-1 ${getColSpan(index)}`}
           >
-            <div className="flex flex-col justify-start items-center max-w-xs">
-              <div className={`relative rounded-full w-32 lg:w-52 h-32 lg:h-52 ${member.colour}`}>
+            <div className="relative flex flex-col justify-start items-center max-w-xs">
+              <div className={`relative w-28 lg:w-44 h-28 lg:h-44`}>
+                {/* background image */}
                 <div className="absolute w-48 lg:w-72 h-48 lg:h-72 inset-1/2 -translate-x-1/2 -translate-y-1/2">
                   <Image
                     src={member.bg}
@@ -33,7 +34,11 @@ const Team = () => {
                   />
                 </div>
 
-                <div className="relative w-full h-full">
+                {/* coloured border */}
+                <div className={`absolute rounded-full w-32 lg:w-52 h-32 lg:h-52 inset-1/2 -translate-x-1/2 -translate-y-1/2 ${member.colour}`} />
+
+                {/* human image */}
+                <div className="absolute w-full h-full">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -46,7 +51,7 @@ const Team = () => {
                 </div>
               </div>
 
-              <div className="p-1">
+              <div className="py-5">
                 <h3 className="text-center text-lg md:text-xl font-bold font-helvetica text-slate-50/90 mt-3">
                   {member.name}
                 </h3>
