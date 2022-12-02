@@ -60,7 +60,7 @@ const Subscribe = () => {
           href="https://forms.gle/MsMYhqwyfc2pF4ze9"
           rel="noopener noreferrer"
           target="_blank"
-          className="text-transparent !bg-clip-text gradient-purple"
+          className="text-transparent !bg-clip-text gradient-purple hover:underline hover:tracking-widest duration-500 ease-in-out"
         >
           newsletter
         </a>{" "}

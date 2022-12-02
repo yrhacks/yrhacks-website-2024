@@ -47,7 +47,7 @@ export const questions = [
   {
     question: "When and where will the event take place?",
     answer: [
-      "The event will be from March 3-4, 2023. We will be offering both in-person at Richmond Green S.S. and virtual options.",
+      "The event will be from March 3-4, 2023. We will be offering both in-person at Bill Crothers S.S. and virtual options.",
     ],
   },
   {
