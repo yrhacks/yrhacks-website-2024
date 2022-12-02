@@ -56,11 +56,17 @@ const Subscribe = () => {
     <form onSubmit={subscribe} className="pt-7 mx-1 w-full">
       <p className="text-slate-50/90 text-lg font-bold leading-6 pb-3">
         Sign up for our{" "}
-        <span className="text-transparent !bg-clip-text gradient-purple">
+        <a
+          href="https://forms.gle/MsMYhqwyfc2pF4ze9"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="text-transparent !bg-clip-text gradient-purple"
+        >
           newsletter
-        </span>{" "}
+        </a>{" "}
         to stay updated!
       </p>
+      {/*
       <input
         type="email"
         id="email-input"
@@ -99,7 +105,7 @@ const Subscribe = () => {
         >
           {sendSuccess ? "Subscribed!" : "Subscribe!"}
         </p>
-      </button>
+      </button>*/}
     </form>
   );
 };
