@@ -2,7 +2,7 @@ import fetch from "isomorphic-unfetch";
 
 var md5 = require("md5");
 
-export default async (req, res) => {
+const Subscribe = async (req, res) => {
   const { email } = req.body;
 
   if (!email) {
@@ -47,3 +47,5 @@ export default async (req, res) => {
     });
   }
 };
+
+export default Subscribe;
