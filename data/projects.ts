@@ -183,10 +183,10 @@ export const projects = [
     id: 18,
     award: "IBM: Best Use of Open Source",
     name: "ReSketch",
-    developers: ["Aryan Gupta", "Aryan Gupta", "Aryan Gupta", "Aryan Gupta"],
+    developers: ["Thomas Wang", "James Su", "Daniel Chen", "Andrew Chen"],
     description:
       "ReSketch puts the “fun” in “learning” by allowing students to engage with the UN Sustainable Development Goals while chilling with friends! Players sketch based on SDG-related prompts; points are earned if our AI recognizes the sketch. The prompt descriptors provide information regarding the SDGs for students to expand on global sustainability issues.",
-    image: "/assets/img/projects/ReSketch.png",
+    image: "/assets/img/projects/Resketch.png",
     color: "gradient-lavender",
   },
   {
