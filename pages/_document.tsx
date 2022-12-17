@@ -6,13 +6,52 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="YRHacks - An annual Hackathon run by students, for students! Available to all YRDSB high school students."
+          content="YRHacks - An annual hackathon run by students, for students! Available to all YRDSB high school students."
         />
-        <meta name="theme-color" content="#0E1116" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" content="YRHacks" />
+        <meta name="copyright" content="2022 YRHacks" />
+
+        <meta property="og:url" content="https://yrhacks.ca" />
+        <meta property="og:site_name" content="YRHacks" />
+        <meta property="og:title" content="YRDSB's official hackathon" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="YRHacks - An annual hackathon run by students, for students! Available to all YRDSB high school students."
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="/assets/logos/logo-512x512.png" />
+        <meta property="og:image:alt" content="YRHacks" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="YRDSB's official hackathon" />
+        <meta
+          name="twitter:description"
+          content="YRHacks - An annual hackathon run by students, for students! Available to all YRDSB high school students."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yrdsb.ca/assets/logos/logo-512x512.png"
+        />
+
+        <meta name="theme-color" content="#20194a" />
+        <meta name="msapplication-navbutton-color" content="#20194a" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#20194a" />
+        <meta name="msapplication-TileColor" content="#20194a" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logos/logo-96x96.png" />
-        <meta name="apple-mobile-web-app-status-bar" content="#0E1116" />
+
+        <link
+          rel="mask-icon"
+          href="/assets/logos/logo-transparent.svg"
+          color="#643dbf"
+        />
+        <link rel="icon" href="/favicon.ico" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

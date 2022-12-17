@@ -3,8 +3,8 @@
   "short_name": "YRHacks",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0E1116",
-  "theme_color": "#0E1116",
+  "background_color": "#181424",
+  "theme_color": "#643dbf",
   "orientation": "portrait-primary",
   "icons": [
     {
