@@ -22,7 +22,7 @@ const Faq: NextPage = () => {
         className="w-screen flex justify-center items-center bg-transparent px-5 md:px-10 lg:px-48 pt-48 relative z-10"
       >
         <div className="w-full flex flex-col justify-start items-center rounded-lg z-20">
-          <h2 className="text-4xl font-bold w-full pb-10 font-helvetica text-slate-50/90">
+          <h2 className="text-4xl font-bold w-full pb-10 font-helvetica text-violet-100/80">
             <span className="!bg-clip-text text-transparent gradient-teal">
               F
             </span>

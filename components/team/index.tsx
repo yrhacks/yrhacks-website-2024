@@ -7,7 +7,7 @@ const Team = () => {
     if (index <= 1) return "lg:col-span-2";
     else if (index == 14) return "lg:col-span-4";
     else return "lg:col-span-1";
-  }
+  };
 
   return (
     <main className="flex flex-col items-center">
@@ -19,7 +19,9 @@ const Team = () => {
         {team.map((member, index) => (
           <div
             key={index}
-            className={`flex flex-col justify-start items-center col-span-1 ${getColSpan(index)}`}
+            className={`flex flex-col justify-start items-center col-span-1 ${getColSpan(
+              index
+            )}`}
           >
             <div className="max-w-[300px] flex flex-col justify-start items-center">
               <div className={`relative w-40 lg:w-64 h-40 lg:h-64`}>
@@ -34,7 +36,9 @@ const Team = () => {
                 </div>
 
                 {/* coloured border */}
-                <div className={`absolute rounded-full w-28 lg:w-44 h-28 lg:h-44 inset-1/2 -translate-x-1/2 -translate-y-1/2 ${member.colour}`} />
+                <div
+                  className={`absolute rounded-full w-28 lg:w-44 h-28 lg:h-44 inset-1/2 -translate-x-1/2 -translate-y-1/2 ${member.colour}`}
+                />
 
                 {/* human image */}
                 <div className="absolute w-24 lg:w-36 h-24 lg:h-36 inset-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -50,29 +54,26 @@ const Team = () => {
                 </div>
               </div>
 
-              <h3 className="text-center text-md lg:text-xl font-bold font-helvetica text-slate-50/90">
+              <h3 className="text-center text-md lg:text-xl font-bold font-helvetica text-violet-100/80">
                 {member.name}
               </h3>
-              <h4 className="text-center text-sm lg:text-md italic text-slate-50/90">
+              <h4 className="text-center text-sm lg:text-md italic text-violet-100/80">
                 {member.role}
               </h4>
-              <p className="text-center text-xs text-slate-50/90 mb-3">
+              <p className="text-center text-xs text-violet-100/80 mb-3">
                 Grade {member.grade} @ {member.school}
               </p>
 
               <p
-                className={
-                  "text-xs lg:text-sm text-slate-50/90 text-center"
-                }
+                className={"text-xs lg:text-sm text-violet-100/80 text-center"}
               >
                 {member.blurb}
               </p>
             </div>
           </div>
-        )
-        )}
+        ))}
       </div>
-    </main >
+    </main>
   );
 };
 

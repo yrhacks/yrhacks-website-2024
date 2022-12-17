@@ -34,7 +34,7 @@ const Carousel = () => {
         name="Previous Project"
       >
         <TiChevronLeft
-          className="text-slate-50/90 hover:text-slate-50 duration-200 text-3xl lg:text-7xl mx-2"
+          className="text-violet-100/80 hover:text-slate-50 duration-200 text-3xl lg:text-7xl mx-2"
           onClick={scrollPrev}
         />
       </button>
@@ -68,13 +68,13 @@ const Carousel = () => {
                   height={300}
                 />
               </div>
-              <h4 className="text-slate-50/90 font-helvetica font-extrabold text-xl lg:text-3xl mt-3 text-center">
+              <h4 className="text-violet-100/80 font-helvetica font-extrabold text-xl lg:text-3xl mt-3 text-center">
                 {project.name}
               </h4>
-              <h5 className="font-bold text-slate-50/90 text-sm md:text-base py-1 lg:py-2 text-center">
+              <h5 className="font-bold text-violet-100/80 text-sm md:text-base py-1 lg:py-2 text-center">
                 Created by: {project.developers.join(", ")}
               </h5>
-              <p className="text-slate-50/90 font-normal text-base leading-5 text-center px-2 md:px-7 lg:px-12">
+              <p className="text-violet-100/80 font-normal text-base leading-5 text-center px-2 md:px-7 lg:px-12">
                 {project.description}
               </p>
             </div>
@@ -87,7 +87,7 @@ const Carousel = () => {
         name="Next Project"
       >
         <TiChevronRight
-          className="text-slate-50/90 hover:text-slate-50 duration-200 text-3xl lg:text-7xl mx-2"
+          className="text-violet-100/80 hover:text-slate-50 duration-200 text-3xl lg:text-7xl mx-2"
           onClick={scrollNext}
         />
       </button>

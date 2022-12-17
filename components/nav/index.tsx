@@ -33,12 +33,12 @@ const Nav = () => {
             {width < 768 ? (
               isOpen ? (
                 <IoCloseOutline
-                  className="text-3xl text-slate-50/90 cursor-pointer"
+                  className="text-3xl text-violet-100/80 cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 />
               ) : (
                 <IoMenuOutline
-                  className="text-3xl text-slate-50/90 cursor-pointer"
+                  className="text-3xl text-violet-100/80 cursor-pointer"
                   onClick={() => setIsOpen(true)}
                 />
               )
@@ -46,28 +46,28 @@ const Nav = () => {
               <ul className="w-full flex items-center space-x-4 xl:space-x-6">
                 <li>
                   <Link href="/">
-                    <span className="text-slate-50/90 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
+                    <span className="text-violet-100/80 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
                       Home
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/team">
-                    <span className="text-slate-50/90 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
+                    <span className="text-violet-100/80 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
                       Our Team
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/faq">
-                    <span className="text-slate-50/90 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
+                    <span className="text-violet-100/80 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
                       FAQ
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/#contact">
-                    <span className="text-slate-50/90 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
+                    <span className="text-violet-100/80 text-sm lg:text-base font-semibold duration-300 ease-in-out transition-all hover:bg-slate-50/10 rounded-md bg-transparent py-2 px-3 cursor-pointer">
                       Contact
                     </span>
                   </Link>

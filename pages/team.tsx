@@ -24,14 +24,14 @@ export const About: NextPage = () => {
       >
         <h1
           data-aos="fade-up"
-          className="text-center text-4xl md:text-6xl font-bold w-full pb-6 font-helvetica text-slate-50/90"
+          className="text-center text-4xl md:text-6xl font-bold w-full pb-6 font-helvetica text-violet-100/80"
         >
           Our Team
         </h1>
         <h2
           data-aos="fade-up"
           data-aos-delay={500}
-          className="text-center text-xl md:text-4xl font-bold font-helvetica text-slate-50/90"
+          className="text-center text-xl md:text-4xl font-bold font-helvetica text-violet-100/80"
         >
           Meet the incredible team behind{" "}
           <span className="!bg-clip-text text-transparent gradient-purple">
@@ -43,7 +43,7 @@ export const About: NextPage = () => {
           data-aos-delay={1000}
           className="flex flex-col justify-start items-center flex-wrap px-6 lg:px-24 mt-10"
         >
-          <p className="text-center text-lg font-helvetica text-slate-50/90">
+          <p className="text-center text-lg font-helvetica text-violet-100/80">
             We are a group of high school students from across York Region who
             are passionate about{" "}
             <span className="!bg-clip-text font-bold text-transparent gradient-pumpkin">
@@ -54,7 +54,7 @@ export const About: NextPage = () => {
               innovation.
             </span>
           </p>
-          <p className="text-center text-lg font-helvetica text-slate-50/90 mt-6">
+          <p className="text-center text-lg font-helvetica text-violet-100/80 mt-6">
             We are working very hard to bring you an awesome hackathon
             experience this year!
           </p>
