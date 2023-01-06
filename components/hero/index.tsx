@@ -36,7 +36,7 @@ const Hero = () => {
     return () => {
       clearInterval(updateTime);
     };
-  }, []);
+  }, [launchDate]);
 
   return (
     <header className="relative w-screen h-screen flex flex-col justify-center items-start bg-transparent pt-20 px-5 md:px-10 lg:px-48">
