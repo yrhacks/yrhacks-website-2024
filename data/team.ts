@@ -144,7 +144,7 @@ export const team = [
     school: "Bayview S.S.",
     blurb:
       "YRHacks is amazing, join YRHacks! And drink lots of hot water and get lots of sleep.",
-    image: "/assets/team/Joyce.JPG",
+    image: "/assets/team/Joyce.jpg",
     bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
   },
