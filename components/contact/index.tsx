@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import { AiOutlineLink } from "react-icons/ai";
 import { FiInstagram, FiMail } from "react-icons/fi";
 
@@ -37,19 +36,27 @@ const Contact = () => {
     setMessageInvalid(false);
     setSubmitLabel("Sending...");
 
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        e.target,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
-      )
-      .then((result) => {
-        clearState();
-        setFailed(false);
-        setSubmitLabel("Sent!");
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          clearState();
+          setFailed(false);
+          setSubmitLabel("Sent!");
+        } else {
+          throw new Error("Something went wrong");
+        }
       })
-      .catch((error) => {
+      .catch((err) => {
         setFailed(true);
         setSubmitLabel("Send");
       });
