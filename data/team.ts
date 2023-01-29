@@ -97,16 +97,6 @@ export const team = [
     colour: "gradient-rose",
   },
   {
-    name: "Yash Uppal",
-    role: "Finance Logistics",
-    grade: "11",
-    school: "Unionville H.S.",
-    blurb: "",
-    image: "/assets/logos/logo-512x512.png",
-    bg: "/assets/team/cent.svg",
-    colour: "gradient-rose",
-  },
-  {
     name: "Derrick Ha",
     role: "Outreach Executive",
     grade: "11",
