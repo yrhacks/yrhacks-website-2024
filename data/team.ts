@@ -4,7 +4,7 @@ export const team = [
     role: "Lead Organizer",
     grade: "12",
     school: "Alexander Mackenzie H.S.",
-    blurb: "",
+    blurb: "Photographer and student. Probably procrastinating on YRHACKS as you're speaking.",
     image: "/assets/team/Jeffery.webp",
     bg: "/assets/team/planet.svg",
     colour: "gradient-purple",
