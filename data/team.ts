@@ -87,7 +87,7 @@ export const team = [
   },
   {
     name: "Fiona Cai",
-    role: "Finance Logistics",
+    role: "Finance Executive",
     grade: "10",
     school: "Bayview S.S.",
     blurb:
