@@ -101,7 +101,7 @@ export const team = [
     role: "Outreach Executive",
     grade: "11",
     school: "Bayview S.S.",
-    blurb: "💀",
+    blurb: "Hi! I'm super excited about this year's iteration of YRHacks and know it'll be special!",
     image: "/assets/team/Derrick.webp",
     bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
