@@ -70,7 +70,7 @@ const Hero = () => {
           data-aos-delay="700"
           className="text-sm lg:text-xl mt-8 text-violet-100/80"
         >
-          Registrations for YRHacks 2023 will open in January 2023. Stay tuned!
+          Registrations for YRHacks 2023 will open in February 2023. Stay tuned!
         </p>
         <div
           data-aos="fade-up"
