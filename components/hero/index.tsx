@@ -65,13 +65,16 @@ const Hero = () => {
           minutes={minutes}
           seconds={seconds}
         />
-        <p
+        <a
           data-aos="fade-up"
           data-aos-delay="700"
+          href="https://forms.gle/jLf71qSFpz5zTw2b8"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-sm lg:text-xl mt-8 text-violet-100/80"
         >
-          Registrations for YRHacks 2023 will open in February 2023. Stay tuned!
-        </p>
+          Register now!
+        </a>
         <div
           data-aos="fade-up"
           data-aos-delay="1000"
