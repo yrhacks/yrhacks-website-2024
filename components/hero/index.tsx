@@ -65,35 +65,36 @@ const Hero = () => {
           minutes={minutes}
           seconds={seconds}
         />
-        <a
+        <div
           data-aos="fade-up"
           data-aos-delay="700"
-          href="https://forms.gle/jLf71qSFpz5zTw2b8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm lg:text-xl mt-8 text-violet-100/80"
+          className="flex flex-col justify-start items-start"
         >
-          Register now!
-        </a>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="1000"
-          className="flex flex-row items-center w-full mt-6"
-        >
-          <MdLocationOn className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
-          <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
-            Bill Crothers S.S. (In-person + Virtual!)
+          <div className="gradient-purple rounded-full w-60 px-8 py-3 flex items-center justify-center ease-in-out duration-500 hover:scale-110 cursor-pointer">
+            <a
+              href="https://forms.gle/jLf71qSFpz5zTw2b8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm lg:text-lg text-violet-100/80 font-bold text-center"
+            >
+              Register Now!
+            </a>
+          </div>
+          <p className="mt-4 text-violet-100/80 text-md text-lg">
+            Register by February 23rd. GAPPS account required.
           </p>
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="1000"
-          className="flex flex-row items-center w-full mt-3"
-        >
-          <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
-          <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
-            March 3-4, 2023
-          </p>
+          <div className="flex flex-row items-center w-full mt-6">
+            <MdLocationOn className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
+            <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
+              Bill Crothers S.S. (In-person + Virtual!)
+            </p>
+          </div>
+          <div className="flex flex-row items-center w-full mt-3">
+            <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
+            <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
+              March 3-4, 2023
+            </p>
+          </div>
         </div>
       </div>
     </header>
