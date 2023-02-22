@@ -11,7 +11,7 @@ const Hero = () => {
   const [begun, setBegun] = useState(false);
 
   // launch date: March 03, 2023
-  const launchDate = new Date("2023-03-03T04:00:00Z").getTime();
+  const launchDate = new Date("2023-03-04T23:00:00Z").getTime();
 
   useEffect(() => {
     const updateTime = setInterval(() => {
