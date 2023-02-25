@@ -70,18 +70,13 @@ const Hero = () => {
           data-aos-delay="700"
           className="flex flex-col justify-start items-start"
         >
-          <div className="gradient-purple rounded-full w-60 px-8 py-3 flex items-center justify-center ease-in-out duration-500 hover:scale-110 cursor-pointer">
-            <a
-              href="https://forms.gle/jLf71qSFpz5zTw2b8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm lg:text-lg text-violet-100/80 font-bold text-center"
-            >
-              Register Now!
-            </a>
+          <div className="gradient-purple rounded-full w-60 px-8 py-3 flex items-center justify-center cursor-pointer">
+            <p className="text-sm lg:text-lg text-violet-100/80 font-bold text-center">
+              Registration is now closed!
+            </p>
           </div>
           <p className="mt-4 text-violet-100/80 text-md text-lg">
-            Register by February 23rd. GAPPS account required.
+            See you there!
           </p>
           <div className="flex flex-row items-center w-full mt-6">
             <MdLocationOn className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
