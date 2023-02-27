@@ -21,7 +21,7 @@ export const questions = [
   },
   {
     question: "Where do I sign up?",
-    answer: ["Sign ups will open in January 2023."],
+    answer: ["Sign-ups have ended for YRHacks 2023."],
   },
   {
     question: "How will teams work?",
@@ -35,7 +35,7 @@ export const questions = [
   {
     question: "What equipment should I own?",
     answer: [
-      "All the equipment you need is a computer or laptop, and an internet connection! You will need the IDE, game engine, compilers, etc. of your choice. Make sure you are able to use ZOOM and Discord prior to the hackathon, as they will be the two main platforms used. If you are not comfortable with using Discord, as it is a non-board approved platform, board-approved tools will be provided as an equal alternative.",
+      "All the equipment you need is a computer or laptop, and an internet connection! You will need the IDE, game engine, compilers, etc. of your choice. Make sure you are able to use Google Classroom, Microsoft Teams, and Discord prior to the hackathon, as they will be the main platforms used. If you are not comfortable with using Discord, as it is a non-board approved platform, board-approved tools will be provided as an equal alternative.",
     ],
   },
   {
