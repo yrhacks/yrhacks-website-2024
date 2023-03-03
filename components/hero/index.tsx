@@ -12,14 +12,14 @@ const Hero = () => {
   const [ended, setEnded] = useState(false);
 
   // launch date: March 03, 2023
-  let launchDate = new Date("2023-03-04T23:00:00Z").getTime();
+  let launchDate = new Date("2023-03-03T23:00:00Z").getTime();
   useEffect(() => {
     const updateTime = setInterval(() => {
       const now = new Date().getTime();
       let until = launchDate - now;
 
       if (until <= 0) {
-        launchDate = new Date("2023-03-06T02:00:00Z").getTime();
+        launchDate = new Date("2023-03-05T02:00:00Z").getTime();
         setBegun(true);
       }
       until = launchDate - now;
