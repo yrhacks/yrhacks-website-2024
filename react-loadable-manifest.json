@@ -1,0 +1,48 @@
+{
+  "index.tsx -> ../components/about": {
+    "id": 5231,
+    "files": [
+      "static/chunks/675-cadafe4612252715.js",
+      "static/chunks/664-7eb13a7eb2653f67.js",
+      "static/chunks/231.345e0b3c0191cc4e.js"
+    ]
+  },
+  "index.tsx -> ../components/contact": {
+    "id": 3007,
+    "files": [
+      "static/chunks/d7eeaac4.ac1722e6a4d75dd2.js",
+      "static/chunks/893.dcd79a526ee70a99.js",
+      "static/chunks/7.2b2c575fb572bb64.js"
+    ]
+  },
+  "index.tsx -> ../components/footer": {
+    "id": 1532,
+    "files": [
+      "static/chunks/532.f32a09542fa8a64e.js"
+    ]
+  },
+  "index.tsx -> ../components/hero": {
+    "id": 7493,
+    "files": [
+      "static/chunks/252f366e.233fcd1f1ac53578.js",
+      "static/chunks/216.0d15b1ddb98dfe62.js"
+    ]
+  },
+  "index.tsx -> ../components/nav": {
+    "id": 4604,
+    "files": [
+      "static/chunks/ae51ba48-f4d4c2a5695e0184.js",
+      "static/chunks/675-cadafe4612252715.js",
+      "static/chunks/664-7eb13a7eb2653f67.js",
+      "static/chunks/871.42c67c5ffec849e2.js"
+    ]
+  },
+  "index.tsx -> ../components/projects": {
+    "id": 9600,
+    "files": [
+      "static/chunks/de71a805.0785bb0f0bce69c8.js",
+      "static/chunks/675-cadafe4612252715.js",
+      "static/chunks/739.1f3ea739a8204f14.js"
+    ]
+  }
+}
