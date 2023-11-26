@@ -7,7 +7,7 @@ const Footer = () => {
       className="w-screen flex flex-col items-center py-12 bg-transparent z-10"
     >
       <p className="text-sm pb-2 text-violet-100/80">
-        Copyright © 2022{" "}
+        Copyright © 2023{" "}
         <span className="gradient-purple text-transparent !bg-clip-text font-bold">
           YRHacks
         </span>

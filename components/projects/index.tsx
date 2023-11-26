@@ -11,7 +11,7 @@ const Projects = () => {
       <h2 className="text-2xl md:text-4xl text-violet-100/80 font-bold font-helvetica mb-10">
         Winners of{" "}
         <span className="text-transparent gradient-purple !bg-clip-text">
-          YRHacks 2022
+          YRHacks 2023
         </span>
       </h2>
       <Carousel />
