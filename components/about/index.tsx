@@ -17,8 +17,8 @@ const About = () => {
         run by students, for students.
       </h2>
       <p className="text-violet-100/80 text-lg font-medium mt-8 w-full">
-        Interested in participating in YRHacks 2023? Stay tuned for sign-ups in
-        Spring 2023 by joining our{" "}
+        Interested in participating in YRHacks 2024? Stay tuned for sign-ups in
+        Spring 2024 by joining our{" "}
         <Link href="/#contact">
           <span className="hover:font-bold text-lg duration-100 ease-in-out gradient-purple text-transparent !bg-clip-text cursor-pointer">
             mailing list!

@@ -8,18 +8,18 @@ const Hero = () => {
   const [hours, setHours] = useState<number>(0);
   const [minutes, setMinutes] = useState<number>(0);
   const [seconds, setSeconds] = useState<number>(0);
-  const [begun, setBegun] = useState(false);
+  const [begun, setBegun] = useState(true);
   const [ended, setEnded] = useState(false);
 
-  // launch date: March 03, 2023
-  let launchDate = new Date("2023-03-03T23:00:00Z").getTime();
+  // launch date: April 17, 2024
+  let launchDate = new Date("2024-04-17T23:00:00Z").getTime();
   useEffect(() => {
     const updateTime = setInterval(() => {
       const now = new Date().getTime();
       let until = launchDate - now;
 
       if (until <= 0) {
-        launchDate = new Date("2023-03-05T02:00:00Z").getTime();
+        launchDate = new Date("2024-04-17T02:00:00Z").getTime();
         setBegun(true);
       }
       until = launchDate - now;
@@ -50,7 +50,7 @@ const Hero = () => {
           data-aos="fade-up"
           className="text-sm font-semibold text-slate-50/50"
         >
-          SPRING 2023
+          SPRING 2024
         </p>
         <h1
           data-aos="fade-up"
@@ -89,13 +89,14 @@ const Hero = () => {
           <div className="flex flex-row items-center w-full mt-6">
             <MdLocationOn className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
-              Bill Crothers S.S. (In-person + Virtual!)
+              Dr. Bette Stephenson Centre for Learning (Virtual + In-person!)
             </p>
+            <></>
           </div>
           <div className="flex flex-row items-center w-full mt-3">
             <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
-              March 3-4, 2023
+              April 17 (Virtual) - 18 (In-person), 2024
             </p>
           </div>
         </div>

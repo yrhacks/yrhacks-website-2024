@@ -21,7 +21,7 @@ export const questions = [
   },
   {
     question: "Where do I sign up?",
-    answer: ["Sign-ups have ended for YRHacks 2023."],
+    answer: ["Sign-ups have ended for YRHacks 2024."],
   },
   {
     question: "How will teams work?",
@@ -47,7 +47,7 @@ export const questions = [
   {
     question: "When and where will the event take place?",
     answer: [
-      "The event will be from March 3-4, 2023. We will be offering both in-person at Bill Crothers S.S. and virtual options.",
+      "The event will be from April 17-18, 2024. We will be offering both in-person at Dr. Bette Stephenson Centre for Learning and virtual options.",
     ],
   },
   {
