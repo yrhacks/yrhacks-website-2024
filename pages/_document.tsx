@@ -10,7 +10,7 @@ export default function Document() {
         />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="author" content="YRHacks" />
-        <meta name="copyright" content="2022 YRHacks" />
+        <meta name="copyright" content="2023 YRHacks" />
 
         <meta property="og:url" content="https://yrhacks.ca" />
         <meta property="og:site_name" content="YRHacks" />

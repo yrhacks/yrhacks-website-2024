@@ -8,8 +8,9 @@ const Hero = () => {
   const [hours, setHours] = useState<number>(0);
   const [minutes, setMinutes] = useState<number>(0);
   const [seconds, setSeconds] = useState<number>(0);
-  const [begun, setBegun] = useState(true);
+  const [begun, setBegun] = useState(false);
   const [ended, setEnded] = useState(false);
+  const [closed, setClosed] = useState(false);
 
   // launch date: April 17, 2024
   let launchDate = new Date("2024-04-17T23:00:00Z").getTime();
@@ -30,6 +31,7 @@ const Hero = () => {
         setMinutes(0);
         setSeconds(0);
         setEnded(true);
+        setClosed(true);
         return;
       }
       setDays(Math.floor(until / (1000 * 60 * 60 * 24)));
@@ -83,7 +85,9 @@ const Hero = () => {
                 ? ended
                   ? "Thank you for attending! See you next year!"
                   : "YRHacks has begun!"
-                : "Registration is now closed!"}
+                : closed
+                ? "Registration is now closed!"
+                : "Registration is now open!"}
             </p>
           </div>
           <div className="flex flex-row items-center w-full mt-6">
