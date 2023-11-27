@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { MdLocationOn, MdCalendarToday } from "react-icons/md";
 import Countdown from "../countdown";
+import Image from "next/image";
 import ParticlesBackground from "../particles";
 
 const Hero = () => {
@@ -58,7 +59,14 @@ const Hero = () => {
           data-aos="fade-up"
           className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-violet-100/80"
         >
-          YRHacks
+          <Image
+            className="long-logo"
+            src="/assets/logos/logo-long.svg"
+            alt="YRHacks Logo Long"
+            width={450}
+            height={60}
+            layout={"intrinsic"}
+          />
         </h1>
         <p
           data-aos="fade-up"
