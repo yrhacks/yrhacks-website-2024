@@ -273,6 +273,8 @@ button:focus {
 }
 
 .long-logo {
+  margin: auto;
   width: 100%;
   max-width: 450px !important;
+  filter: grayscale(1) brightness(2);
 }
