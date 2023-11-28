@@ -57,8 +57,8 @@ const Hero = () => {
             SPRING 2024
           </p>
           <h1
-            data-aos="fade-down"
-            data-aos-delay={250}
+            data-aos="fade-up"
+            data-aos-delay={100}
             className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-violet-100/80"
           >
             <Image
