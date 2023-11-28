@@ -49,7 +49,7 @@ const Hero = () => {
   return (
     <header className="relative w-screen h-screen flex flex-col justify-center items-start bg-transparent pt-20 px-5 md:px-10 lg:px-48">
       <div className="bg-transparent z-10 w-full ">
-        <div className="flex items-center justify-center flex-col gap-5">
+        <div className="flex items-center justify-center flex-col gap-10">
           <p
             data-aos="fade-up"
             className="text-sm font-semibold text-slate-50/50"
@@ -61,14 +61,16 @@ const Hero = () => {
             data-aos-delay={100}
             className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-violet-100/80"
           >
-            <Image
-              className="long-logo"
-              src="/assets/logos/logo-long.svg"
-              alt="YRHacks Logo Long"
-              width={450}
-              height={60}
-              layout={"intrinsic"}
-            />
+            <div className="long-logo-back">
+              <Image
+                className="long-logo"
+                src="/assets/logos/logo-long.svg"
+                alt="YRHacks Logo Long"
+                width={400}
+                height={53}
+                layout={"intrinsic"}
+              />
+            </div>
           </h1>
           <p
             data-aos="fade-up"
