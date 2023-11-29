@@ -187,7 +187,7 @@ export const team = [
     role: "Marketing Executive",
     grade: "12",
     school: "Richmond Hill HS.",
-    blurb: "?",
+    blurb: "Marketing Executive desc.",
     image: "/assets/team/?.webp",
     bg: "/assets/team/speech.svg",
     colour: "gradient-gold",

@@ -5,7 +5,7 @@ import { team } from "../../data/team";
 const Team = () => {
   const getColSpan = (index: number) => {
     if (index <= 1) return "lg:col-span-2";
-    else if (index == 14) return "lg:col-span-4";
+    else if (index == 18) return "lg:col-span-4";
     else return "lg:col-span-1";
   };
 
