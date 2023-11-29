@@ -28,7 +28,7 @@ export const team = [
     school: "Bur Oak SS.",
     blurb:
       "Logistics Executive desc.",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/Tristan.webp",
     bg: "/assets/team/meteor.svg",
     colour: "gradient-teal",
   },
@@ -39,7 +39,7 @@ export const team = [
     school: "Richmond Hill HS.",
     blurb:
       "Logistics Executive desc.",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/Andrew.webp",
     bg: "/assets/team/meteor.svg",
     colour: "gradient-teal",
   },
@@ -50,7 +50,7 @@ export const team = [
     school: "Unionville HS.",
     blurb:
       "Logistics Executive desc.",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/Doris.webp",
     bg: "/assets/team/meteor.svg",
     colour: "gradient-teal",
   },
@@ -61,7 +61,7 @@ export const team = [
     school: "Bayview SS.",
     blurb:
       "Logistics Executive school",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/Conan.webp",
     bg: "/assets/team/meteor.svg",
     colour: "gradient-teal",
   },
@@ -72,7 +72,7 @@ export const team = [
     school: "Bayview SS.",
     blurb:
       "Logistics Executive school",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/Matthew.webp",
     bg: "/assets/team/meteor.svg",
     colour: "gradient-teal",
   },
@@ -93,7 +93,7 @@ export const team = [
     grade: "12",
     school: "Milliken Mills HS.",
     blurb: "kenny add this",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/Kenny.webp",
     bg: "/assets/team/gear.svg",
     colour: "gradient-lavender",
   },
@@ -104,7 +104,7 @@ export const team = [
     school: "Pierre Elliot Trudeau HS.",
     blurb:
       "Finance Executive desc.",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/Mekaeel.webp",
     bg: "/assets/team/cent.svg",
     colour: "gradient-rose",
   },
@@ -114,7 +114,7 @@ export const team = [
     grade: "12",
     school: "Bayview SS.",
     blurb: "Outreach Executive school",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/Derrick.webp",
     bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
   },
@@ -124,8 +124,8 @@ export const team = [
     grade: "11",
     school: "Thornhill SS.",
     blurb:
-      "Outreach Executive desc.",
-    image: "/assets/team/?.webp",
+      "There is no better memory than coding at 2 am for YRHACKS. I'm sure you'll love it.",
+    image: "/assets/team/Dave.webp",
     bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
   },
@@ -157,7 +157,7 @@ export const team = [
     school: "Richmond Hill HS.",
     blurb:
       "Outreach Executive desc.",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/William.webp",
     bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
   },
@@ -168,7 +168,7 @@ export const team = [
     school: "Markville SS.",
     blurb:
       "Outreach Executive desc.",
-    image: "/assets/team/?.webp",
+    image: "/assets/teamKyle.webp",
     bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
   },
@@ -188,7 +188,7 @@ export const team = [
     grade: "12",
     school: "Richmond Hill HS.",
     blurb: "Marketing Executive desc.",
-    image: "/assets/team/?.webp",
+    image: "/assets/team/Julia.webp",
     bg: "/assets/team/speech.svg",
     colour: "gradient-gold",
   }
