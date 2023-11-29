@@ -175,8 +175,8 @@ export const team = [
   {
     name: "Vivian Wu",
     role: "Marketing Executive",
-    grade: "?",
-    school: "?",
+    grade: "11",
+    school: "Richmond Hill HS.",
     blurb: "Hi I'm Vivian, one of the Marketing executives! Can't wait for another great year of YRHacks :)",
     image: "/assets/team/Vivian.webp",
     bg: "/assets/team/speech.svg",
