@@ -38,7 +38,7 @@ export const team = [
     grade: "12",
     school: "Richmond Hill HS.",
     blurb:
-      "Logistics Executive desc.",
+      "Hi I'm Andrew! Did you know matcha is better than taro?",
     image: "/assets/team/Andrew.webp",
     bg: "/assets/team/meteor.svg",
     colour: "gradient-teal",
