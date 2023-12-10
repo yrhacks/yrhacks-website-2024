@@ -5,8 +5,8 @@ export const projects = [
     name: "HandPilot",
     developers: ["Anton Lee", "Yair Korok"],
     description:
-      "A household bin which uses Tensorflow to sort and organise garbage, with data hosted on a website. Based on Raspberry Pi.",
-    image: "/assets/img/projects/ETrash.png",
+      "HandPilot converts hand movement to cursor movement, allowing for control of a computer (or any machine) without a mouse.",
+    image: "/assets/img/projects/handpilot.jpg",
     color: "gradient-gold",
   },
   {
@@ -15,8 +15,8 @@ export const projects = [
     name: "IWitness",
     developers: ["Rickey Zheng", "Davis Liu", "Andrew Yeung", "Eric Chen"],
     description:
-      "Discord Defender is a Discord bot that makes use of a virus scanner and its API to keep server members safe from malicious links and files.",
-    image: "/assets/img/projects/Discord Defender.png",
+      "IWitness is a web application aimed at first responders. It is designed to hook up to cameras around the city to detect crime or medical emergencies. Once the AI detects one of those, it pings a suitable person to check the situation accordingly.",
+    image: "/assets/img/projects/iwitness.png",
     color: "gradient-silver",
   },
   {
@@ -25,8 +25,8 @@ export const projects = [
     name: "Eyedentify",
     developers: ["Andrew Chu", "Laison Tao", "William Wu", "Luke Zhan"],
     description:
-      "A new online prescription test that is free of charge and usable anywhere in the world. Thanks to our scaling algorithm, your score will be converted to an accurate prescription based on the Canadian valid optical prescription criteria. C-ing clearly is the new advancement to affordable, accessible, and efficient healthcare.",
-    image: "/assets/img/placeholder.jpg",
+      "Eyedentify is a web app for completing attendances of large classrooms with facial recognition. A great tool for teachers and group leaders, Eyedentify is easy, intuitive, and impactful.",
+    image: "/assets/img/projects/eyedentify.png",
     color: "gradient-silver",
   },
   {
@@ -39,9 +39,8 @@ export const projects = [
       "Alexander Taylor",
       "Thomas Russel",
     ],
-    description:
-      "Covid has disrupted our lives in many aspects especially our education. Students are forced to learn in isolation so we designed an online meeting site, specialized for students to join into study sessions with their fellow classmates but also with people from different schools whom are taking the same classes.",
-    image: "/assets/img/projects/Study Shoal.png",
+    description: "To Be Added",
+    image: "/assets/img/projects/robots led by sean ii.png",
     color: "gradient-bronze",
   },
   {
@@ -55,8 +54,8 @@ export const projects = [
       "Hailey Chen",
     ],
     description:
-      "LOOPlayer is an innovative tool for incredibly engaging and augmented music education. Young musicians will be able to create amazing and creative music pieces with only a computer keyboard!",
-    image: "/assets/img/projects/LOOPlayer.png",
+      "The overall idea was to create a puzzle-based story game where each level would utilize and emphasize one game mechanic that the level would be centered around, in this case, each level would be a different puzzle and an overarching narrative behind them.",
+    image: "/assets/img/projects/desktop ribbit.jpg",
     color: "gradient-purple",
   },
   {
@@ -64,9 +63,8 @@ export const projects = [
     award: "Best Use of API",
     name: "Transit Tracker",
     developers: ["Jathan Yao", "Andy Yin", "Owen Guo"],
-    description:
-      "Our project is a website designed to encourage healthy eating by incorporating recipes and instructions for the 3 meals of the day; breakfast, lunch and dinner. It also includes the total time to prepare the dishes, the serving sizes, substitution for certain foods for restrictive diets, and also educating the readers about healthy and unhealthy eating lifestyles.",
-    image: "/assets/img/projects/Healthy Eats.png",
+    description: "To Be Added",
+    image: "/assets/img/placeholder.jpg",
     color: "gradient-purple",
   },
   {
@@ -75,8 +73,8 @@ export const projects = [
     name: "Breaking Bread",
     developers: ["Harry Li", "Angelina", "Sherry Lin", "Emily Luo"],
     description:
-      "TaskBot is a Discord bot that allows for more efficiency for all ages. The bot allows users to create tasks and check them off with ease using features, including prioritization, rewards, community engagement. Furthermore, the bot is user-friendly and easy to utilize with numerous commands and assistance tools.",
-    image: "/assets/img/projects/TaskBot.png",
+      "Breaking Bread is a mobile application dedicated to helping people break bread (share meals with others).",
+    image: "/assets/img/projects/breakingbread.png",
     color: "gradient-teal",
   },
   {
@@ -85,8 +83,8 @@ export const projects = [
     name: "Eyedentify",
     developers: ["Andrew Chu", "Laison Tao", "William Wu", "Luke Zhan"],
     description:
-      "A web-app that revolutionizes TikTok's LIVE service for both creators and viewers, LiveTok provides additional features genuinely never seen before on the platform such as: user statistics, leaderboards, giveaways, and more. LiveTok makes use of custom software to read TikTok's live chats and perform data processing on them accordingly.",
-    image: "/assets/img/projects/LiveTok.png",
+      "Eyedentify is a web app for completing attendances of large classrooms with facial recognition. A great tool for teachers and group leaders, Eyedentify is easy, intuitive, and impactful.",
+    image: "/assets/img/projects/eyedentify.png",
     color: "gradient-purple",
   },
   {
@@ -95,8 +93,8 @@ export const projects = [
     name: "doc4<fn",
     developers: ["Jeremy Su", "Sharon Lin", "Darren Liu", "Tanay Kumar"],
     description:
-      " Our project Bullet Cell is a simple top-down bullet hell with roguelike elements and explosive edge-of-your-seat gameplay. It is a game developed on GreenFoot with inspiration from 'Itta' and 'Soul Knight'. It has easy to understand controls and ever increasing difficulty. The core aspect of our game is that both the enemies and the player becomes stronger as the game progresses, giving the player a constant challenge.",
-    image: "/assets/img/projects/Bullet Cell.png",
+      "The website allows users to first chat with either a doctor or an AI to receive a diagnosis. Using the chat option, the website will ask users to describe their injury so they can accurately diagnose the user with rehabilitation exercises. After, the user can use the track option to track their progress and range of motion whilst performing the exercises. This allows the user to ensure that they are doing the exercises correctly in order to heal accurately.",
+    image: "/assets/img/projects/doc4fn.png",
     color: "gradient-teal",
   },
   {
@@ -105,8 +103,8 @@ export const projects = [
     name: "IWitness",
     developers: ["Andrew Yeung", "Davis Liu", "Rickey Zheng", "Eric Chen"],
     description:
-      "The GoodEye Bot is currently a Discord bot that allows users to perform a variety of engaging actions on images of their choice. This includes but is not limited to: text to image generation, object classification, and image colorization.",
-    image: "/assets/img/projects/The GoodEye Bot.png",
+      "IWitness is a web application aimed at first responders. It is designed to hook up to cameras around the city to detect crime or medical emergencies. Once the AI detects one of those, it pings a suitable person to check the situation accordingly.",
+    image: "/assets/img/projects/iwitness.png",
     color: "gradient-teal",
   },
 ];
