@@ -53,7 +53,7 @@ const About = () => {
         </div>
         <div className="w-full flex flex-col justify-start items-center">
           <h3 className="text-5xl lg:text-6xl font-bold font-helvetica text-center gradient-purple !bg-clip-text text-transparent">
-            25+
+            30+
           </h3>
           <p className="text-violet-100/80 tracking-wider text-lg text-center leading-6 pt-4">
             mentors and sponsors

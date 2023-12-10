@@ -13,11 +13,11 @@ const Countdown = ({ days, hours, minutes, seconds }: Props) => {
     <div className="w-full flex flex-row items-center justify-between p-4 select-none">
       <DateUnit value={days} unit="Days" delay={0} />
       <div className="w-[2px] h-full bg-slate-600/20" />
-      <DateUnit value={hours} unit="Hours" delay={100} />
+      <DateUnit value={hours} unit="Hours" delay={150} />
       <div className="w-[2px] h-full bg-slate-600/20" />
-      <DateUnit value={minutes} unit="Minutes" delay={150} />
+      <DateUnit value={minutes} unit="Minutes" delay={300} />
       <div className="w-[2px] h-full bg-slate-600/20" />
-      <DateUnit value={seconds} unit="Seconds" delay={200} />
+      <DateUnit value={seconds} unit="Seconds" delay={450} />
     </div>
   );
 };

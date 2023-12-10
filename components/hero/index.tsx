@@ -113,7 +113,7 @@ const Hero = () => {
           <div className="flex flex-row items-center w-full mt-3">
             <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
-              April 17 (Virtual) - 18 (In-person), 2024
+              April 17 (Virtual) to 18 (In-person), 2024
             </p>
           </div>
         </div>
