@@ -31,7 +31,7 @@ const Carousel = () => {
       <button
         disabled={!prevBtnEnabled}
         className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]"
-        name="Previous Project"
+        name="Previous Photo"
       >
         <TiChevronLeft
           className="text-violet-100/80 hover:text-slate-50 duration-200 text-3xl lg:text-7xl mx-2"
@@ -47,36 +47,23 @@ const Carousel = () => {
             >
               <h3
                 className={
-                  "text-xl font-helvetica lg:text-3xl mb-2 lg:mb-4 font-bold text-center !bg-clip-text text-transparent " +
-                  photo.color
+                  "text-xl font-helvetica lg:text-3xl mb-2 lg:mb-4 font-bold text-center !bg-clip-text text-transparent gradient-purple"
                 }
               >
-                {photo.award}
               </h3>
               <div
                 className={
-                  "relative flex items-center justify-center p-2 " +
-                  photo.color
+                  "relative flex items-center justify-center p-2 gradient-purple"
                 }
               >
                 <Image
                   src={photo.image}
-                  alt={photo.name}
                   layout="intrinsic"
                   objectFit="cover"
-                  width={500}
-                  height={300}
+                  width={1920}
+                  height={1080}
                 />
               </div>
-              <h4 className="text-violet-100/80 font-helvetica font-extrabold text-xl lg:text-3xl mt-3 text-center">
-                {photo.name}
-              </h4>
-              <h5 className="font-bold text-violet-100/80 text-sm md:text-base py-1 lg:py-2 text-center">
-                Created by: {photo.developers.join(", ")}
-              </h5>
-              <p className="text-violet-100/80 font-normal text-base leading-5 text-center px-2 md:px-7 lg:px-12">
-                {photo.description}
-              </p>
             </div>
           ))}
         </div>
@@ -84,7 +71,7 @@ const Carousel = () => {
       <button
         disabled={!nextBtnEnabled}
         className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]"
-        name="Next Project"
+        name="Next Photo"
       >
         <TiChevronRight
           className="text-violet-100/80 hover:text-slate-50 duration-200 text-3xl lg:text-7xl mx-2"
