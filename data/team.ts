@@ -170,7 +170,7 @@ export const team = [
     grade: "11",
     school: "Richmond Hill HS.",
     blurb:
-      "hey! i like making websites :). i love r&b music, half-life, and geocaching!!",
+      "hey! i like making websites. i love r&b music, half-life, and geocaching!!",
     image: "/assets/team/Ashvin.webp",
     bg: "/assets/team/gear.svg",
     colour: "gradient-lavender",
