@@ -37,7 +37,7 @@ export const projects = [
     description:
       "Covid has disrupted our lives in many aspects especially our education. Students are forced to learn in isolation so we designed an online meeting site, specialized for students to join into study sessions with their fellow classmates but also with people from different schools whom are taking the same classes.",
     image: "/assets/img/projects/Study Shoal.png",
-    color: "gradient-purple",
+    color: "gradient-yrhacks",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const projects = [
     description:
       "LOOPlayer is an innovative tool for incredibly engaging and augmented music education. Young musicians will be able to create amazing and creative music pieces with only a computer keyboard!",
     image: "/assets/img/projects/LOOPlayer.png",
-    color: "gradient-purple",
+    color: "gradient-yrhacks",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const projects = [
     description:
       "Our project is a website designed to encourage healthy eating by incorporating recipes and instructions for the 3 meals of the day; breakfast, lunch and dinner. It also includes the total time to prepare the dishes, the serving sizes, substitution for certain foods for restrictive diets, and also educating the readers about healthy and unhealthy eating lifestyles.",
     image: "/assets/img/projects/Healthy Eats.png",
-    color: "gradient-purple",
+    color: "gradient-yrhacks",
   },
   {
     id: 7,

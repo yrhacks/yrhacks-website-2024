@@ -144,12 +144,20 @@ a {
   text-decoration: none;
 }
 
-.gradient-purple,
-.gradient-purple:hover {
+.gradient-yrhacks,
+.gradient-yrhacks:hover {
   background: linear-gradient(118.33deg,
       #2563EB 15.33%,
       #9333EA 48.66%,
       #BE123C 110.20%);
+}
+
+.gradient-purple,
+.gradient-purple:hover {
+  background: linear-gradient(118.33deg,
+      #7B3DC5 3.84%,
+      #5452DD 107.67%,
+      #A227AC 52.51%);
 }
 
 .gradient-teal,

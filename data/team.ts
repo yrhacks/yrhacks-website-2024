@@ -4,7 +4,8 @@ export const team = [
     role: "Lead Organizer",
     grade: "12",
     school: "Alexander Mackenzie H.S.",
-    blurb: "Photographer and student. Probably procrastinating on YRHACKS as you're speaking.",
+    blurb:
+      "Photographer and student. Probably procrastinating on YRHACKS as you're speaking.",
     image: "/assets/team/Jeffery.webp",
     bg: "/assets/team/planet.svg",
     colour: "gradient-purple",
@@ -101,7 +102,8 @@ export const team = [
     role: "Outreach Executive",
     grade: "11",
     school: "Bayview S.S.",
-    blurb: "Hi! I'm super excited about this year's iteration of YRHacks and know it'll be special!",
+    blurb:
+      "Hi! I'm super excited about this year's iteration of YRHacks and know it'll be special!",
     image: "/assets/team/Derrick.webp",
     bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",

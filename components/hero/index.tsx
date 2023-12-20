@@ -92,7 +92,7 @@ const Hero = () => {
           data-aos-delay="700"
           className="flex flex-col justify-start items-start"
         >
-          <div className="gradient-purple rounded-full px-8 py-3 flex items-center justify-center">
+          <div className="gradient-yrhacks rounded-full px-8 py-3 flex items-center justify-center">
             <p className="text-sm lg:text-lg text-violet-100/80 font-bold text-center">
               {begun
                 ? ended
