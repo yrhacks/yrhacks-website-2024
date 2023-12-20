@@ -47,7 +47,7 @@ const Hero = () => {
   }, [seconds]);
 
   return (
-    <header className="relative w-screen h-screen flex flex-col justify-center items-start bg-transparent pt-20 px-5 md:px-10 lg:px-48">
+    <header className="relative w-screen h-[95vh] flex flex-col justify-center items-start bg-transparent pt-20 px-5 md:px-10 lg:px-48">
       <div className="bg-transparent z-10 w-full ">
         <div className="flex items-center justify-center flex-col gap-5">
           <p
@@ -106,7 +106,7 @@ const Hero = () => {
           <div className="flex flex-row items-center justify-center w-full mt-6">
             <MdLocationOn className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
-              Dr. Bette Stephenson Centre for Learning (Virtual + In-person!)
+              Dr. Bette Stephenson Centre for Learning
             </p>
             <></>
           </div>
