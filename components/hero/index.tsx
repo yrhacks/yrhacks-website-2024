@@ -66,8 +66,8 @@ const Hero = () => {
                 className="long-logo"
                 src="/assets/logos/logo-long.svg"
                 alt="YRHacks Logo Long"
-                width={400}
-                height={53}
+                width={220}
+                height={63}
                 layout={"intrinsic"}
               />
             </div>
