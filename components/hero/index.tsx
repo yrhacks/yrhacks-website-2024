@@ -49,7 +49,7 @@ const Hero = () => {
   return (
     <header className="relative w-screen h-screen flex flex-col justify-center items-start bg-transparent pt-20 px-5 md:px-10 lg:px-48">
       <div className="bg-transparent z-10 w-full ">
-        <div className="flex items-center justify-center flex-col gap-10">
+        <div className="flex items-center justify-center flex-col gap-5">
           <p
             data-aos="fade-up"
             className="text-sm font-semibold text-slate-50/50"
@@ -74,7 +74,7 @@ const Hero = () => {
           </h1>
           <p
             data-aos="fade-up"
-            className="text-xl font-semibold italic mb-4 text-violet-100/80"
+            className="text-xl font-semibold italic text-violet-100/80"
           >
             {begun ? (ended ? "has ended!" : "ends in...") : "is in..."}
           </p>
@@ -92,8 +92,8 @@ const Hero = () => {
           data-aos-delay="700"
           className="flex flex-col justify-center items-center"
         >
-          <div className="gradient-yrhacks rounded-full px-8 py-3 flex items-center justify-center mt-6">
-            <p className="text-sm lg:text-lg text-violet-100/80 font-bold text-center">
+          <div className="gradient-yrhacks rounded-full px-10 py-3 flex items-center justify-center mt-6">
+            <p className="text-lg lg:text-lg text-violet-100/80 font-bold text-center">
               {begun
                 ? ended
                   ? "Thank you for attending! See you next year!"
