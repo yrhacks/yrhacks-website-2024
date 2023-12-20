@@ -90,9 +90,9 @@ const Hero = () => {
         <div
           data-aos="fade-up"
           data-aos-delay="700"
-          className="flex flex-col justify-start items-start"
+          className="flex flex-col justify-center items-center"
         >
-          <div className="gradient-yrhacks rounded-full px-8 py-3 flex items-center justify-center">
+          <div className="gradient-yrhacks rounded-full px-8 py-3 flex items-center justify-center mt-6">
             <p className="text-sm lg:text-lg text-violet-100/80 font-bold text-center">
               {begun
                 ? ended
@@ -103,14 +103,14 @@ const Hero = () => {
                 : "Registration is now open!"}
             </p>
           </div>
-          <div className="flex flex-row items-center w-full mt-6">
+          <div className="flex flex-row items-center justify-center w-full mt-6">
             <MdLocationOn className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
               Dr. Bette Stephenson Centre for Learning (Virtual + In-person!)
             </p>
             <></>
           </div>
-          <div className="flex flex-row items-center w-full mt-3">
+          <div className="flex flex-row items-center justify-center w-full mt-3">
             <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
               April 17 (Virtual) to 18 (In-person), 2024
