@@ -5,6 +5,7 @@ import Nav from "../components/nav";
 import Team from "../components/team";
 import Partners from "../components/partners";
 import Footer from "../components/footer";
+import Photos from "../components/photos";
 import ParticlesBackground from "../components/particles";
 
 export const About: NextPage = () => {
@@ -61,6 +62,7 @@ export const About: NextPage = () => {
         </div>
       </header>
       <Team />
+      <Photos />
       <Partners />
       <Footer />
     </main>

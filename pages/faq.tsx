@@ -37,7 +37,7 @@ const Faq: NextPage = () => {
             uestions
           </h2>
           <div className="flex flex-row justify-between items-start flex-wrap">
-            <div className="w-full lg:w-[48%] flex flex-col">
+            <div data-aos="fade-up" className="w-full lg:w-[48%] flex flex-col">
               {questions
                 .slice(0, Math.floor(questions.length / 2))
                 .map((question, index) => (
@@ -48,7 +48,11 @@ const Faq: NextPage = () => {
                   />
                 ))}
             </div>
-            <div className="w-full lg:w-[48%] flex flex-col">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={100}
+              className="w-full lg:w-[48%] flex flex-col"
+            >
               {questions
                 .slice(Math.floor(questions.length / 2))
                 .map((question, index) => (
