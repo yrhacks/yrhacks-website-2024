@@ -295,7 +295,7 @@ button:focus {
 }
 
 .long-logo {
-  max-width: 200px !important;
+  max-width: 300px !important;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
