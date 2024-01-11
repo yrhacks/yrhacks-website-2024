@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { AiOutlineLink } from "react-icons/ai";
 import { FiInstagram, FiMail } from "react-icons/fi";
-
+import ReactGA from 'react-ga';
+const handleInstagramClick = () => {
+  ReactGA.event({
+    category: 'Social',
+    action: 'Opened Instagram Account',
+  });
+};
 const initialState = {
   name: "",
   email: "",
@@ -161,6 +167,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-purple !bg-clip-text"
+                onClick={handleInstagramClick}
               >
                 <FiInstagram className="text-violet-100/80 group-hover:text-indigo-600 duration-300 text-lg md:text-2xl mr-3" />
                 @yrhacks
