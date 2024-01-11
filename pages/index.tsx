@@ -2,6 +2,9 @@ import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import ParticlesBackground from "../components/particles";
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-VSQCNJLRD7');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Nav = dynamic(() => import("../components/nav"));
 const Hero = dynamic(() => import("../components/hero"));
