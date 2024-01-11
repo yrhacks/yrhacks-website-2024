@@ -21,7 +21,7 @@ const Hero = () => {
 
       if (until <= 0) {
         launchDate = new Date("2024-04-17T02:00:00Z").getTime();
-        setBegun(true);
+        setBegun(false);
       }
       until = launchDate - now;
       if (begun && until <= 0) {
