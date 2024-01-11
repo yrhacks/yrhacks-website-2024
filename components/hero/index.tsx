@@ -11,6 +11,7 @@ const Hero = () => {
   const [begun, setBegun] = useState(false);
   const [ended, setEnded] = useState(false);
   const [closed, setClosed] = useState(false);
+  const [open, setOpen] = useState(false);
 
   // launch date: April 17, 2024
   let launchDate = new Date("2024-04-17T23:00:00Z").getTime();
@@ -81,13 +82,16 @@ const Hero = () => {
         >
           <div className="gradient-purple rounded-full px-8 py-3 flex items-center justify-center">
             <p className="text-sm lg:text-lg text-violet-100/80 font-bold text-center">
-              {begun
-                ? ended
-                  ? "Thank you for attending! See you next year!"
-                  : "YRHacks has begun!"
-                : closed
-                ? "Registration is now closed!"
-                : "Registration is now open!"}
+            {begun
+            ? ended
+              ? "Thank you for attending! See you next year!"
+              : "YRHacks has begun!"
+            : closed
+              ? "Registration is now closed!"
+                : open
+                  ? "Registration is now open!"
+                  : "Registration isn't open yet."}
+
             </p>
           </div>
           <div className="flex flex-row items-center w-full mt-6">
