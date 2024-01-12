@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineLink } from "react-icons/ai";
 import { FiInstagram, FiMail } from "react-icons/fi";
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 const handleInstagramClick = () => {
   ReactGA.event({
     category: 'Social',
