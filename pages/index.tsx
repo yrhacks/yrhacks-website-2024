@@ -4,7 +4,6 @@ import { Suspense } from "react";
 import ParticlesBackground from "../components/particles";
 import ReactGA from "react-ga4";
 ReactGA.initialize("G-VSQCNJLRD7");
-export const runtime = 'edge'
 
 
 const Nav = dynamic(() => import("../components/nav"));
