@@ -13,6 +13,7 @@ const handleContactSend = () => {
     category: 'Social',
     action: 'Sent Contact Mail',
   });
+};
 const handleMailClick = () => {
   ReactGA.event({
     category: 'Social',
