@@ -8,11 +8,6 @@ const handleInstagramClick = () => {
     action: 'Opened Instagram Account',
   });
 };
-const handleContactSend = () => {
-  ReactGA.event({
-    category: 'Social',
-    action: 'Sent Contact Mail',
-  });
 const handleMailClick = () => {
   ReactGA.event({
     category: 'Social',
@@ -69,7 +64,6 @@ const Contact = () => {
           clearState();
           setFailed(false);
           setSubmitLabel("Sent!");
-          {handleContactSend}
         } else {
           throw new Error("Something went wrong");
         }
@@ -206,7 +200,6 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 target="_blank"
                 className="flex items-center justify-center mt-5 px-6 py-3 w-full text-base duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 hover:shadow-[0_0_25px_-5px] hover:shadow-purple-600/10 border-slate-50/10 bg-gradient-to-br from-slate-50/[0.08] via-slate-50/[0.03] to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70 text-violet-100/80 hover:text-purple-500 font-bold"
-                onClick={handleInstagramClick}
               >
                 Follow us! <AiOutlineLink className="ml-1 inline" />
               </a>{" "}
