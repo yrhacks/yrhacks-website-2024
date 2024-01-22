@@ -1,7 +1,25 @@
 import { useState } from "react";
 import { AiOutlineLink } from "react-icons/ai";
 import { FiInstagram, FiMail } from "react-icons/fi";
-
+import ReactGA from 'react-ga4';
+const handleInstagramClick = () => {
+  ReactGA.event({
+    category: 'Social',
+    action: 'Opened Instagram Account',
+  });
+};
+const handleContactSend = () => {
+  ReactGA.event({
+    category: 'Social',
+    action: 'Sent Contact Mail',
+  });
+};
+const handleMailClick = () => {
+  ReactGA.event({
+    category: 'Social',
+    action: 'Opened Email',
+  });
+};
 const initialState = {
   name: "",
   email: "",
@@ -52,6 +70,7 @@ const Contact = () => {
           clearState();
           setFailed(false);
           setSubmitLabel("Sent!");
+          {handleContactSend}
         } else {
           throw new Error("Something went wrong");
         }
@@ -161,6 +180,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-yrhacks !bg-clip-text"
+                onClick={handleInstagramClick}
               >
                 <FiInstagram className="text-violet-100/80 group-hover:text-indigo-600 duration-300 text-lg md:text-2xl mr-3" />
                 @yrhacks
@@ -172,6 +192,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-yrhacks !bg-clip-text"
+                onClick={handleMailClick}
               >
                 <FiMail className="text-violet-100/80 group-hover:text-indigo-600 duration-300 text-lg md:text-2xl mr-3" />
                 yorkregionhacks@gmail.com
@@ -179,15 +200,16 @@ const Contact = () => {
             </div>
             <div className="pt-7 mx-1 w-full">
               <p className="text-violet-100/80 text-lg font-bold leading-6 pb-3">
-                Sign up for our newsletter to stay updated!
+                Follow our Instagram to stay updated!
               </p>
               <a
-                href="https://forms.gle/MsMYhqwyfc2pF4ze9"
+                href="https://instagram.com/yrhacks"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="flex items-center justify-center mt-5 px-6 py-3 w-full text-base duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 hover:shadow-[0_0_25px_-5px] hover:shadow-purple-600/10 border-slate-50/10 bg-gradient-to-br from-slate-50/[0.08] via-slate-50/[0.03] to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70 text-violet-100/80 hover:text-purple-500 font-bold"
+                onClick={handleInstagramClick}
               >
-                Sign up <AiOutlineLink className="ml-1 inline" />
+                Follow us! <AiOutlineLink className="ml-1 inline" />
               </a>{" "}
             </div>
           </div>

@@ -21,7 +21,7 @@ export const questions = [
   },
   {
     question: "Where do I sign up?",
-    answer: ["Sign-ups have ended for YRHacks 2024."],
+    answer: ["Sign-ups haven't started for YRHacks 2024."],
   },
   {
     question: "How will teams work?",
