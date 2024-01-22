@@ -1,23 +1,24 @@
 import { useState } from "react";
 import { AiOutlineLink } from "react-icons/ai";
 import { FiInstagram, FiMail } from "react-icons/fi";
-import ReactGA from 'react-ga4';
+import ReactGA from "react-ga4";
+
 const handleInstagramClick = () => {
   ReactGA.event({
-    category: 'Social',
-    action: 'Opened Instagram Account',
+    category: "Social",
+    action: "Opened Instagram Account",
   });
 };
 const handleContactSend = () => {
   ReactGA.event({
-    category: 'Social',
-    action: 'Sent Contact Mail',
+    category: "Social",
+    action: "Sent Contact Mail",
   });
 };
 const handleMailClick = () => {
   ReactGA.event({
-    category: 'Social',
-    action: 'Opened Email',
+    category: "Social",
+    action: "Opened Email",
   });
 };
 const initialState = {
@@ -54,23 +55,36 @@ const Contact = () => {
     setMessageInvalid(false);
     setSubmitLabel("Sending...");
 
-    fetch("/api/contact", {
+    const params = {
+      content: "From Website",
+      embeds: [
+        {
+          color: 8076741,
+          author: {
+            name: `From: ${name}`,
+          },
+          title: email,
+          description: "```" + message + "```",
+          timestamp: new Date().toISOString(),
+        },
+      ],
+    };
+
+    fetch("WEBHOOK HERE", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        name,
-        email,
-        message,
-      }),
+      body: JSON.stringify(params),
     })
       .then((res) => {
-        if (res.status === 200) {
+        if (res.status === 204) {
           clearState();
           setFailed(false);
           setSubmitLabel("Sent!");
-          {handleContactSend}
+          {
+            handleContactSend;
+          }
         } else {
           throw new Error("Something went wrong");
         }
@@ -79,6 +93,32 @@ const Contact = () => {
         setFailed(true);
         setSubmitLabel("Send");
       });
+
+    // fetch("/api/contact", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     name,
+    //     email,
+    //     message,
+    //   }),
+    // })
+    //   .then((res) => {
+    //     if (res.status === 200) {
+    //       clearState();
+    //       setFailed(false);
+    //       setSubmitLabel("Sent!");
+    //       {handleContactSend}
+    //     } else {
+    //       throw new Error("Something went wrong");
+    //     }
+    //   })
+    //   .catch((err) => {
+    //     setFailed(true);
+    //     setSubmitLabel("Send");
+    //   });
   };
 
   const validateEmail = (email: string) => {
