@@ -1,4 +1,4 @@
-name: Sync branch
+name: Sync
 
 on:
   push:
@@ -6,14 +6,20 @@ on:
       - main
 
 jobs:
-  sync-branch:
-    name: Update test branch
+  sync:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@master
-      - uses: connor-baer/action-sync-branch@main
-        with:
-          branch: cloudflare
-          token: ${{ secrets.GH_TOKEN }}
-          force: false
+        uses: actions/checkout@v2
+
+      - name: Switch to cloudflare branch
+        run: |
+          git checkout cloudflare
+          git pull origin cloudflare
+
+      - name: Merge changes from main
+        run: git merge origin/main --no-edit
+
+      - name: Push changes to cloudflare branch
+        run: git push origin cloudflare
