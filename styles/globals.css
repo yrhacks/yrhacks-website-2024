@@ -147,9 +147,9 @@ a {
 .gradient-yrhacks,
 .gradient-yrhacks:hover {
   background: linear-gradient(118.33deg,
-      #2563EB 15.33%,
-      #9333EA 48.66%,
-      #BE123C 110.20%);
+      #7B3DC5 7.68%,
+      #5452DD 107.67%,
+      #ee2fff 52.51%);
 }
 
 .gradient-purple,
@@ -278,23 +278,4 @@ button:focus {
         rgba(216, 180, 254, 0.3) 0%,
         rgba(216, 180, 254, 0.1) 100%);
   }
-}
-
-.long-logo-back {
-  padding: 15px;
-  border-radius: 30px;
-}
-
-.long-logo {
-  max-width: 300px !important;
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  filter: grayscale(1) brightness(2.5);
-  transition: 300ms;
-}
-
-.long-logo-back:hover>.long-logo {
-  filter: grayscale(0) brightness(1);
 }
