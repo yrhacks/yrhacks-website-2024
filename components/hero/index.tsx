@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { MdLocationOn, MdCalendarToday } from "react-icons/md";
 import Countdown from "../countdown";
-import Image from "next/image";
 import ParticlesBackground from "../particles";
 
 const Hero = () => {
@@ -47,53 +46,42 @@ const Hero = () => {
   }, [seconds]);
 
   return (
-    <header className="relative w-screen h-[95vh] flex flex-col justify-center items-start bg-transparent pt-20 px-5 md:px-10 lg:px-48">
-      <div className="bg-transparent z-10 w-full ">
-        <div className="flex items-center justify-center flex-col gap-5">
-          <p
-            data-aos="fade-up"
-            className="text-sm font-semibold text-slate-50/50"
-          >
-            SPRING 2024
-          </p>
-          <h1
-            data-aos="fade-up"
-            data-aos-delay={100}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-violet-100/80"
-          >
-            <div className="long-logo-back">
-              <Image
-                className="long-logo"
-                src="/assets/logos/logo-long.svg"
-                alt="YRHacks Logo Long"
-                width={350}
-                height={100}
-                layout={"intrinsic"}
-              />
-            </div>
-          </h1>
-          <p
-            data-aos="fade-up"
-            className="text-xl font-semibold italic text-violet-100/80"
-          >
-            {begun ? (ended ? "has ended!" : "ends in...") : "is in..."}
-          </p>
-          {!ended && (
-            <Countdown
-              days={days}
-              hours={hours}
-              minutes={minutes}
-              seconds={seconds}
-            />
-          )}
-        </div>
+    <header className="relative w-screen h-screen flex flex-col justify-center items-start bg-transparent pt-20 px-5 md:px-10 lg:px-48">
+      <div className="bg-transparent z-10 w-full">
+        <p
+          data-aos="fade-up"
+          className="text-sm font-semibold text-slate-50/50"
+        >
+          SPRING 2024
+        </p>
+        <h1
+          data-aos="fade-up"
+          data-aos-delay={100}
+          className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-violet-100/80"
+        >
+          YRHacks
+        </h1>
+        <p
+          data-aos="fade-up"
+          className="text-xl font-semibold italic mb-4 text-violet-100/80"
+        >
+          {begun ? (ended ? "has ended!" : "ends in...") : "is in..."}
+        </p>
+        {!ended && (
+          <Countdown
+            days={days}
+            hours={hours}
+            minutes={minutes}
+            seconds={seconds}
+          />
+        )}
         <div
           data-aos="fade-up"
           data-aos-delay="700"
-          className="flex flex-col justify-center items-center"
+          className="flex flex-col justify-start items-start"
         >
-          <div className="gradient-yrhacks rounded-full px-10 py-3 flex items-center justify-center mt-6">
-            <p className="text-lg lg:text-lg text-violet-100/80 font-bold text-center">
+          <div className="gradient-yrhacks rounded-full px-8 py-3 flex items-center justify-center">
+            <p className="text-sm lg:text-lg text-violet-100/80 font-bold text-center">
               {begun
                 ? ended
                   ? "Thank you for attending! See you next year!"
@@ -103,14 +91,14 @@ const Hero = () => {
                 : "Registration is now open!"}
             </p>
           </div>
-          <div className="flex flex-row items-center justify-center w-full mt-6">
+          <div className="flex flex-row items-center w-full mt-6">
             <MdLocationOn className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
               Dr. Bette Stephenson Centre for Learning
             </p>
             <></>
           </div>
-          <div className="flex flex-row items-center justify-center w-full mt-3">
+          <div className="flex flex-row items-center w-full mt-3">
             <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
               April 17 (Virtual) to 18 (In-person), 2024
