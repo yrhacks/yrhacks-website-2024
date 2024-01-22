@@ -56,7 +56,7 @@ const Contact = () => {
     setSubmitLabel("Sending...");
 
     const params = {
-      content: "From Website",
+      content: "New Website Message <@&1118302616120725695>!",
       embeds: [
         {
           color: 8076741,
@@ -68,9 +68,9 @@ const Contact = () => {
           timestamp: new Date().toISOString(),
         },
       ],
-    };
+    };    
 
-    fetch("WEBHOOK HERE", {
+    fetch("hi kenny please put webhook url here", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
