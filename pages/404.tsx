@@ -100,7 +100,7 @@ const Page: NextPage = () => {
         <h3 className="text-xl text-slate-50/80 text-center mt-20">
           Here&apos;s our{" "}
           <Link href="/#">
-            <span className="text-transparent font-bold gradient-purple !bg-clip-text cursor-pointer">
+            <span className="text-transparent font-bold gradient-yrhacks !bg-clip-text cursor-pointer">
               home page
             </span>
           </Link>

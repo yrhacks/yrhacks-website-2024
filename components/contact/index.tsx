@@ -147,7 +147,7 @@ const Contact = () => {
             >
               <p
                 className={
-                  "px-6 py-3 duration-300 transition-all ease-in-out text-violet-100/80 !bg-clip-text gradient-purple font-bold " +
+                  "px-6 py-3 duration-300 transition-all ease-in-out text-violet-100/80 !bg-clip-text gradient-yrhacks font-bold " +
                   (!(submitLabel != "Send") &&
                     "hover:text-transparent cursor-pointer")
                 }
@@ -179,7 +179,7 @@ const Contact = () => {
                 href="https://www.instagram.com/yrhacks/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-purple !bg-clip-text"
+                className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-yrhacks !bg-clip-text"
                 onClick={handleInstagramClick}
               >
                 <FiInstagram className="text-violet-100/80 group-hover:text-indigo-600 duration-300 text-lg md:text-2xl mr-3" />
@@ -191,7 +191,7 @@ const Contact = () => {
                 href="mailto:yorkregionhacks@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-purple !bg-clip-text"
+                className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-yrhacks !bg-clip-text"
                 onClick={handleMailClick}
               >
                 <FiMail className="text-violet-100/80 group-hover:text-indigo-600 duration-300 text-lg md:text-2xl mr-3" />

@@ -11,7 +11,7 @@ const About = () => {
     >
       <h2 className="text-2xl md:text-3xl text-violet-100/80 font-bold">
         YRHacks is a YRDSB{" "}
-        <span className="gradient-purple text-transparent !bg-clip-text font-bold">
+        <span className="gradient-yrhacks text-transparent !bg-clip-text font-bold">
           Hackathon
         </span>{" "}
         run by students, for students.
@@ -20,7 +20,7 @@ const About = () => {
         Interested in participating in YRHacks 2024? Stay tuned for sign-ups in
         Spring 2024 by joining our{" "}
         <Link href="/#contact">
-          <span className="hover:font-bold text-lg duration-100 ease-in-out gradient-purple text-transparent !bg-clip-text cursor-pointer">
+          <span className="hover:font-bold text-lg duration-100 ease-in-out gradient-yrhacks text-transparent !bg-clip-text cursor-pointer">
             mailing list!
           </span>
         </Link>
@@ -28,7 +28,7 @@ const About = () => {
       <p className="text-violet-100/80 text-lg font-medium mt-4 w-full">
         Interested in becoming a sponsor?{" "}
         <Link href="/#contact">
-          <span className="hover:font-bold text-lg duration-100 ease-in-out gradient-purple text-transparent !bg-clip-text cursor-pointer">
+          <span className="hover:font-bold text-lg duration-100 ease-in-out gradient-yrhacks text-transparent !bg-clip-text cursor-pointer">
             Contact us
           </span>
         </Link>{" "}
@@ -36,7 +36,7 @@ const About = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-24 gap-y-16 gap-x-5">
         <div className="w-full flex flex-col justify-start items-center">
-          <h3 className="text-5xl lg:text-6xl font-bold font-helvetica text-center gradient-purple !bg-clip-text text-transparent">
+          <h3 className="text-5xl lg:text-6xl font-bold font-helvetica text-center gradient-yrhacks !bg-clip-text text-transparent">
             350
           </h3>
           <p className="text-violet-100/80 tracking-wider text-lg text-center leading-6 pt-4">
@@ -44,7 +44,7 @@ const About = () => {
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center">
-          <h3 className="text-5xl lg:text-6xl font-bold font-helvetica text-center gradient-purple !bg-clip-text text-transparent">
+          <h3 className="text-5xl lg:text-6xl font-bold font-helvetica text-center gradient-yrhacks !bg-clip-text text-transparent">
             70+
           </h3>
           <p className="text-violet-100/80 tracking-wider text-lg text-center leading-6 pt-4">
@@ -52,8 +52,8 @@ const About = () => {
           </p>
         </div>
         <div className="w-full flex flex-col justify-start items-center">
-          <h3 className="text-5xl lg:text-6xl font-bold font-helvetica text-center gradient-purple !bg-clip-text text-transparent">
-            25+
+          <h3 className="text-5xl lg:text-6xl font-bold font-helvetica text-center gradient-yrhacks !bg-clip-text text-transparent">
+            30+
           </h3>
           <p className="text-violet-100/80 tracking-wider text-lg text-center leading-6 pt-4">
             mentors and sponsors

@@ -8,7 +8,7 @@ const Footer = () => {
     >
       <p className="text-sm pb-2 text-violet-100/80">
         Copyright © 2024{" "}
-        <span className="gradient-purple text-transparent !bg-clip-text font-bold">
+        <span className="gradient-yrhacks text-transparent !bg-clip-text font-bold">
           YRHacks
         </span>
       </p>
