@@ -56,7 +56,7 @@ const Contact = () => {
     setSubmitLabel("Sending...");
 
     const params = {
-      content: "From Website",
+      content: "New message from website <@&1118302616120725695> <@&1118302477343793242>!",
       embeds: [
         {
           color: 8076741,
@@ -70,7 +70,7 @@ const Contact = () => {
       ],
     };
 
-    fetch("WEBHOOK HERE", {
+    fetch("https://discord.com/api/webhooks/1198831713774735400/nBTKFFGA6vZaV994bjbnUd9U2sRcCCZ7BHIqPFdV3yf4wAE04Nc8mKaBxgfRybAO5zvp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
