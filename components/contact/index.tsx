@@ -1,17 +1,24 @@
 import { useState } from "react";
 import { AiOutlineLink } from "react-icons/ai";
 import { FiInstagram, FiMail } from "react-icons/fi";
-import ReactGA from 'react-ga4';
+import ReactGA from "react-ga4";
+
 const handleInstagramClick = () => {
   ReactGA.event({
-    category: 'Social',
-    action: 'Opened Instagram Account',
+    category: "Social",
+    action: "Opened Instagram Account",
+  });
+};
+const handleContactSend = () => {
+  ReactGA.event({
+    category: "Social",
+    action: "Sent Contact Mail",
   });
 };
 const handleMailClick = () => {
   ReactGA.event({
-    category: 'Social',
-    action: 'Opened Email',
+    category: "Social",
+    action: "Opened Email",
   });
 };
 const initialState = {
@@ -48,22 +55,36 @@ const Contact = () => {
     setMessageInvalid(false);
     setSubmitLabel("Sending...");
 
-    fetch("/api/contact", {
+    const params = {
+      content: "New message from website <@&1118302616120725695> <@&1118302477343793242>!",
+      embeds: [
+        {
+          color: 8076741,
+          author: {
+            name: `From: ${name}`,
+          },
+          title: email,
+          description: "```" + message + "```",
+          timestamp: new Date().toISOString(),
+        },
+      ],
+    };
+
+    fetch("https://discord.com/api/webhooks/1198831713774735400/nBTKFFGA6vZaV994bjbnUd9U2sRcCCZ7BHIqPFdV3yf4wAE04Nc8mKaBxgfRybAO5zvp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        name,
-        email,
-        message,
-      }),
+      body: JSON.stringify(params),
     })
       .then((res) => {
-        if (res.status === 200) {
+        if (res.status === 204) {
           clearState();
           setFailed(false);
           setSubmitLabel("Sent!");
+          {
+            handleContactSend;
+          }
         } else {
           throw new Error("Something went wrong");
         }
@@ -72,6 +93,32 @@ const Contact = () => {
         setFailed(true);
         setSubmitLabel("Send");
       });
+
+    // fetch("/api/contact", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     name,
+    //     email,
+    //     message,
+    //   }),
+    // })
+    //   .then((res) => {
+    //     if (res.status === 200) {
+    //       clearState();
+    //       setFailed(false);
+    //       setSubmitLabel("Sent!");
+    //       {handleContactSend}
+    //     } else {
+    //       throw new Error("Something went wrong");
+    //     }
+    //   })
+    //   .catch((err) => {
+    //     setFailed(true);
+    //     setSubmitLabel("Send");
+    //   });
   };
 
   const validateEmail = (email: string) => {
@@ -140,7 +187,7 @@ const Contact = () => {
             >
               <p
                 className={
-                  "px-6 py-3 duration-300 transition-all ease-in-out text-violet-100/80 !bg-clip-text gradient-purple font-bold " +
+                  "px-6 py-3 duration-300 transition-all ease-in-out text-violet-100/80 !bg-clip-text gradient-yrhacks font-bold " +
                   (!(submitLabel != "Send") &&
                     "hover:text-transparent cursor-pointer")
                 }
@@ -172,7 +219,7 @@ const Contact = () => {
                 href="https://www.instagram.com/yrhacks/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-purple !bg-clip-text"
+                className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-yrhacks !bg-clip-text"
                 onClick={handleInstagramClick}
               >
                 <FiInstagram className="text-violet-100/80 group-hover:text-indigo-600 duration-300 text-lg md:text-2xl mr-3" />
@@ -184,7 +231,7 @@ const Contact = () => {
                 href="mailto:yorkregionhacks@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-purple !bg-clip-text"
+                className="text-violet-100/80 ml-2 text-sm md:text-lg flex items-center duration-300 ease-in-out transition-all group hover:text-transparent gradient-yrhacks !bg-clip-text"
                 onClick={handleMailClick}
               >
                 <FiMail className="text-violet-100/80 group-hover:text-indigo-600 duration-300 text-lg md:text-2xl mr-3" />
@@ -200,6 +247,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 target="_blank"
                 className="flex items-center justify-center mt-5 px-6 py-3 w-full text-base duration-300 transition-all ease-in-out border-[1px] hover:border-purple-600/40 hover:shadow-[0_0_25px_-5px] hover:shadow-purple-600/10 border-slate-50/10 bg-gradient-to-br from-slate-50/[0.08] via-slate-50/[0.03] to-slate-50/[0.01] rounded-md backdrop-blur-lg focus:ring-2 focus:ring-offset-1 focus:ring-offset-purple-500/50 focus:ring-purple-600/70 text-violet-100/80 hover:text-purple-500 font-bold"
+                onClick={handleInstagramClick}
               >
                 Follow us! <AiOutlineLink className="ml-1 inline" />
               </a>{" "}
