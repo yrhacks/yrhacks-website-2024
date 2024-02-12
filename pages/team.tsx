@@ -35,7 +35,7 @@ export const About: NextPage = () => {
           className="text-center text-xl md:text-4xl font-bold font-helvetica text-violet-100/80"
         >
           Meet the incredible team behind{" "}
-          <span className="!bg-clip-text text-transparent gradient-purple">
+          <span className="!bg-clip-text text-transparent gradient-yrhacks">
             YRHacks!
           </span>
         </h2>

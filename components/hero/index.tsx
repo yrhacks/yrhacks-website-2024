@@ -14,14 +14,14 @@ const Hero = () => {
   const [open, setOpen] = useState(false);
 
   // launch date: April 17, 2024
-  let launchDate = new Date("2024-04-17T23:00:00Z").getTime();
+  let launchDate = new Date("2024-04-16T19:00:00Z").getTime();
   useEffect(() => {
     const updateTime = setInterval(() => {
       const now = new Date().getTime();
       let until = launchDate - now;
 
       if (until <= 0) {
-        launchDate = new Date("2024-04-17T02:00:00Z").getTime();
+        launchDate = new Date("2024-04-16T19:00:00Z").getTime();
         setBegun(false);
       }
       until = launchDate - now;
@@ -57,6 +57,7 @@ const Hero = () => {
         </p>
         <h1
           data-aos="fade-up"
+          data-aos-delay={100}
           className="text-5xl md:text-6xl lg:text-7xl font-bold my-1 font-helvetica text-violet-100/80"
         >
           YRHacks
@@ -80,7 +81,7 @@ const Hero = () => {
           data-aos-delay="700"
           className="flex flex-col justify-start items-start"
         >
-          <div className="gradient-purple rounded-full px-8 py-3 flex items-center justify-center">
+          <div className="gradient-yrhacks rounded-full px-8 py-3 flex items-center justify-center">
             <p className="text-sm lg:text-lg text-violet-100/80 font-bold text-center">
             {begun
             ? ended
@@ -97,14 +98,14 @@ const Hero = () => {
           <div className="flex flex-row items-center w-full mt-6">
             <MdLocationOn className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
-              Dr. Bette Stephenson Centre for Learning (Virtual + In-person!)
+              Dr. Bette Stephenson Centre for Learning
             </p>
             <></>
           </div>
           <div className="flex flex-row items-center w-full mt-3">
             <MdCalendarToday className="text-xl lg:text-2xl mr-2 text-violet-100/80" />
             <p className="text-sm lg:text-lg font-semibold text-violet-100/80">
-              April 17 (Virtual) - 18 (In-person), 2024
+              April 17 (Virtual) to 18 (In-person), 2024
             </p>
           </div>
         </div>

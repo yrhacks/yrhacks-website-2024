@@ -30,7 +30,6 @@
     "tsparticles": "^2.3.4"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.8.5",
     "@types/aos": "^3.0.4",
     "@types/node": "18.8.3",
     "@types/react": "18.0.21",
