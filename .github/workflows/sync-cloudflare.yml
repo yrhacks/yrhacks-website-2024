@@ -13,8 +13,18 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Fetch cloudflare branch
+      run: |
+        git fetch origin cloudflare
+
+    - name: Checkout cloudflare branch
+      run: |
+        git checkout -b cloudflare origin/cloudflare
+
+    - name: Merge changes from main
+      run: |
+        git merge main --no-edit
+
     - name: Push changes to cloudflare branch
       run: |
-        git checkout cloudflare
-        git merge main --no-edit
         git push origin cloudflare
