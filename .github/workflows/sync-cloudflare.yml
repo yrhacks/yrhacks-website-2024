@@ -23,7 +23,7 @@ jobs:
 
     - name: Merge changes from main
       run: |
-        git merge main --no-edit
+        git merge main --no-edit --allow-unrelated-histories
 
     - name: Push changes to cloudflare branch
       run: |
