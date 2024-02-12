@@ -1,0 +1,35 @@
+name: Sync Main to Cloudflare Branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up Git
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Fetch cloudflare branch
+      run: |
+        git fetch origin cloudflare
+
+    - name: Checkout cloudflare branch
+      run: |
+        git checkout -b cloudflare origin/cloudflare
+
+    - name: Merge changes from main
+      run: |
+        git merge main --no-edit --allow-unrelated-histories --force
+
+    - name: Push changes to cloudflare branch
+      run: |
+        git push origin cloudflare
