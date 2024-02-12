@@ -1,0 +1,25 @@
+name: Sync
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Switch to cloudflare branch
+        run: |
+          git checkout cloudflare
+          git pull origin cloudflare
+
+      - name: Merge changes from main
+        run: git merge origin/main --no-edit
+
+      - name: Push changes to cloudflare branch
+        run: git push origin cloudflare
