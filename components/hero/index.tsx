@@ -11,7 +11,6 @@ const Hero = () => {
   const [begun, setBegun] = useState(false);
   const [ended, setEnded] = useState(false);
   const [closed, setClosed] = useState(false);
-  const [open, setOpen] = useState(false);
 
   // launch date: April 17, 2024
   let launchDate = new Date("2024-04-16T19:00:00Z").getTime();
@@ -45,6 +44,22 @@ const Hero = () => {
       clearInterval(updateTime);
     };
   }, [seconds]);
+
+  const getRegistrationStatus = () => {
+    if (begun) { // After Hackathon Start
+      if (ended) { // After Hackathon End
+          return "Thank you for attending! See you next year!";
+      } else { // During Hackathon
+          return "YRHacks has begun!";
+      }
+    } else { // Before Hackathon Start
+        if (closed) { // Before Registration Start
+            return "Registration is now closed!";
+        } else { // After Registration Start
+            return "Registration is now open!";
+        }
+    }
+  }
 
   return (
     <header className="relative w-screen h-screen flex flex-col justify-center items-start bg-transparent pt-20 px-5 md:px-10 lg:px-48">
@@ -83,16 +98,7 @@ const Hero = () => {
         >
           <div className="gradient-yrhacks rounded-full px-8 py-3 flex items-center justify-center">
             <p className="text-sm lg:text-lg text-violet-100/80 font-bold text-center">
-            {begun
-            ? ended
-              ? "Thank you for attending! See you next year!"
-              : "YRHacks has begun!"
-            : closed
-              ? "Registration is now closed!"
-                : open
-                  ? "Registration is now open!"
-                  : "Registration isn't open yet."}
-
+            {getRegistrationStatus()}
             </p>
           </div>
           <div className="flex flex-row items-center w-full mt-6">
