@@ -10,31 +10,41 @@ const Hero = () => {
   const [seconds, setSeconds] = useState<number>(0);
   const [begun, setBegun] = useState(false);
   const [ended, setEnded] = useState(false);
-  const [closed, setClosed] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [registrationOpen, setRegistrationOpen] = useState(false);
+  const [registrationSoon, setRegistrationSoon] = useState(false);
 
-  // launch date: April 17, 2024
-  let launchDate = new Date("2024-04-16T19:00:00Z").getTime();
+  // launch date: April 17, 2024, 5PM
+  let launchDate = new Date("April 17, 2024 17:00:00 EST").getTime();
   useEffect(() => {
     const updateTime = setInterval(() => {
       const now = new Date().getTime();
-      let until = launchDate - now;
-
-      if (until <= 0) {
-        launchDate = new Date("2024-04-16T19:00:00Z").getTime();
-        setBegun(false);
+      const until = new Date("April 17, 2024 17:00:00 EST").getTime() - now;
+      // Registration soon: January 1, 2024, 12AM
+      if (new Date("January 1, 2024 00:00:00 EST").getTime() - now <= 0) {
+        setRegistrationSoon(true);
       }
-      until = launchDate - now;
-      if (begun && until <= 0) {
-        clearInterval(updateTime);
+
+      // Registration open: February 15, 2024, 12AM
+      if (new Date("February 15, 2024 00:00:00 EST").getTime() - now <= 0) {
+        setRegistrationOpen(true);
+      }
+
+      // Hackathon start: April 17, 2024, 5PM
+      if (until <= 0) {
         setDays(0);
         setHours(0);
         setMinutes(0);
         setSeconds(0);
+        setBegun(true);
+      }
+
+      // Hackathon end: April 18, 2024, 5PM
+      if (new Date("April 18, 2024 17:00:00 EST").getTime() - now <= 0) {
+        clearInterval(updateTime);
         setEnded(true);
-        setClosed(true);
         return;
       }
+
       setDays(Math.floor(until / (1000 * 60 * 60 * 24)));
       setHours(Math.floor((until % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
       setMinutes(Math.floor((until % (1000 * 60 * 60)) / (1000 * 60)));
@@ -45,6 +55,33 @@ const Hero = () => {
       clearInterval(updateTime);
     };
   }, [seconds]);
+
+  const getRegistrationStatus = () => {
+    if (begun) {
+      // After Hackathon Start
+      if (ended) {
+        // After Hackathon End
+        return "Thank you for attending! See you next year!";
+      } else {
+        // During Hackathon
+        return "YRHacks has begun!";
+      }
+    } else {
+      // Before Hackathon Start
+      if (registrationOpen) {
+        // After Registration Start
+        return "Registration is now open!";
+      } else {
+        if (registrationSoon) {
+          // Before Registration Start Soon
+          return "Registration is opening soon!";
+        } else {
+          // After Registration End
+          return "Registration is now closed!";
+        }
+      }
+    }
+  };
 
   return (
     <header className="relative w-screen h-screen flex flex-col justify-center items-start bg-transparent pt-20 px-5 md:px-10 lg:px-48">
@@ -83,16 +120,7 @@ const Hero = () => {
         >
           <div className="gradient-yrhacks rounded-full px-8 py-3 flex items-center justify-center">
             <p className="text-sm lg:text-lg text-violet-100/80 font-bold text-center">
-            {begun
-            ? ended
-              ? "Thank you for attending! See you next year!"
-              : "YRHacks has begun!"
-            : closed
-              ? "Registration is now closed!"
-                : open
-                  ? "Registration is now open!"
-                  : "Registration isn't open yet."}
-
+              {getRegistrationStatus()}
             </p>
           </div>
           <div className="flex flex-row items-center w-full mt-6">
