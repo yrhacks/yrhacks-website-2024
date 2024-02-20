@@ -70,7 +70,7 @@ const Hero = () => {
       // Before Hackathon Start
       if (registrationOpen) {
         // After Registration Start
-        return <a href="https://docs.google.com/forms/d/e/1FAIpQLSf84vdRChXpE1mara1uxOYkrqBTElCejCbXvISNwqNrAW1O4g/viewform?usp=sf_link">Registration is now open!</a>;
+        return <a href="https://docs.google.com/forms/d/e/1FAIpQLSf84vdRChXpE1mara1uxOYkrqBTElCejCbXvISNwqNrAW1O4g/viewform?usp=sf_link">Registration is now open! (Click for registration form!)</a>;
       } else {
         if (registrationSoon) {
           // Before Registration Start Soon
