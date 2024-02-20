@@ -260,3 +260,4 @@ const Contact = () => {
 };
 
 export default Contact;
+export const config = { runtime: 'edge' };

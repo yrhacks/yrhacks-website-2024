@@ -44,3 +44,4 @@ const Dropdown = ({ open, setOpen }: Props) => {
 };
 
 export default Dropdown;
+export const config = { runtime: 'edge' };

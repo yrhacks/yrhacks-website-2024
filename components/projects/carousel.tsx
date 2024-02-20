@@ -96,3 +96,4 @@ const Carousel = () => {
 };
 
 export default Carousel;
+export const config = { runtime: 'edge' };

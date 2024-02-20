@@ -18,3 +18,4 @@ const Footer = () => {
 };
 
 export default Footer;
+export const config = { runtime: 'edge' };

@@ -40,3 +40,4 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+export const config = { runtime: 'edge' };
