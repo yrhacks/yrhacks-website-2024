@@ -25,7 +25,7 @@ const Hero = () => {
       }
 
       // Registration open: February 15, 2024, 12AM
-      if (new Date("February 15, 2024 00:00:00 EST").getTime() - now <= 0) {
+      if (new Date("February 20, 2024 00:00:00 EST").getTime() - now <= 0) {
         setRegistrationOpen(true);
       }
 
@@ -70,7 +70,7 @@ const Hero = () => {
       // Before Hackathon Start
       if (registrationOpen) {
         // After Registration Start
-        return "Registration is now open!";
+        return <a href="https://docs.google.com/forms/d/e/1FAIpQLSf84vdRChXpE1mara1uxOYkrqBTElCejCbXvISNwqNrAW1O4g/viewform?usp=sf_link">Registration is now open!</a>;
       } else {
         if (registrationSoon) {
           // Before Registration Start Soon
