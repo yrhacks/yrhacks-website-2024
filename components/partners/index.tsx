@@ -64,4 +64,3 @@ const Partners = () => {
 };
 
 export default Partners;
-export const config = { runtime: 'edge' };

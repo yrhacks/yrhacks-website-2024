@@ -78,4 +78,3 @@ const Team = () => {
 };
 
 export default Team;
-export const config = { runtime: 'edge' };

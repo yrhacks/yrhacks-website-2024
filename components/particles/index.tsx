@@ -109,4 +109,3 @@ const ParticlesBackground: React.FC<Props> = ({ props }) => {
 };
 
 export default ParticlesBackground;
-export const config = { runtime: 'edge' };

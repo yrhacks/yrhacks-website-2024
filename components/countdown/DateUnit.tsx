@@ -24,4 +24,3 @@ const DateUnit = ({ value, unit, delay }: Props) => {
 };
 
 export default DateUnit;
-export const config = { runtime: 'edge' };

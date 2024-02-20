@@ -83,4 +83,3 @@ const Nav = () => {
 };
 
 export default Nav;
-export const config = { runtime: 'edge' };

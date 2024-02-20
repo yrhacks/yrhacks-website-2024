@@ -70,4 +70,3 @@ export const About: NextPage = () => {
 };
 
 export default About;
-export const config = { runtime: 'edge' };
