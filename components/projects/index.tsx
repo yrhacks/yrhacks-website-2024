@@ -20,4 +20,4 @@ const Projects = () => {
 };
 
 export default Projects;
-export const config = { runtime: 'experimental-edge' };
+export const config = { runtime: 'edge' };

@@ -143,4 +143,4 @@ const Hero = () => {
 };
 
 export default Hero;
-export const config = { runtime: 'experimental-edge' };
+export const config = { runtime: 'edge' };

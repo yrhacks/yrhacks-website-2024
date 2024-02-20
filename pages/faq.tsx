@@ -72,4 +72,4 @@ const Faq: NextPage = () => {
 };
 
 export default Faq;
-export const config = { runtime: 'experimental-edge' };
+export const config = { runtime: 'edge' };

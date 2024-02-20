@@ -39,8 +39,8 @@ export const partners = {
       link: "https://www.echoar.xyz/",
     },
     {
-      name: "experimental-edgePrim",
-      link: "https://experimental-edgeprim.com/",
+      name: "EdgePrim",
+      link: "https://edgeprim.com/",
     },
     {
       name: "HackStudent",

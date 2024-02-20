@@ -46,4 +46,4 @@ const Collapsible = ({ question, answer }: Props) => {
 };
 
 export default Collapsible;
-export const config = { runtime: 'experimental-edge' };
+export const config = { runtime: 'edge' };

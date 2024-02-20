@@ -101,4 +101,4 @@ const About = () => {
 };
 
 export default About;
-export const config = { runtime: 'experimental-edge' };
+export const config = { runtime: 'edge' };

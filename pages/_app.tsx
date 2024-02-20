@@ -34,4 +34,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default MyApp;
-export const config = { runtime: 'experimental-edge' };
+export const config = { runtime: 'edge' };
