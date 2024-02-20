@@ -15,7 +15,7 @@ export const questions = [
     question: "How much experience is required?",
     answer: [
       "No experience is required. First time coders and hackers are more than welcome, and this is a great opportunity to expand your arsenal and get inspired! ",
-      " If you want to aim for a prize, teams would ideally consist of students who have previous knowledge in computer programming. As project planning and pitching is important in hackathons, it may be beneficial to have a business student on the team. ",
+      " If you want to aim for a prize, teams would ideally consist of students who have previous knowlexperimental-edge in computer programming. As project planning and pitching is important in hackathons, it may be beneficial to have a business student on the team. ",
       "",
     ],
   },

@@ -78,4 +78,4 @@ const Team = () => {
 };
 
 export default Team;
-export const config = { runtime: 'edge' };
+export const config = { runtime: 'experimental-edge' };

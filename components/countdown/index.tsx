@@ -26,4 +26,4 @@ const Countdown = ({ days, hours, minutes, seconds }: Props) => {
 };
 
 export default Countdown;
-export const config = { runtime: 'edge' };
+export const config = { runtime: 'experimental-edge' };
