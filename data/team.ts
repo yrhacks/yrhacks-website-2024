@@ -36,7 +36,8 @@ export const team = [
     role: "Logistics Executive",
     grade: "11",
     school: "Bur Oak SS.",
-    blurb: "Once upon a time, I ate so much Papaya I turned orange. I was rushed to the ER.",
+    blurb:
+      "Once upon a time, I ate so much Papaya I turned orange. I was rushed to the ER.",
     image: "/assets/team/Tristan.webp",
     bg: "/assets/team/meteor.svg",
     colour: "gradient-teal",
@@ -107,7 +108,8 @@ export const team = [
     role: "Outreach Lead",
     grade: "12",
     school: "Bayview SS.",
-    blurb: "Hey! Aside from coding, I'm a powerlifter, magician, and speedcuber! Reach out @derrickxha on insta",
+    blurb:
+      "Hey! Aside from coding, I'm a powerlifter, magician, and speedcuber! Reach out @derrickxha on insta",
     image: "/assets/team/Derrick.webp",
     bg: "/assets/team/globe.svg",
     colour: "gradient-pumpkin",
@@ -180,7 +182,7 @@ export const team = [
     role: "Technology Executive",
     grade: "12",
     school: "Milliken Mills HS.",
-    blurb: "kenny add this",
+    blurb: "I'll write my blurb tomorrow",
     image: "/assets/team/Kenny.webp",
     bg: "/assets/team/gear.svg",
     colour: "gradient-lavender",
