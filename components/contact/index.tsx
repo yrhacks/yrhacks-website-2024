@@ -56,7 +56,8 @@ const Contact = () => {
     setSubmitLabel("Sending...");
 
     const params = {
-      content: "New message from website <@&1118302616120725695> <@&1118302477343793242>!",
+      content:
+        "New message from website <@&1118302446771503134> <@&1118302477343793242>!",
       embeds: [
         {
           color: 8076741,
@@ -70,13 +71,16 @@ const Contact = () => {
       ],
     };
 
-    fetch("https://discord.com/api/webhooks/1198831713774735400/nBTKFFGA6vZaV994bjbnUd9U2sRcCCZ7BHIqPFdV3yf4wAE04Nc8mKaBxgfRybAO5zvp", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(params),
-    })
+    fetch(
+      "https://discord.com/api/webhooks/1198831713774735400/nBTKFFGA6vZaV994bjbnUd9U2sRcCCZ7BHIqPFdV3yf4wAE04Nc8mKaBxgfRybAO5zvp",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(params),
+      }
+    )
       .then((res) => {
         if (res.status === 204) {
           clearState();
