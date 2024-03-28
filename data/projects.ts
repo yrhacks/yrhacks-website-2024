@@ -40,7 +40,7 @@ export const projects = [
       "Thomas Russel",
     ],
     description: "To Be Added",
-    image: "/assets/img/projects/robots led by sean ii.png",
+    image: "/assets/img/projects/robotsledbyseanii.png",
     color: "gradient-bronze",
   },
   {
@@ -55,7 +55,7 @@ export const projects = [
     ],
     description:
       "The overall idea was to create a puzzle-based story game where each level would utilize and emphasize one game mechanic that the level would be centered around, in this case, each level would be a different puzzle and an overarching narrative behind them.",
-    image: "/assets/img/projects/desktop ribbit.jpg",
+    image: "/assets/img/projects/desktopribbit.jpg",
     color: "gradient-purple",
   },
   {
