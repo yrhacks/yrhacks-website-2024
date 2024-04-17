@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { TiChevronLeft, TiChevronRight } from "react-icons/ti";
 import useEmblaCarousel from "embla-carousel-react";
 import { photos } from "../../data/photos";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Carousel = () => {
   const [viewportRef, embla] = useEmblaCarousel({
