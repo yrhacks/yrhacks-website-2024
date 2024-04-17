@@ -11,6 +11,50 @@ export const partners = {
   ],
   past_partners: [
     {
+      name: "ACTO",
+      link: "https://acto.com/",
+    },
+    {
+      name: "TTMath",
+      link: "http://www.ttmath.ca/en/contact",
+    },
+    {
+      name: "echo3D",
+      link: "https://www.echo3d.com/",
+    },
+    {
+      name: "gen.xyz",
+      link: "https://gen.xyz/contact",
+    },
+    {
+      name: "pawnTech",
+      link: "https://www.instagram.com/pawntech",
+    },
+    {
+      name: "Balsamiq",
+      link: "https://balsamiq.com/support/",
+    },
+    {
+      name: "Give My Certificate",
+      link: "https://givemycertificate.com/contact.html",
+    },
+    {
+      name: "Pho Xe Lua",
+      link: "https://www.phoxelua.ca/",
+    },
+    {
+      name: "CS50",
+      link: "https://cs50.harvard.edu/",
+    },
+    {
+      name: "siberX",
+      link: "https://www.siberx.org/",
+    },
+    {
+      name: "TMU DMZ",
+      link: "https://dmz.torontomu.ca/contact/",
+    },
+    {
       name: "AMD",
       link: "https://www.amd.com/en",
     },
