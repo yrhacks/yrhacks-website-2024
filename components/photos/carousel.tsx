@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { TiChevronLeft, TiChevronRight } from "react-icons/ti";
 import useEmblaCarousel from "embla-carousel-react";
 import { photos } from "../../data/photos";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const Carousel = () => {
   const [viewportRef, embla] = useEmblaCarousel({
@@ -49,8 +49,7 @@ const Carousel = () => {
                 className={
                   "text-xl font-helvetica lg:text-3xl mb-2 lg:mb-4 font-bold text-center !bg-clip-text text-transparent gradient-purple"
                 }
-              >
-              </h3>
+              ></h3>
               <div
                 className={
                   "relative flex items-center justify-center p-2 gradient-purple"
