@@ -157,16 +157,6 @@ export const team = [
     colour: "gradient-pumpkin",
   },
   {
-    name: "Kyle Liu",
-    role: "Outreach Executive",
-    grade: "11",
-    school: "Markville SS.",
-    blurb: "Hi my name is Kyle and I love Yrhacks!",
-    image: "/assets/team/Kyle.webp",
-    bg: "/assets/team/globe.svg",
-    colour: "gradient-pumpkin",
-  },
-  {
     name: "Ashvin Henry",
     role: "Technology Executive",
     grade: "11",
