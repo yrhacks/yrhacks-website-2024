@@ -57,6 +57,7 @@ const Carousel = () => {
               >
                 <Image
                   src={photo.image}
+                  alt={photo.id.toString()}
                   layout="intrinsic"
                   objectFit="cover"
                   width={1920}
